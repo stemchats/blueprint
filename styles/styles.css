@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.home #home-nav,
+.about #about-nav,
+.journals #journals-nav,
+.blog #blog-nav,
+.involved #involved-nav {
+  color: black;
+  font-weight: bold;
+}
+
+.home #home-nav:hover,
+.about #about-nav:hover,
+.journals #journals-nav:hover,
+.blog #blog-nav:hover,
+.involved #involved-nav:hover {
+  color: #005792;
+}
+/*# sourceMappingURL=styles.css.map */
