@@ -1,0 +1,31 @@
+// Roboto Slab
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+// Josefin Sans
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+// Karla (instead of Proxima Nova)
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+// VARIABLES
+$light-blue : #b3cdde;
+$blue : #005792;
+$dark-blue : #13334c;
+$red : #ff5959;
+$teal : #82d1c6;
+
+
+
+// PAGE HIGHLIGHT
+.home #home-nav,
+.about #about-nav,
+.program #program-nav,
+.toolbox #toolbox-nav,
+.campaigns #campaigns-nav,
+.contact #contact-nav {
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        color: $light-blue;
+    }
+}
