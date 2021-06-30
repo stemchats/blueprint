@@ -38,50 +38,49 @@ footer {
     //padding-top: 25px; 
     //padding-left: 100px;
     padding: 25px 90px;
-}
 
-
-footer h4 {
-    color: white
-}
-footer .nextlink {
-    color: white
-}
-footer p{
-    color: $light-blue
-}
-
-footer .link{
-    color: $light-blue;
-
-    &:hover{
-        color: $teal;
-        text-decoration: none;
-        border-bottom: 1px solid;
+    h4 {
+        color: white
     }
-}
 
+    p{
+        color: $light-blue
+    }
 
-footer .magnify-logo{
-    width:150px;
-    display: block;
-    height: auto;
-}
+    .nextlink {
+        color: white
+    }
 
-footer .text-overlay {
-    white-space: nowrap; 
-    color :white;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
+    .link{
+        color: $light-blue;
+    
+        &:hover{
+            color: $teal;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+    }
 
- footer .overlay {
+    .magnify-logo{
+        width:150px;
+        display: block;
+        height: auto;
+    }
+
+    .text-overlay {
+        white-space: nowrap; 
+        color :white;
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    
+    .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -92,42 +91,40 @@ footer .text-overlay {
     height: 100%;
     transition: .5s ease;
     opacity: 1;
-  }
+    }
 
-  footer .container-overlay{
-    position: relative;
-    width: 50%;
-      &:hover .overlay{
-        width: 150px;
-      }
-  }
+    .container-overlay{
+        position: relative;
+        width: 50%;
+        &:hover .overlay{
+            width: 150px;
+        }
+    }
 
-  footer .icon{
-      color:white;
-      margin: 0 10px;
-      &:hover{
-          color:$teal;
-      }
-  }
+    .icon{
+        color:white;
+        margin: 0 10px;
+        &:hover{
+            color:$teal;
+        }
+    }
 
+    .mission{
+        font-size: 25px;
+        margin-top: 45px ;
+        font-weight: 700;
+        color: $teal;
+        font-style: italic;
+        text-align:center;
+    }
+
+    .bottom{
+        color:white;
+        font-size:13px;
+    }
   
-  footer .mission{
-      font-size: 25px;
-      margin-top: 45px ;
-      font-weight: 700;
-      color: $teal;
-      font-style: italic;
-      text-align:center;
-  }
-
-  footer .bottom{
-      color:white;
-      font-size:13px;
-  }
-
-
-  footer .row-bottom{
-      text-align:center;
-  }
-
+    .row-bottom{
+        text-align:center;
+    }
+}
   
