@@ -28,3 +28,119 @@ $teal : #82d1c6;
         color: $blue;
     }
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    text-align: center;
+    background-size:cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.block{
+    width: 1750px;
+    margin: 0 auto;
+    position: fixed;
+    
+}
+header{
+    height: 100px;
+    background: #13334c;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width:30%;
+    float: left;
+    line-height: 100px;
+    overflow: hidden;
+    margin-left: 125px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family:Josefin Sans;
+    color: #fff;
+    letter-spacing: 5px;
+}   
+.logo a:hover {
+    color:#ff5959;
+}
+.logo-img {
+    width: 70px;
+    margin-top: -15px;
+    margin-right: -5px;
+}
+.menu-bar {
+    float: right;
+    margin-top:25px;
+    line-height: 45px;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    font-family: roboto Slab;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin:0 25px;
+    text-decoration: none;
+}
+.menu-bar ul li{
+    margin:0 25px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding-left:10px;
+    padding-right:10px;
+
+}
+.menu-bar ul li:hover{
+    background: transparent;
+    border-radius: 0px;
+}
+.menu-bar ul li a:hover{
+    color:#ff5959;
+}
+.dropdown{
+    display: None;
+    z-index: 1;
+}
+.menu-bar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: #005792;
+    margin-top:0 1px;
+    margin-left:-15px;
+}
+.menu-bar ul li:hover .dropdown ul{
+    display: block;
+    margin:10px;
+}
+.menu-bar ul li:hover .dropdown ul li{
+    display: block;
+    width:150px;
+    font-size:15px;
+    font-family: Karla;
+    letter-spacing:1px;
+    padding:10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .dropdown ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .dropdown ul li a:hover{
+    color: #ff5959;
+}
