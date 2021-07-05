@@ -30,17 +30,15 @@ $teal : #82d1c6;
 }
 
 // FOOTER
-#footer {
+footer {
     font-family: 'Karla';
-    height: 330px;
     width:100%;
     background-color: $blue;
-    //padding-top: 25px; 
-    //padding-left: 100px;
-    padding: 25px 90px;
+    padding: 25px 20px;
+    min-height: 330px;
 
     h4 {
-        color: white
+        color: white;
     }
 
     p{
@@ -63,8 +61,8 @@ $teal : #82d1c6;
 
     .magnify-logo{
         width:150px;
-        display: block;
-        height: auto;
+        //display: block;
+        //height: auto;
     }
 
     .text-overlay {
