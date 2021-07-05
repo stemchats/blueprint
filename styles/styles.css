@@ -18,42 +18,41 @@
   color: #005792;
 }
 
-#footer {
+footer {
   font-family: 'Karla';
   width: 100%;
   background-color: #005792;
-  padding: 25px 90px;
+  padding: 25px 20px;
+  min-height: 330px;
 }
 
-#footer h4 {
+footer h4 {
   color: white;
 }
 
-#footer p {
+footer p {
   color: #b3cdde;
 }
 
-#footer .nextlink {
+footer .nextlink {
   color: white;
 }
 
-#footer .link {
+footer .link {
   color: #b3cdde;
 }
 
-#footer .link:hover {
+footer .link:hover {
   color: #82d1c6;
   text-decoration: none;
   border-bottom: 1px solid;
 }
 
-#footer .magnify-logo {
+footer .magnify-logo {
   width: 150px;
-  display: block;
-  height: auto;
 }
 
-#footer .text-overlay {
+footer .text-overlay {
   white-space: nowrap;
   color: white;
   font-size: 20px;
@@ -67,7 +66,7 @@
   -ms-transform: translate(-50%, -50%);
 }
 
-#footer .overlay {
+footer .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -81,25 +80,25 @@
   opacity: 1;
 }
 
-#footer .container-overlay {
+footer .container-overlay {
   position: relative;
   width: 50%;
 }
 
-#footer .container-overlay:hover .overlay {
+footer .container-overlay:hover .overlay {
   width: 150px;
 }
 
-#footer .icon {
+footer .icon {
   color: white;
   margin: 0 10px;
 }
 
-#footer .icon:hover {
+footer .icon:hover {
   color: #82d1c6;
 }
 
-#footer .mission {
+footer .mission {
   font-size: 25px;
   margin-top: 45px;
   font-weight: 700;
@@ -108,12 +107,38 @@
   text-align: center;
 }
 
-#footer .bottom {
+footer .bottom {
   color: white;
   font-size: 13px;
 }
 
-#footer .row-bottom {
+footer .row-bottom {
   text-align: center;
+}
+
+#ourmission {
+  font-family: 'Karla';
+  font-size: 18px;
+  margin: 50px;
+}
+
+#ourmission h1 {
+  font-family: 'Roboto Slab';
+}
+
+#ourmission .opening {
+  text-align: center;
+}
+
+#ourmission a {
+  font-weight: bolder;
+  color: #ff5959;
+}
+
+#ourmission a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #ff5959;
+  background-color: #ffc2c2;
 }
 /*# sourceMappingURL=styles.css.map */

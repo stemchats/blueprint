@@ -31,14 +31,15 @@ $teal : #82d1c6;
 
 // FOOTER
 
-#footer {
+footer {
     font-family: 'Karla';
     width:100%;
     background-color: $blue;
-    padding: 25px 90px;
+    padding: 25px 20px;
+    min-height: 330px;
 
     h4 {
-        color: white
+        color: white;
     }
 
     p{
@@ -61,8 +62,8 @@ $teal : #82d1c6;
 
     .magnify-logo{
         width:150px;
-        display: block;
-        height: auto;
+        //display: block;
+        //height: auto;
     }
 
     .text-overlay {
@@ -129,7 +130,7 @@ $teal : #82d1c6;
 //ABOUT US 
 #ourmission {
     font-family: 'Karla';
-    font-weight: 400;
+    font-size:18px;
     margin: 50px;
 
     h1{
@@ -148,7 +149,7 @@ $teal : #82d1c6;
             text-decoration: none;
             border-bottom: 1px solid;
             color: $red;
-            background-color:$light-teal;
+            background-color:#ffc2c2;
             
         }
     }
