@@ -29,3 +29,103 @@ $teal : #82d1c6;
         color: $blue;
     }
 }
+
+// FOOTER
+footer {
+    font-family: 'Karla';
+    height: 330px;
+    width:100%;
+    background-color: $blue;
+    //padding-top: 25px; 
+    //padding-left: 100px;
+    padding: 25px 90px;
+
+    h4 {
+        color: white
+    }
+
+    p{
+        color: $light-blue
+    }
+
+    .nextlink {
+        color: white
+    }
+
+    .link{
+        color: $light-blue;
+    
+        &:hover{
+            color: $teal;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+    }
+
+    .magnify-logo{
+        width:150px;
+        display: block;
+        height: auto;
+    }
+
+    .text-overlay {
+        white-space: nowrap; 
+        color :white;
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    
+    .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:$dark-blue;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    }
+
+    .container-overlay{
+        position: relative;
+        width: 50%;
+        &:hover .overlay{
+            width: 150px;
+        }
+    }
+
+    .icon{
+        color:white;
+        margin: 0 10px;
+        &:hover{
+            color:$teal;
+        }
+    }
+
+    .mission{
+        font-size: 25px;
+        margin-top: 45px ;
+        font-weight: 700;
+        color: $teal;
+        font-style: italic;
+        text-align:center;
+    }
+
+    .bottom{
+        color:white;
+        font-size:13px;
+    }
+  
+    .row-bottom{
+        text-align:center;
+    }
+}
+  
