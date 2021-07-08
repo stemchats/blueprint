@@ -30,6 +30,95 @@ $teal : #82d1c6;
     }
 }
 
+// TEAM
+
+.team-header {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.team-desc {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.teamcard-container {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 25px;
+    padding: 0 50px 60px 50px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 300px;
+    }
+}
+
+.teamcard-desc {
+    padding-top: 30px;
+}
+
+.img-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-hover img {
+    width: 250px;
+    border-radius: 6%;
+}
+
+.teamcard-content {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.teamcard-content p {
+    position: relative;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+.teamcard-desc .teamcard-position {
+    color: #005792;
+}
+
+
+.teamcard-container:hover .img-hover .teamcard-content {
+    background: #b3cdde;
+    transform: translateY(-100%);
+    transition: all 1s ease;
+    border-radius: 6%;
+}
+
+.socials .fab {
+    color: #005792;
+}
+
+.socials .fab:hover {
+    color: #13334c;
+}
+
+
+
 // FOOTER
 footer {
     font-family: 'Karla';
