@@ -118,10 +118,10 @@
 
 footer {
   font-family: 'Karla';
-  height: 330px;
   width: 100%;
   background-color: #005792;
-  padding: 25px 90px;
+  padding: 25px 20px;
+  min-height: 330px;
 }
 
 footer h4 {
@@ -148,8 +148,6 @@ footer .link:hover {
 
 footer .magnify-logo {
   width: 150px;
-  display: block;
-  height: auto;
 }
 
 footer .text-overlay {
