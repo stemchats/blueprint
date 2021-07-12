@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .home #home-nav,
 .about #about-nav,
 .journals #journals-nav,
@@ -157,6 +164,7 @@ header .dropdown:hover .dropdown-menu {
   margin-top: -1px;
   display: block;
   background-color: #005792;
+}
 
 .team-header {
   text-align: center;
@@ -179,6 +187,15 @@ header .dropdown:hover .dropdown-menu {
   padding: 0 50px 60px 50px;
 }
 
+.teamcard-container:hover .img-hover .teamcard-content {
+  background: #b3cdde;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 6%;
+}
+
 .team-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +214,10 @@ header .dropdown:hover .dropdown-menu {
 
 .teamcard-desc {
   padding-top: 30px;
+}
+
+.teamcard-desc .teamcard-position {
+  color: #005792;
 }
 
 .img-hover {
@@ -233,19 +254,6 @@ header .dropdown:hover .dropdown-menu {
   word-wrap: break-word;
   padding: 20px;
   padding-top: 20px;
-}
-
-.teamcard-desc .teamcard-position {
-  color: #005792;
-}
-
-.teamcard-container:hover .img-hover .teamcard-content {
-  background: #b3cdde;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  border-radius: 6%;
 }
 
 .socials .fab {

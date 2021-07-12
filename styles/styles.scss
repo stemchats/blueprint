@@ -13,6 +13,11 @@ $dark-blue : #13334c;
 $red : #ff5959;
 $teal : #82d1c6;
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
 
@@ -139,18 +144,18 @@ header{
                 .nav-link{
                     color:$teal;
                 }
+            }
+        }
+        .dropdown:hover{
+            z-index: 0;
+            
+            .dropdown-menu{
+                margin-top:-1px;
+                display:block;
+                background-color:$blue;
+            }
         }
     }
-    .dropdown:hover{
-        z-index: 0;
-        
-        .dropdown-menu{
-            margin-top:-1px;
-            display:block;
-            background-color:$blue;
-        }
-    }
-}
 
 
 
@@ -176,6 +181,13 @@ header{
     position: relative;
     margin: 0px 25px;
     padding: 0 50px 60px 50px;
+
+    &:hover .img-hover .teamcard-content {
+        background: #b3cdde;
+        transform: translateY(-100%);
+        transition: all 1s ease;
+        border-radius: 6%;
+    }
 }
 
 .team-row {
@@ -190,16 +202,20 @@ header{
 
 .teamcard-desc {
     padding-top: 30px;
+
+    .teamcard-position {
+        color: #005792;
+    }
 }
 
 .img-hover {
     position: relative;
     overflow: hidden;
-}
 
-.img-hover img {
-    width: 250px;
-    border-radius: 6%;
+    img {
+        width: 250px;
+        border-radius: 6%;
+    }
 }
 
 .teamcard-content {
@@ -211,34 +227,22 @@ header{
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-}
 
-.teamcard-content p {
-    position: relative;
-    white-space: normal;
-    word-wrap: break-word;
-    padding: 20px;
-    padding-top: 20px;
-}
-
-.teamcard-desc .teamcard-position {
-    color: #005792;
-}
-
-
-.teamcard-container:hover .img-hover .teamcard-content {
-    background: #b3cdde;
-    transform: translateY(-100%);
-    transition: all 1s ease;
-    border-radius: 6%;
+    p {
+        position: relative;
+        white-space: normal;
+        word-wrap: break-word;
+        padding: 20px;
+        padding-top: 20px;
+    }
 }
 
 .socials .fab {
     color: #005792;
-}
 
-.socials .fab:hover {
-    color: #13334c;
+    &:hover {
+        color: #13334c;
+    }
 }
 
 
@@ -246,7 +250,7 @@ header{
 // FOOTER
 footer {
     font-family: 'Karla';
-    width:100%;
+    width: 100%;
     background-color: $blue;
     padding: 25px 20px;
     min-height: 330px;
@@ -293,21 +297,22 @@ footer {
     }
     
     .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:$dark-blue;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-    opacity: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color:$dark-blue;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        opacity: 1;
     }
 
     .container-overlay{
         position: relative;
         width: 50%;
+
         &:hover .overlay{
             width: 150px;
         }
@@ -316,6 +321,7 @@ footer {
     .icon{
         color:white;
         margin: 0 10px;
+
         &:hover{
             color:$teal;
         }
