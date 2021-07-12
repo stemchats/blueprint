@@ -21,20 +21,6 @@ $teal : #82d1c6;
 
 
 
-// PAGE HIGHLIGHT
-.home #home-nav,
-.about #about-nav,
-.journals #journals-nav,
-.blog #blog-nav,
-.involved #involved-nav {
-    color: black;
-    font-weight: bold;
-
-    &:hover {
-        color: $blue;
-    }
-}
-
 .container, .container-fluid {
     position: relative;
     padding: 120px 1.5rem;

@@ -8,23 +8,6 @@
           box-sizing: border-box;
 }
 
-.home #home-nav,
-.about #about-nav,
-.journals #journals-nav,
-.blog #blog-nav,
-.involved #involved-nav {
-  color: black;
-  font-weight: bold;
-}
-
-.home #home-nav:hover,
-.about #about-nav:hover,
-.journals #journals-nav:hover,
-.blog #blog-nav:hover,
-.involved #involved-nav:hover {
-  color: #005792;
-}
-
 .container, .container-fluid {
   position: relative;
   padding: 120px 1.5rem;
