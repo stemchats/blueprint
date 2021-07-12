@@ -18,6 +18,146 @@
   color: #005792;
 }
 
+.container, .container-fluid {
+  position: relative;
+  padding: 120px 1.5rem;
+}
+
+.text-center {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.small-box-title {
+  margin-top: 10rem;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.medium-box-title {
+  margin-top: 10rem;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.large-box-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  background-color: #13334c;
+}
+
+header .navbar {
+  padding: 20 0px;
+  line-height: 74px;
+  background-color: #13334c;
+}
+
+header .navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 2em;
+  font-family: Roboto Slab;
+  color: #fff;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: rem;
+  line-height: 100px;
+  overflow: hidden;
+  margin-left: 100px;
+}
+
+header .navbar .navbar-brand:hover {
+  color: #ff5959;
+}
+
+header .navbar .navbar-brand .logo-img {
+  width: 70px;
+  margin-top: -10px;
+  margin-right: -2px;
+}
+
+header .navbar .navbar-brand .logo-text {
+  border: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px 5px 5px;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+header .navbar .nav-item {
+  font-family: Josefin Sans;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 25px;
+  margin-right: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+header .navbar .nav-item .nav-link {
+  font-weight: 800px;
+  color: #fff;
+}
+
+header .navbar .nav-item .nav-link:hover {
+  color: #ff5959;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .navbar .nav-item.active {
+  font-weight: bold;
+}
+
+header .navbar .nav-item.active .nav-link {
+  color: #82d1c6;
+}
+
+header .dropdown:hover {
+  z-index: 0;
+}
+
+header .dropdown:hover .dropdown-menu {
+  margin-top: -1px;
+  display: block;
+  background-color: #005792;
+
 .team-header {
   text-align: center;
   font-size: 40px;

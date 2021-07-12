@@ -30,6 +30,130 @@ $teal : #82d1c6;
     }
 }
 
+.container, .container-fluid {
+    position: relative;
+    padding: 120px 1.5rem;
+}
+.text-center {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.small-box-title { //h3
+    margin-top: 10rem;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.medium-box-title { //h2
+    margin-top: 10rem;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.large-box-title { //h1
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+header{
+    position:absolute;
+    z-index:10;
+    width:100%;
+    height:100px;
+    background-color:$dark-blue;
+    
+
+    .navbar{
+        padding:20 0px;
+        line-height:74px;
+        background-color:$dark-blue;
+
+        .navbar-brand{
+            font-weight: 800;
+            font-size: 2em;
+            font-family:Roboto Slab;
+            color:#fff;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: rem;
+            line-height: 100px;
+            overflow:hidden;
+            margin-left:100px;
+
+            &:hover{
+                color:#ff5959;
+            }
+
+            .logo-img {
+                width: 70px;
+                margin-top: -10px;
+                margin-right:-2px;
+            }
+            .logo-text {
+                border: 0;
+                transition: 0.5s;
+                padding: 10px 5px 5px;
+                font-weight: bold;
+                z-index:10;
+                font-size:50px;
+                letter-spacing:5px;
+            }
+        }
+        .nav-item{
+            font-family:Josefin Sans;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left:25px;
+            margin-right:50px;
+            margin-top:10px;
+            font-size:20px;
+
+            .nav-link{
+                font-weight:800px;
+                color:#fff;
+            }
+            .nav-link:hover{
+                color:$red;
+                transition: 0.5s;
+            }
+        }
+        .nav-item.active{
+            font-weight:bold;
+                .nav-link{
+                    color:$teal;
+                }
+        }
+    }
+    .dropdown:hover{
+        z-index: 0;
+        
+        .dropdown-menu{
+            margin-top:-1px;
+            display:block;
+            background-color:$blue;
+        }
+    }
+}
+
+
+
 // TEAM
 
 .team-header {
@@ -215,4 +339,3 @@ footer {
         text-align:center;
     }
 }
-  
