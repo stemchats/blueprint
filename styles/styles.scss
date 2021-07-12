@@ -119,16 +119,18 @@ header{
             .nav-link{
                 font-weight:800px;
                 color:#fff;
+
+                &:hover{
+                    color:$red;
+                    transition: 0.5s;
+                }
             }
-            .nav-link:hover{
-                color:$red;
-                transition: 0.5s;
-            }
-        }
-        .nav-item.active{
-            font-weight:bold;
-                .nav-link{
-                    color:$teal;
+
+            &.active{
+                font-weight:bold;
+                    .nav-link{
+                        color:$teal;
+                    }
                 }
             }
         }
