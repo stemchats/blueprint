@@ -24,6 +24,15 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  font-family: Karla;
+}
+
+ol {
+  font-family: Karla;
+}
+
+address {
+  font-family: Karla;
 }
 
 .small-box-title {
@@ -44,6 +53,7 @@
   font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
+  font-family: Josefin Sans;
 }
 
 header {
