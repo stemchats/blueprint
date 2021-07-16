@@ -4,3 +4,74 @@
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+
+    #page{
+        margin: 20px 20px;
+
+        #ourmission{
+
+            .textbox{
+                text-align: center;
+            }
+
+            .research-img{
+                width:100%;
+                max-width: 500px;
+                height:auto;
+            }
+
+            .blueprint{
+                margin-top:60px;
+                margin-bottom: auto;
+            }
+
+            .magnify{
+                margin-top:auto;
+            }
+        }
+
+        #partners{
+
+            img{
+                width:100%;
+                max-width:600px;
+                height:auto;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* start of medium tablet styles */
+    #page{
+        margin: 40px 40px;
+
+        #ourmission{
+
+            .blueprint{
+                margin-top:60px;
+                margin-bottom: auto;
+            }
+    
+            .magnify{
+                margin-top:auto;
+            }
+        }
+
+        #support{
+            .handshake{
+                align-items: center;
+            }
+
+            .icon{
+                text-align: center;
+                margin:auto;
+            }
+        }
+    }
+
+}

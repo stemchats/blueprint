@@ -4,4 +4,54 @@
     margin-bottom: 10px;
   }
 }
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+  #page {
+    margin: 20px 20px;
+  }
+  #page #ourmission .textbox {
+    text-align: center;
+  }
+  #page #ourmission .research-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  #page #ourmission .blueprint {
+    margin-top: 60px;
+    margin-bottom: auto;
+  }
+  #page #ourmission .magnify {
+    margin-top: auto;
+  }
+  #page #partners img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* start of medium tablet styles */
+  #page {
+    margin: 40px 40px;
+  }
+  #page #ourmission .blueprint {
+    margin-top: 60px;
+    margin-bottom: auto;
+  }
+  #page #ourmission .magnify {
+    margin-top: auto;
+  }
+  #page #support .handshake {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #page #support .icon {
+    text-align: center;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=media.css.map */
