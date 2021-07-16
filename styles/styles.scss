@@ -248,6 +248,7 @@ header{
 
 
 // FOOTER
+
 footer {
     font-family: 'Karla';
     width: 100%;
@@ -345,3 +346,128 @@ footer {
         text-align:center;
     }
 }
+
+//ABOUT  
+
+#page{
+    font-family: 'Karla';
+    font-size:18px;
+    margin: 50px 90px;
+
+    h1{
+        margin-top: 20px;
+        font-family: 'Roboto Slab';
+    }
+
+    .textbox{
+        margin: 30px 10px;
+    }
+
+    #ourmission {
+    
+        .opening{
+            text-align: center;
+        }
+    
+        a{
+            font-weight: bolder;
+            color: $red;
+    
+            &:hover{
+                text-decoration: none;
+                border-bottom: 1px solid;
+                color: $red;
+                background-color:#ffc2c2;
+                
+            }
+        }
+    
+        .title{
+            padding:10px;
+            text-align: center;
+        }
+    
+        .textbox{
+            text-align:justify;
+        }
+    
+        .research-img{
+            width:500px;
+            height:auto;
+        }
+    
+        b{
+            color:$blue
+        }
+        
+        .blueprint{
+            margin-top:60px;
+            margin-bottom: 50px;
+        }
+    
+        .magnify{
+            margin-top:60px;
+            margin-bottom: 50px;
+        }
+    
+    
+    }
+
+    #partners{
+
+        .textbox{
+            text-align:center;
+        }
+
+        a{
+            font-weight: bolder;
+            color: $blue;
+    
+            &:hover{
+                text-decoration: none;
+                border-bottom: 1px solid;
+                color:$blue;
+                background-color:#99d6ff;
+            }
+        }
+
+        img{
+            width:600px;
+            height:auto;
+        }
+
+    }
+    
+    #support{
+        .textbox{
+            text-align:center;
+            margin-bottom: 70px;
+        }
+        .handshake{
+            color:$blue;
+            text-align: center;
+        }
+
+        .btn{
+            color:$blue;
+            background-color:white;
+            border-color:$blue;
+            font-weight:bolder;
+
+            &:hover{
+                color: white;
+                background-color: $teal;
+                border-color:$teal;
+                font-weight:bolder;
+            }
+    
+        }
+
+    }
+}
+
+
+
+
+
+  
