@@ -1,60 +1,372 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.home #home-nav,
-.about #about-nav,
-.journals #journals-nav,
-.blog #blog-nav,
-.involved #involved-nav {
-  color: black;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container, .container-fluid {
+  position: relative;
+  padding: 120px 1.5rem;
+}
+
+.text-center {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: Karla;
+}
+
+ol {
+  font-family: Karla;
+}
+
+address {
+  font-family: Karla;
+}
+
+.small-box-title {
+  margin-top: 10rem;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.medium-box-title {
+  margin-top: 10rem;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.large-box-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Josefin Sans;
+}
+
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  background-color: #13334c;
+}
+
+header .navbar {
+  padding: 20 0px;
+  line-height: 74px;
+  background-color: #13334c;
+}
+
+header .navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 2em;
+  font-family: Roboto Slab;
+  color: #fff;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: rem;
+  line-height: 100px;
+  overflow: hidden;
+  margin-left: 100px;
+}
+
+header .navbar .navbar-brand:hover {
+  color: #ff5959;
+}
+
+header .navbar .navbar-brand .logo-img {
+  width: 70px;
+  margin-top: -10px;
+  margin-right: -2px;
+}
+
+header .navbar .navbar-brand .logo-text {
+  border: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px 5px 5px;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+header .navbar .nav-item {
+  font-family: Josefin Sans;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 25px;
+  margin-right: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+header .navbar .nav-item .nav-link {
+  font-weight: 800px;
+  color: #fff;
+}
+
+header .navbar .nav-item .nav-link:hover {
+  color: #ff5959;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .navbar .nav-item.active {
   font-weight: bold;
 }
 
-.home #home-nav:hover,
-.about #about-nav:hover,
-.journals #journals-nav:hover,
-.blog #blog-nav:hover,
-.involved #involved-nav:hover {
+header .navbar .nav-item.active .nav-link {
+  color: #82d1c6;
+}
+
+header .dropdown:hover {
+  z-index: 0;
+}
+
+header .dropdown:hover .dropdown-menu {
+  margin-top: -1px;
+  display: block;
+  background-color: #005792;
+}
+
+.team-header {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.team-desc {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.teamcard-name {
+  padding-top: 20px;
+}
+
+.teamcard-container {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin: 0px 25px;
+  padding: 0 50px 60px 50px;
+}
+
+.teamcard-container:hover .img-hover .teamcard-content {
+  background: #b3cdde;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 6%;
+}
+
+.teamcard-position {
+  color: #005792;
+  font-size: 17px;
+}
+
+.teamcard-container {
+  margin-bottom: 20px;
+}
+
+.img-hover img {
+  height: 300px;
+  width: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6%;
+}
+
+.socials .fab {
+  color: #005792;
+  padding-left: 10px;
+  font-size: 35px;
+}
+
+.socials .fab:hover {
+  color: #13334c;
+}
+
+.modal-trigger {
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 25px;
+}
+
+.modal-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.modal-role {
+  margin-bottom: 15px;
   color: #005792;
 }
 
-footer {
+.modal-body .img-fluid {
+  height: 300px;
+  width: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+  padding-right: 20px;
+}
+
+.modal-body .img-fluid .teamcard-desc {
+  padding-top: 30px;
+}
+
+.modal-body .img-fluid .teamcard-desc .teamcard-position {
+  color: #005792;
+}
+
+.modal-body .img-fluid .img-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-body .img-fluid .img-hover img {
+  width: 250px;
+  border-radius: 6%;
+}
+
+@media (max-width: 700px) {
+  .modal-body .img-fluid .modal-body .img-fluid {
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+
+.modal-body .img-fluid .blog-header {
+  text-align: center;
+  font-size: 50px;
+}
+
+.modal-body .img-fluid .blog-desc {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-body .img-fluid .post-btn {
+  margin-bottom: 20px;
+  color: #005792;
+  border: 1.5px solid #005792;
+  padding: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal-body .img-fluid .post-btn:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #005792;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal-body .img-fluid .post-btn:hover p {
+  position: relative;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.modal-body .img-fluid .card-title a {
+  text-decoration: none;
+  color: #005792;
+}
+
+.modal-body .img-fluid .card-title a:hover {
+  color: #13334c;
+}
+
+.modal-body .img-fluid .medium-btn {
+  margin-bottom: 25px;
+}
+
+.modal-body .img-fluid .card-img-top {
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal-body .img-fluid footer {
   font-family: 'Karla';
-  height: 330px;
   width: 100%;
   background-color: #005792;
-  padding: 25px 90px;
+  padding: 25px 20px;
+  min-height: 330px;
 }
 
-footer h4 {
+.modal-body .img-fluid footer h4 {
   color: white;
 }
 
-footer p {
+.modal-body .img-fluid footer p {
   color: #b3cdde;
 }
 
-footer .nextlink {
+.modal-body .img-fluid footer .nextlink {
   color: white;
 }
 
-footer .link {
+.modal-body .img-fluid footer .link {
   color: #b3cdde;
 }
 
-footer .link:hover {
+.modal-body .img-fluid footer .link:hover {
   color: #82d1c6;
   text-decoration: none;
   border-bottom: 1px solid;
 }
 
-footer .magnify-logo {
+.modal-body .img-fluid footer .magnify-logo {
   width: 150px;
-  display: block;
-  height: auto;
 }
 
-footer .text-overlay {
+.modal-body .img-fluid footer .text-overlay {
   white-space: nowrap;
   color: white;
   font-size: 20px;
@@ -68,7 +380,7 @@ footer .text-overlay {
   -ms-transform: translate(-50%, -50%);
 }
 
-footer .overlay {
+.modal-body .img-fluid footer .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -82,25 +394,25 @@ footer .overlay {
   opacity: 1;
 }
 
-footer .container-overlay {
+.modal-body .img-fluid footer .container-overlay {
   position: relative;
   width: 50%;
 }
 
-footer .container-overlay:hover .overlay {
+.modal-body .img-fluid footer .container-overlay:hover .overlay {
   width: 150px;
 }
 
-footer .icon {
+.modal-body .img-fluid footer .icon {
   color: white;
   margin: 0 10px;
 }
 
-footer .icon:hover {
+.modal-body .img-fluid footer .icon:hover {
   color: #82d1c6;
 }
 
-footer .mission {
+.modal-body .img-fluid footer .mission {
   font-size: 25px;
   margin-top: 45px;
   font-weight: 700;
@@ -109,22 +421,22 @@ footer .mission {
   text-align: center;
 }
 
-footer .bottom {
+.modal-body .img-fluid footer .bottom {
   color: white;
   font-size: 13px;
 }
 
-footer .row-bottom {
+.modal-body .img-fluid footer .row-bottom {
   text-align: center;
 }
 
-.carousel-item {
+.modal-body .img-fluid .carousel-item {
   height: 32rem;
   background: gray;
   color: wheat;
 }
 
-.container {
+.modal-body .img-fluid .container {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -132,7 +444,7 @@ footer .row-bottom {
   padding: 50px;
 }
 
-.row {
+.modal-body .img-fluid .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,22 +456,22 @@ footer .row-bottom {
   left: 320px;
 }
 
-.headerBluePrint {
+.modal-body .img-fluid .headerBluePrint {
   text-align: center;
 }
 
-.imgBluePrint {
+.modal-body .img-fluid .imgBluePrint {
   height: 200px;
   width: 300px;
   position: relative;
   left: 550px;
 }
 
-.textSection {
+.modal-body .img-fluid .textSection {
   padding: 40px;
 }
 
-.partnerSection {
+.modal-body .img-fluid .partnerSection {
   background-color: tomato;
   text-align: center;
   width: 1030px;
