@@ -10,7 +10,7 @@
 
 .container, .container-fluid {
   position: relative;
-  padding: 120px 1.5rem;
+  padding: 150px 1.5rem 70px;
 }
 
 .text-center {
@@ -177,13 +177,11 @@ header .dropdown:hover .dropdown-menu {
   padding-top: 20px;
 }
 
-.teamcard-position {
-  color: #005792;
-  font-size: 17px;
-}
-
 .teamcard-container {
-  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0 50px 60px 50px;
 }
 
 .teamcard-container:hover .img-hover .teamcard-content {
@@ -195,16 +193,13 @@ header .dropdown:hover .dropdown-menu {
   border-radius: 6%;
 }
 
-.team-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.teamcard-position {
+  color: #005792;
+  font-size: 17px;
+}
+
+.teamcard-container {
+  margin-bottom: 20px;
 }
 
 .img-hover img {
@@ -223,14 +218,6 @@ header .dropdown:hover .dropdown-menu {
 
 .socials .fab:hover {
   color: #13334c;
-
-.teamcard-desc .teamcard-position {
-  color: #005792;
-}
-
-.img-hover {
-  position: relative;
-  overflow: hidden;
 }
 
 .modal-trigger {
@@ -263,11 +250,22 @@ header .dropdown:hover .dropdown-menu {
   padding-right: 20px;
 }
 
-@media (max-width: 700px) {
-  .modal-body .img-fluid {
-    float: none;
-    margin-bottom: 10px;
-  }
+.teamcard-desc {
+  padding-top: 30px;
+}
+
+.teamcard-desc .teamcard-position {
+  color: #005792;
+}
+
+.img-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-hover img {
+  width: 250px;
+  border-radius: 6%;
 }
 
 .blog-header {
@@ -299,15 +297,20 @@ header .dropdown:hover .dropdown-menu {
   transition: 0.5s;
 }
 
+.post-btn:hover p {
+  position: relative;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 20px;
+  padding-top: 20px;
+}
+
 .card-title a {
   text-decoration: none;
-
-.socials .fab {
   color: #005792;
 }
 
 .card-title a:hover {
-  text-decoration: none;
   color: #13334c;
 }
 
