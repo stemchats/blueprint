@@ -84,28 +84,18 @@
     <div id="header"></div>
 
     <!-- CONTENT -->
-    <div class="container">
 
-    </div>
-
-    <!-- TEAM -->
+<div class="container">
     <div class="team-header">Meet Our Team</div>
-    <div class="team-desc">Team description</div>
+    <!--<div class="team-desc">Team description</div>-->
 
-    <div class="team-row">
+    <div class="row">
 
         <!-- ANUSHA -->
-        <div class="teamcard-container">
+        <div class="teamcard-container col-md-4 text-center">
             <div class="img-hover">
-                <img src="" alt="">  
-
-                <div class="teamcard-content">
-                    <p>Brief bio here</p>
-                    <div class="socials">
-                        <h1><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></h1>
-                    </div>
-                </div>
-            </div> 
+                <img class="modal-trigger" onclick="removeAnimate()" alt="Anusha Puri" data-toggle="modal" src="/images/team/AnushaPatterson.JPG" data-target="#modal1" loading="lazy">            
+            </div>
                 
             <div class="teamcard-desc">
                 <h3 class="teamcard-name">Anusha Puri<h1></h3>
@@ -114,16 +104,9 @@
         </div>
 
         <!-- GINA -->
-        <div class="teamcard-container">
+        <div class="teamcard-container col-md-4 text-center">
             <div class="img-hover">
-                <img src="" alt="">  
-
-                <div class="teamcard-content">
-                    <p>Brief bio here</p>
-                    <div class="socials">
-                        <h1><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></h1>
-                    </div>
-                </div>
+                <img class="modal-trigger" onclick="removeAnimate()" alt="Gina Lee" data-toggle="modal" src="/images/team/GinaLee.JPG" data-target="#modal2" loading="lazy"> 
             </div> 
                 
             <div class="teamcard-desc">
@@ -133,16 +116,9 @@
         </div>
 
         <!-- BIANCA -->
-        <div class="teamcard-container">
+        <div class="teamcard-container col-md-4 text-center">
             <div class="img-hover">
-                <img src="" alt="">  
-
-                <div class="teamcard-content">
-                    <p>Brief bio here</p>
-                    <div class="socials">
-                        <h1><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></h1>
-                    </div>
-                </div>
+                <img class="modal-trigger" onclick="removeAnimate()" alt="Bianca Chan" data-toggle="modal" src="/images/team/BiancaChan.JPG" data-target="#modal3" loading="lazy"> 
             </div> 
                 
             <div class="teamcard-desc">
@@ -152,19 +128,12 @@
         </div>
     </div>
 
-    <div class="team-row">
+    <div class="row">
 
         <!-- APRIL -->
-        <div class="teamcard-container">
+        <div class="teamcard-container col-md-4 text-center">
             <div class="img-hover">
-                <img src="" alt="">  
-
-                <div class="teamcard-content">
-                    <p>Brief bio here</p>
-                    <div class="socials">
-                        <h1><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></h1>
-                    </div>
-                </div>
+                <img class="modal-trigger" onclick="removeAnimate()" alt="April Zhang" data-toggle="modal" src="/images/team/AprilZhang.JPG" data-target="#modal4" loading="lazy"> 
             </div> 
                 
             <div class="teamcard-desc">
@@ -174,16 +143,9 @@
         </div>
 
         <!-- AUDREY -->
-        <div class="teamcard-container">
+        <div class="teamcard-container col-md-4 text-center">
             <div class="img-hover">
-                <img src="" alt="">  
-
-                <div class="teamcard-content">
-                    <p>Brief bio here</p>
-                    <div class="socials">
-                        <h1><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></h1>
-                    </div>
-                </div>
+                <img class="modal-trigger" onclick="removeAnimate()" alt="Audrey Vargas" data-toggle="modal" src="/images/team/AudreyVargas.JPG" data-target="#modal5" loading="lazy">  
             </div> 
                 
             <div class="teamcard-desc">
@@ -193,16 +155,9 @@
         </div>
 
         <!-- SAKSHI -->
-        <div class="teamcard-container">
+        <div class="teamcard-container col-md-4 col-sm-6 text-center">
             <div class="img-hover">
-                <img src="" alt="">  
-
-                <div class="teamcard-content">
-                    <p>Brief bio here</p>
-                    <div class="socials">
-                        <h1><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></h1>
-                    </div>
-                </div>
+                <img class="modal-trigger" onclick="removeAnimate()" alt="Sakshi Garg" data-toggle="modal" src="/images/team/SakshiGarg.JPG" data-target="#modal6" loading="lazy">
             </div> 
                 
             <div class="teamcard-desc">
@@ -211,6 +166,154 @@
             </div>                
         </div>
     </div>
+
+
+
+    <!-- MODAL POPUPS -->
+
+    <!-- ANUSHA -->
+    <div class="modal modal fade" id="modal1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">         
+           
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img class="img-fluid" src="/images/team/AnushaPatterson.JPG" alt="Anusha Puri">
+              <div class="modal-head">
+                  <h5 class="modal-title">Anusha Puri</h5>
+                  <div class="socials">
+                      <a href="https://www.linkedin.com/in/anusha-p-04bb59190/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+              <h6 class="modal-role">Blueprint Lead</h6>
+              <p class="modal-desc">Anusha is a driven researcher and second-year student at the Massachusetts Institute of Technology majoring in Biological Engineering. 
+              She joined STEMchats to help others discover the potential of research and to further conversation on real-world scientific issues and their solutions. 
+              In her free time, she enjoys playing the piano, writing comedy, and doing trivia.
+             </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- GINA -->
+    <div class="modal fade" id="modal2">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">         
+         
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <img class="img-fluid" src="/images/team/GinaLee.JPG" alt="Gina Lee">
+            <div class="modal-head">
+                <h5 class="modal-title">Gina Lee</h5>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/ginalee2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <h6 class="modal-role">Blueprint Lead</h6>
+            <p class="modal-desc">
+              Gina is an advocate for equal educational opportunity and is a rising freshman at Yale University in New Haven, CT. 
+              She joined STEMchats because she wants to inspire students from underrepresented backgrounds to discover their passion in STEM. She hopes to help make research and education in the STEM fields attainable for everyone. 
+              In her free time, Gina likes fencing, baking sweets, reading new books, and relaxing at coffee shops.
+           </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+      <!-- BIANCA -->
+    <div class="modal fade" id="modal3">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">         
+           
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img class="img-fluid" src="/images/team/BiancaChan.JPG" alt="Bianca Chan">
+              <div class="modal-head">
+                  <h5 class="modal-title">Bianca Chan</h5>
+              </div>
+              <h6 class="modal-role">Blueprint Coordinator</h6>
+              <p class="modal-desc">
+                Bianca is a rising first-year student majoring in Neuroscience & Medical Anthropology at Case Western Reserve University in Ohio, Cleveland. 
+                She joined STEMchats to inspire and provide more opportunities in the STEM field for minorities and low income youths like her and hopes to mentor students in academic and college related work. 
+                Her parents are from Hong Kong and she hopes she can expand STEMchats to include more students from Hong Kong. In her free time, Bianca loves to go skiing, watch and listen to Kpop and Kdramas, and travel.
+             </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- APRIL -->
+    <div class="modal fade" id="modal4">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">         
+           
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img class="img-fluid" src="/images/team/AprilZhang.JPG" alt="April Zhang">
+              <div class="modal-head">
+                  <h5 class="modal-title">April Zhang</h5>
+                  <div class="socials">
+                      <a href="https://www.linkedin.com/in/april-zhang-39922a13/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+              <h6 class="modal-role">Blueprint Lead</h6>
+              <p class="modal-desc">
+                April is an advocate for equitable opportunity and environmentalism. She is a senior at BASIS Oro Valley in Arizona and aspires to be a biomedical sciences and CS double major. She joined STEMchats to help provide transformative and educational opportunities to low-income, underprivileged, minority students. 
+                A driven opponent of animal cruelty, April has been lacto-vegetarian for 6 years and counting. 
+                In her free time, she loves to practice piano, meditate with family, play tennis with friends, or be found with a large cup of rose-flavored boba tea.
+             </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- AUDREY -->
+    <div class="modal fade" id="modal5">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">         
+           
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img class="img-fluid" src="/images/team/AudreyVargas.JPG" alt="Audrey Vargas">
+              <div class="modal-head">
+                  <h5 class="modal-title">Audrey Vargas</h5>
+              </div>
+              <h6 class="modal-role">Blueprint Lead</h6>
+              <p class="modal-desc">
+                Audrey is an incoming first-year student at MIT where she intends to major in computational biology. 
+                She joined STEMchats to help make STEM opportunities more accessible to students coming from under-resourced communities. 
+                In her free time, Audrey enjoys being outdoors and spending time with her loved ones.
+             </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- ANUSHA -->
+    <div class="modal fade" id="modal6">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">         
+           
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img class="img-fluid" src="/images/team/SakshiGarg.JPG" alt="Sakshi Garg">
+              <div class="modal-head">
+                  <h5 class="modal-title">Sakshi Garg</h5>
+              </div>
+              <h6 class="modal-role">Blueprint Lead</h6>
+              <p class="modal-desc">
+                Sakshi is a rising freshman at Harvard College where she will be studying History & Science with a focus in Medicine & Society. 
+                She joined STEMchats to help address the racial, economic, and gender inequities that pervade STEM while making research more accessible to underrepresented youth. 
+                In her free time, Sakshi loves to cook, watch sitcoms, and go on road trips!
+             </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+</div>
 
     <!-- FOOTER -->
     <div id="footer"></div>

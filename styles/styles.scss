@@ -34,90 +34,133 @@ $teal : #82d1c6;
 
 .team-header {
     text-align: center;
-    font-size: 40px;
-    margin-top: 40px;
-}
-
-.team-desc {
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .team-desc {
     text-align: center;
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    
-}
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
 
-.teamcard-container {
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    margin: 0px 25px;
-    padding: 0 50px 60px 50px;
-}
+  .teamcard-name {
+      padding-top: 20px;
+  }
 
-.team-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .teamcard-position {
+      color: #005792;
+      font-size: 17px;
+  }
 
-    img {
-        height: 300px;
-    }
-}
-
-.teamcard-desc {
-    padding-top: 30px;
-}
-
-.img-hover {
-    position: relative;
-    overflow: hidden;
+  .teamcard-container {
+    margin-bottom: 20px;
 }
 
 .img-hover img {
-    width: 250px;
-    border-radius: 6%;
+        height: 300px;
+        width: 260px;
+        object-fit: cover;
+        border-radius: 6%;
+    }
+  
+  .socials .fab {
+    color: #005792;
+    padding-left: 10px;
+    font-size: 35px;
+  }
+  
+  .socials .fab:hover {
+    color: #13334c;
+  }
+
+.modal-trigger {
+    cursor: pointer;
 }
 
-.teamcard-content {
-    position: absolute;
-    left: 0;
-    width: 250px;
-    height: 300px;
+.modal-title {
+    font-size: 25px;
+}
+
+.modal-head {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 5px;
     text-align: center;
-}
+  }
 
-.teamcard-content p {
-    position: relative;
-    white-space: normal;
-    word-wrap: break-word;
-    padding: 20px;
-    padding-top: 20px;
-}
-
-.teamcard-desc .teamcard-position {
+.modal-role {
+    margin-bottom: 15px;
     color: #005792;
 }
 
-
-.teamcard-container:hover .img-hover .teamcard-content {
-    background: #b3cdde;
-    transform: translateY(-100%);
-    transition: all 1s ease;
-    border-radius: 6%;
+.modal-body .img-fluid {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    float:left;
+    padding-right: 20px;
 }
 
-.socials .fab {
+@media (max-width: 700px) {
+    .modal-body .img-fluid {
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+
+// BLOG
+
+.blog-header {
+    text-align: center;
+    font-size: 50px;
+}
+
+.blog-desc {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.post-btn {
+    margin-bottom: 20px;
     color: #005792;
+    border: 1.5px solid #005792;
+    padding: 8px;
+    transition: 0.4s;
 }
 
-.socials .fab:hover {
+.post-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #005792;
+    transition: 0.5s;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #005792;
+    
+}
+
+.card-title a:hover {
+    text-decoration: none;
     color: #13334c;
 }
 
+.medium-btn {
+    margin-bottom: 25px;
+}
 
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+  
 
 // FOOTER
 footer {
