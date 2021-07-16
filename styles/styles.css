@@ -30,12 +30,12 @@ footer h4 {
   color: white;
 }
 
-footer .nextlink {
-  color: white;
-}
-
 footer p {
   color: #b3cdde;
+}
+
+footer .nextlink {
+  color: white;
 }
 
 footer .link {
@@ -116,5 +116,55 @@ footer .bottom {
 
 footer .row-bottom {
   text-align: center;
+}
+
+.carousel-item {
+  height: 32rem;
+  background: gray;
+  color: wheat;
+}
+
+.container {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 50px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  left: 320px;
+}
+
+.headerBluePrint {
+  text-align: center;
+}
+
+.imgBluePrint {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  left: 550px;
+}
+
+.textSection {
+  padding: 40px;
+}
+
+.partnerSection {
+  background-color: tomato;
+  text-align: center;
+  width: 1030px;
+  font-size: 40px;
+  position: relative;
+  left: 120px;
 }
 /*# sourceMappingURL=styles.css.map */
