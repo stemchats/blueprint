@@ -20,7 +20,6 @@ $teal : #82d1c6;
 }
 
 
-
 .container, .container-fluid {
     position: relative;
     padding: 120px 1.5rem;
@@ -36,6 +35,16 @@ $teal : #82d1c6;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    font-family:Karla;
+    
+}
+
+ol{
+    font-family:Karla;
+}
+
+address{
+    font-family:Karla;
 }
 
 .small-box-title { //h3
@@ -56,6 +65,7 @@ $teal : #82d1c6;
     font-size: 40px;
     font-weight: bold;
     text-transform: capitalize;
+    font-family:Josefin Sans;
 }
 
 
