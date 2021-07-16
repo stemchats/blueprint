@@ -1,21 +1,152 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.home #home-nav,
-.about #about-nav,
-.journals #journals-nav,
-.blog #blog-nav,
-.involved #involved-nav {
-  color: black;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container, .container-fluid {
+  position: relative;
+  padding: 120px 1.5rem;
+}
+
+.text-center {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.small-box-title {
+  margin-top: 10rem;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.medium-box-title {
+  margin-top: 10rem;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.large-box-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  background-color: #13334c;
+}
+
+header .navbar {
+  padding: 20 0px;
+  line-height: 74px;
+  background-color: #13334c;
+}
+
+header .navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 2em;
+  font-family: Roboto Slab;
+  color: #fff;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: rem;
+  line-height: 100px;
+  overflow: hidden;
+  margin-left: 100px;
+}
+
+header .navbar .navbar-brand:hover {
+  color: #ff5959;
+}
+
+header .navbar .navbar-brand .logo-img {
+  width: 70px;
+  margin-top: -10px;
+  margin-right: -2px;
+}
+
+header .navbar .navbar-brand .logo-text {
+  border: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px 5px 5px;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+header .navbar .nav-item {
+  font-family: Josefin Sans;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 25px;
+  margin-right: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+header .navbar .nav-item .nav-link {
+  font-weight: 800px;
+  color: #fff;
+}
+
+header .navbar .nav-item .nav-link:hover {
+  color: #ff5959;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .navbar .nav-item.active {
   font-weight: bold;
 }
 
-.home #home-nav:hover,
-.about #about-nav:hover,
-.journals #journals-nav:hover,
-.blog #blog-nav:hover,
-.involved #involved-nav:hover {
-  color: #005792;
+header .navbar .nav-item.active .nav-link {
+  color: #82d1c6;
+}
+
+header .dropdown:hover {
+  z-index: 0;
+}
+
+header .dropdown:hover .dropdown-menu {
+  margin-top: -1px;
+  display: block;
+  background-color: #005792;
 }
 
 .team-header {
@@ -45,6 +176,27 @@
   margin-bottom: 20px;
 }
 
+.teamcard-container:hover .img-hover .teamcard-content {
+  background: #b3cdde;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 6%;
+}
+
+.team-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .img-hover img {
   height: 300px;
   width: 260px;
@@ -61,6 +213,14 @@
 
 .socials .fab:hover {
   color: #13334c;
+
+.teamcard-desc .teamcard-position {
+  color: #005792;
+}
+
+.img-hover {
+  position: relative;
+  overflow: hidden;
 }
 
 .modal-trigger {
@@ -131,6 +291,8 @@
 
 .card-title a {
   text-decoration: none;
+
+.socials .fab {
   color: #005792;
 }
 
