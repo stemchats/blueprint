@@ -599,4 +599,54 @@ footer .row-bottom {
 #page .collaboration {
   padding: 20px;
 }
+
+#page .carousel-item {
+  height: 32rem;
+  background: gray;
+  color: wheat;
+}
+
+#page .container {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 50px;
+}
+
+#page .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  left: 320px;
+}
+
+#page .headerBluePrint {
+  text-align: center;
+}
+
+#page .imgBluePrint {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  left: 550px;
+}
+
+#page .textSection {
+  padding: 40px;
+}
+
+#page .partnerSection {
+  background-color: tomato;
+  text-align: center;
+  width: 1030px;
+  font-size: 40px;
+  position: relative;
+  left: 120px;
+}
 /*# sourceMappingURL=styles.css.map */
