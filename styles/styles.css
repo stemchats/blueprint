@@ -266,10 +266,13 @@ header .dropdown:hover .dropdown-menu {
 
 footer {
   font-family: 'Karla';
+}
+
+footer .container-fluid {
   width: 100%;
   background-color: #005792;
-  padding: 25px 20px;
-  min-height: 330px;
+  padding: 30px 40px;
+  min-height: 150px;
 }
 
 footer h4 {
@@ -346,7 +349,6 @@ footer .icon:hover {
 
 footer .mission {
   font-size: 25px;
-  margin-top: 45px;
   font-weight: 700;
   color: #82d1c6;
   font-style: italic;
@@ -360,5 +362,81 @@ footer .bottom {
 
 footer .row-bottom {
   text-align: center;
+}
+
+#get-involved {
+  font-family: 'Karla';
+  font-size: 18px;
+}
+
+#get-involved h1 {
+  margin-top: 20px;
+  font-family: 'Roboto Slab';
+}
+
+#get-involved .textbox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#get-involved .buttons {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#get-involved .write-img {
+  width: 600px;
+  height: auto;
+}
+
+#get-involved .scholars-img {
+  width: 400px;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#get-involved .stemchats-img {
+  width: 300px;
+  height: auto;
+}
+
+#get-involved .btn {
+  background-color: #005792;
+  border-color: #005792;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+#get-involved .btn:hover {
+  background-color: #82d1c6;
+  border-color: #82d1c6;
+}
+
+#get-involved .linkintext {
+  font-weight: bolder;
+  color: #005792;
+}
+
+#get-involved .linkintext:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #005792;
+  background-color: #99d6ff;
+}
+
+#get-involved .write {
+  padding: 20px;
+}
+
+#get-involved .work {
+  padding: 20px;
+}
+
+#get-involved .collaboration {
+  padding: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
