@@ -32,6 +32,25 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+  #get-involved .write-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  #get-involved .stemchats-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  #get-involved .scholars-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 991px) {
   /* start of medium tablet styles */
   #page {
@@ -52,6 +71,33 @@
   #page #support .icon {
     text-align: center;
     margin: auto;
+  }
+  #get-involved .images {
+    text-align: center;
+  }
+  #get-involved .textbox {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #get-involved .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #get-involved .btn {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .write-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=media.css.map */

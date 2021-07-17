@@ -20,10 +20,12 @@ $teal : #82d1c6;
 }
 
 
-.container, .container-fluid {
+.container,
+.container-fluid {
     position: relative;
     padding: 150px 1.5rem 70px;
 }
+
 .text-center {
     width: 100%;
     border: none;
@@ -35,123 +37,128 @@ $teal : #82d1c6;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    font-family:Karla;
-    
+    font-family: Karla;
+
 }
 
-ol{
-    font-family:Karla;
+ol {
+    font-family: Karla;
 }
 
-address{
-    font-family:Karla;
+address {
+    font-family: Karla;
 }
 
-.small-box-title { //h3
+.small-box-title {
+    //h3
     margin-top: 10rem;
     font-size: 28px;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.medium-box-title { //h2
+.medium-box-title {
+    //h2
     margin-top: 10rem;
     font-size: 32px;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.large-box-title { //h1
+.large-box-title {
+    //h1
     font-size: 40px;
     font-weight: bold;
     text-transform: capitalize;
-    font-family:Josefin Sans;
+    font-family: Josefin Sans;
 }
 
 
-header{
-    position:fixed;
-    z-index:10;
-    width:100%;
-    height:50px;
-    background-color:$dark-blue;
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    background-color: $dark-blue;
 
-    .navbar{
-        padding:20 0px;
-        line-height:74px;
-        background-color:$dark-blue;
+    .navbar {
+        padding: 20 0px;
+        line-height: 74px;
+        background-color: $dark-blue;
 
-        .navbar-brand{
+        .navbar-brand {
             font-weight: 800;
             font-size: 2em;
-            font-family:Roboto Slab;
-            color:#fff;
+            font-family: Roboto Slab;
+            color: #fff;
             z-index: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: rem;
             line-height: 100px;
-            overflow:hidden;
-            margin-left:100px;
+            overflow: hidden;
+            margin-left: 100px;
 
-            &:hover{
-                color:#ff5959;
+            &:hover {
+                color: #ff5959;
             }
 
             .logo-img {
                 width: 70px;
                 margin-top: -10px;
-                margin-right:-2px;
+                margin-right: -2px;
             }
+
             .logo-text {
                 border: 0;
                 transition: 0.5s;
                 padding: 10px 5px 5px;
                 font-weight: bold;
-                z-index:10;
-                font-size:50px;
-                letter-spacing:5px;
+                z-index: 10;
+                font-size: 50px;
+                letter-spacing: 5px;
             }
         }
-        .nav-item{
-            font-family:Josefin Sans;
+
+        .nav-item {
+            font-family: Josefin Sans;
             z-index: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left:25px;
-            margin-right:50px;
-            margin-top:10px;
-            font-size:20px;
+            margin-left: 25px;
+            margin-right: 50px;
+            margin-top: 10px;
+            font-size: 20px;
 
-            .nav-link{
-                font-weight:800px;
-                color:#fff;
+            .nav-link {
+                font-weight: 800px;
+                color: #fff;
 
-                &:hover{
-                    color:$red;
+                &:hover {
+                    color: $red;
                     transition: 0.5s;
                 }
             }
 
-            &.active{
-                font-weight:bold;
+            &.active {
+                font-weight: bold;
 
-                .nav-link{
-                    color:$teal;
+                .nav-link {
+                    color: $teal;
                 }
             }
         }
     }
 
-    .dropdown:hover{
+    .dropdown:hover {
         z-index: 0;
-        
-        .dropdown-menu{
-            margin-top:-1px;
-            display:block;
-            background-color:$blue;
+
+        .dropdown-menu {
+            margin-top: -1px;
+            display: block;
+            background-color: $blue;
         }
     }
 }
@@ -166,7 +173,7 @@ header{
     margin-top: 5px;
     margin-bottom: 30px;
 }
-  
+
 .team-desc {
     text-align: center;
     font-size: 20px;
@@ -208,13 +215,13 @@ header{
     object-fit: cover;
     border-radius: 6%;
 }
-  
+
 .socials .fab {
     color: #005792;
     padding-left: 10px;
     font-size: 35px;
 }
-  
+
 .socials .fab:hover {
     color: #13334c;
 }
@@ -242,7 +249,7 @@ header{
     height: 300px;
     width: 250px;
     object-fit: cover;
-    float:left;
+    float: left;
     padding-right: 20px;
 }
 
@@ -320,22 +327,25 @@ header{
     object-fit: cover;
 }
 
-  
+
 
 // FOOTER
 
 footer {
     font-family: 'Karla';
-    width: 100%;
-    background-color: $blue;
-    padding: 25px 20px;
-    min-height: 330px;
+
+    .container-fluid {
+        width: 100%;
+        background-color: $blue;
+        padding: 30px 40px;
+        min-height: 150px;
+    }
 
     h4 {
         color: white;
     }
 
-    p{
+    p {
         color: $light-blue
     }
 
@@ -343,25 +353,23 @@ footer {
         color: white
     }
 
-    .link{
+    .link {
         color: $light-blue;
-    
-        &:hover{
+
+        &:hover {
             color: $teal;
             text-decoration: none;
             border-bottom: 1px solid;
         }
     }
 
-    .magnify-logo{
-        width:150px;
-        //display: block;
-        //height: auto;
+    .magnify-logo {
+        width: 150px;
     }
 
     .text-overlay {
-        white-space: nowrap; 
-        color :white;
+        white-space: nowrap;
+        color: white;
         font-size: 20px;
         font-weight: 700;
         position: absolute;
@@ -371,13 +379,13 @@ footer {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
-    
+
     .overlay {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        background-color:$dark-blue;
+        background-color: $dark-blue;
         overflow: hidden;
         width: 0;
         height: 100%;
@@ -385,164 +393,230 @@ footer {
         opacity: 1;
     }
 
-    .container-overlay{
+    .container-overlay {
         position: relative;
         width: 50%;
 
-        &:hover .overlay{
+        &:hover .overlay {
             width: 150px;
         }
     }
 
-    .icon{
-        color:white;
+    .icon {
+        color: white;
         margin: 0 10px;
 
-        &:hover{
-            color:$teal;
+        &:hover {
+            color: $teal;
         }
     }
 
-    .mission{
+    .mission {
         font-size: 25px;
-        margin-top: 45px ;
         font-weight: 700;
         color: $teal;
         font-style: italic;
-        text-align:center;
+        text-align: center;
     }
 
-    .bottom{
-        color:white;
-        font-size:13px;
+    .bottom {
+        color: white;
+        font-size: 13px;
     }
-  
-    .row-bottom{
-        text-align:center;
+
+    .row-bottom {
+        text-align: center;
     }
 }
 
 //ABOUT  
 
-#page{
+#page {
     font-family: 'Karla';
-    font-size:18px;
+    font-size: 18px;
     margin: 50px 90px;
 
-    h1{
-        margin-top: 20px;
-        font-family: 'Roboto Slab';
-    }
+    //GET INVOLVED 
+    #get-involved {
+        font-family: 'Karla';
+        font-size: 18px;
 
-    .textbox{
-        margin: 30px 10px;
-    }
-
-    #ourmission {
-    
-        .opening{
-            text-align: center;
+        h1 {
+            margin-top: 20px;
+            font-family: 'Roboto Slab';
         }
-    
-        a{
-            font-weight: bolder;
-            color: $red;
-    
-            &:hover{
-                text-decoration: none;
-                border-bottom: 1px solid;
+
+        .textbox {
+            margin: 30px 10px;
+        }
+
+        #ourmission {
+
+            .opening {
+                text-align: center;
+            }
+
+            a {
+                font-weight: bolder;
                 color: $red;
-                background-color:#ffc2c2;
-                
+
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 1px solid;
+                    color: $red;
+                    background-color: #ffc2c2;
+
+                }
             }
+
+            .title {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .textbox {
+                text-align: justify;
+            }
+
+            .research-img {
+                width: 500px;
+                height: auto;
+            }
+
+            b {
+                color: $blue
+            }
+
+            .blueprint {
+                margin-top: 60px;
+                margin-bottom: 50px;
+            }
+
+            .magnify {
+                margin-top: 60px;
+                margin-bottom: 50px;
+            }
+
+
         }
-    
-        .title{
-            padding:10px;
-            text-align: center;
+
+        #partners {
+
+            .textbox {
+                text-align: center;
+            }
+
+            a {
+                font-weight: bolder;
+                color: $blue;
+
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 1px solid;
+                    color: $blue;
+                    background-color: #99d6ff;
+                }
+            }
+
+            img {
+                width: 600px;
+                height: auto;
+            }
+
         }
-    
-        .textbox{
-            text-align:justify;
+
+        #support {
+            .textbox {
+                text-align: center;
+                margin-bottom: 70px;
+            }
+
+            .handshake {
+                color: $blue;
+                text-align: center;
+            }
+
+            .btn {
+                color: $blue;
+                background-color: white;
+                border-color: $blue;
+                font-weight: bolder;
+
+                &:hover {
+                    color: white;
+                    background-color: $teal;
+                    border-color: $teal;
+                    font-weight: bolder;
+                }
+
+            }
+
         }
-    
-        .research-img{
-            width:500px;
-            height:auto;
-        }
-    
-        b{
-            color:$blue
-        }
-        
-        .blueprint{
-            margin-top:60px;
-            margin-bottom: 50px;
-        }
-    
-        .magnify{
-            margin-top:60px;
-            margin-bottom: 50px;
-        }
-    
-    
     }
 
-    #partners{
+    .textbox {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-        .textbox{
-            text-align:center;
+    .buttons {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .write-img {
+        width: 600px;
+        height: auto;
+    }
+
+    .scholars-img {
+        width: 400px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .stemchats-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .btn {
+        background-color: $blue;
+        border-color: $blue;
+        box-shadow: none;
+        outline: none;
+
+        &:hover {
+            background-color: $teal;
+            border-color: $teal;
         }
 
-        a{
-            font-weight: bolder;
+    }
+
+    .linkintext {
+        font-weight: bolder;
+        color: $blue;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid;
             color: $blue;
-    
-            &:hover{
-                text-decoration: none;
-                border-bottom: 1px solid;
-                color:$blue;
-                background-color:#99d6ff;
-            }
+            background-color: #99d6ff;
         }
-
-        img{
-            width:600px;
-            height:auto;
-        }
-
     }
-    
-    #support{
-        .textbox{
-            text-align:center;
-            margin-bottom: 70px;
-        }
-        .handshake{
-            color:$blue;
-            text-align: center;
-        }
 
-        .btn{
-            color:$blue;
-            background-color:white;
-            border-color:$blue;
-            font-weight:bolder;
-
-            &:hover{
-                color: white;
-                background-color: $teal;
-                border-color:$teal;
-                font-weight:bolder;
-            }
-    
-        }
-
+    .write {
+        padding: 20px;
     }
+
+    .work {
+        padding: 20px;
+    }
+
+    .collaboration {
+        padding: 20px;
+    }
+
+
 }
-
-
-
-
-
-  
