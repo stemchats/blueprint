@@ -9,12 +9,13 @@ $(function () {
             $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card mb-3 mx-auto mr-5 " style="width: 20rem;">`;
-                var src = item["thumbnail"]; // use thumbnail url
+                display += `<div class="column">`;
+                display += `<div class="card h-100 mb-3 mx-auto mr-5 " style="width: 20rem;">`;
+                var src = item["thumbnail"];
                 display += `<img src="${src}" class="card-img-top" alt="Cover image">`;
                 display += `<div class="card-body">`;
                 display += `<h5 class="card-title"><a href="${item.link}">${item.title}</a></h5>`;
-                var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
+                var yourString = item.description.replace(/<img[^>]*>/g,"");
                 yourString = yourString.replace('h4', 'p');
                 yourString = yourString.replace('h3', 'p');
                 var maxLength = 190; // maximum number of characters to extract
@@ -25,7 +26,7 @@ $(function () {
                 display += `<p class="card-text">${trimmedString}...</p>`;
                 
                 display += `<a href="${item.link}" target="_blank" class="post-btn" >Read More</a>`;
-                display += '</div></div>';
+                display += '</div></div></div>';
                 return k < 10;
             });
 
@@ -37,7 +38,7 @@ $(function () {
 mediumPromise.then(function()
     {
         //Pagination
-        pageSize = 7;
+        pageSize = 10;
 
         var pageCount = $(".card").length / pageSize;
 
@@ -63,3 +64,22 @@ mediumPromise.then(function()
         });
     });
 });
+
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "33.33%";
+  }
+}
