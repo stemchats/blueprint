@@ -49,6 +49,9 @@
     max-width: 400px;
     height: auto;
   }
+  #get-involved .card {
+    width: 350px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -91,9 +94,13 @@
     margin: 0 auto;
     display: block;
   }
+  #get-involved .card {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
+  /* start of large tablet/laptop styles */
   .write-img {
     width: 100%;
     max-width: 500px;
