@@ -209,12 +209,12 @@ header {
     margin-bottom: 20px;
 }
 
-.img-hover img {
-    height: 300px;
-    width: 260px;
-    object-fit: cover;
-    border-radius: 6%;
-}
+// .img-hover img {
+//     height: 300px;
+//     width: 260px;
+//     object-fit: cover;
+//     border-radius: 6%;
+// }
 
 .socials .fab {
     color: #005792;
@@ -265,10 +265,10 @@ header {
     position: relative;
     overflow: hidden;
 
-    img {
-        width: 250px;
-        border-radius: 6%;
-    }
+     img {
+         width: 250px;
+         border-radius: 6%;
+     }
 }
 
 
@@ -567,7 +567,12 @@ footer {
         font-family: 'Roboto Slab';
     }
 
-    .textbox {
+    .textbox{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    .card-deck {
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -619,16 +624,24 @@ footer {
         }
     }
 
+    .work,
+    .collaboration,
+    .opportunities,
     .write {
         padding: 20px;
     }
 
-    .work {
-        padding: 20px;
+    .card-title{
+        font-weight: bolder;
     }
 
-    .collaboration {
-        padding: 20px;
+    .test{
+        justify-content: center;
+    }
+
+    .card{
+        width:800px;
+    }
         
 }
 
@@ -639,19 +652,20 @@ footer {
     background: gray;
     color: wheat;
 }
-.container {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 50px;
-}
-.row {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 320px;
-}
+//.container {
+    // position: absolute;
+    // bottom: 0px;
+    // left: 0px;
+    // right: 0px;
+    // padding: 50px;
+//}
+
+//.row {
+    // display: flex;
+    // flex-direction: row;
+    // position: relative;
+    // left: 320px;
+//}
 .headerBluePrint {
     text-align: center;        
 }
@@ -672,5 +686,4 @@ footer {
     font-size: 40px;
     position: relative;
     left: 120px;
-}
 }
