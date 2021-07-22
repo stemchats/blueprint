@@ -203,14 +203,6 @@ header .dropdown:hover .dropdown-menu {
   margin-bottom: 20px;
 }
 
-.img-hover img {
-  height: 300px;
-  width: 260px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 6%;
-}
-
 .socials .fab {
   color: #005792;
   padding-left: 10px;
@@ -539,6 +531,11 @@ footer .row-bottom {
   margin-bottom: 20px;
 }
 
+#get-involved .card-deck {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #get-involved .buttons {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -588,60 +585,49 @@ footer .row-bottom {
   background-color: #99d6ff;
 }
 
+#get-involved .work,
+#get-involved .collaboration,
+#get-involved .opportunities,
 #get-involved .write {
   padding: 20px;
 }
 
-#get-involved .work {
-  padding: 20px;
+#get-involved .card-title {
+  font-weight: bolder;
 }
 
-#get-involved .collaboration {
-  padding: 20px;
+#get-involved .test {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#get-involved .carousel-item {
+#get-involved .card {
+  width: 800px;
+}
+
+.carousel-item {
   height: 32rem;
   background: gray;
   color: wheat;
 }
 
-#get-involved .container {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  padding: 50px;
-}
-
-#get-involved .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
-  left: 320px;
-}
-
-#get-involved .headerBluePrint {
+.headerBluePrint {
   text-align: center;
 }
 
-#get-involved .imgBluePrint {
+.imgBluePrint {
   height: 200px;
   width: 300px;
   position: relative;
   left: 550px;
 }
 
-#get-involved .textSection {
+.textSection {
   padding: 40px;
 }
 
-#get-involved .partnerSection {
+.partnerSection {
   background-color: tomato;
   text-align: center;
   width: 1030px;
