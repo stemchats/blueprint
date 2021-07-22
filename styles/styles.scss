@@ -188,7 +188,6 @@ header {
 .teamcard-container {
     text-align: center;
     overflow: hidden;
-    position: relative;
     // margin: 0px 25px;
     padding: 0 50px 60px 50px;
 
@@ -210,8 +209,7 @@ header {
 }
 
 .img-hover img {
-    height: 300px;
-    width: 260px;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 6%;
 }
@@ -262,11 +260,9 @@ header {
 }
 
 .img-hover {
-    position: relative;
     overflow: hidden;
 
     img {
-        width: 250px;
         border-radius: 6%;
     }
 }
