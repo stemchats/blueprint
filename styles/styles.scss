@@ -812,7 +812,8 @@ left: 120px;
         input:checked ~ label .icon i:before{
             content: '\f068';
         }
-    input{
-        display:none;
+        input{
+            display:none;
+        }
     }
 }
