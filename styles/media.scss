@@ -65,6 +65,10 @@
             max-width:400px;
             height:auto;
         }
+
+        .card{
+            width:350px;
+        }
     }
 }
 
@@ -96,6 +100,7 @@
             }
         }
     }
+
     #get-involved{
         .images{
             text-align:center;
@@ -116,10 +121,15 @@
             display:block;
         }
 
-    }   
+        .card{
+            width:300px;
+        }
+    }
 }
 
+
 @media screen and (max-width: 1600px){
+    /* start of large tablet/laptop styles */
     .write-img{
         width:100%;
         max-width:500px;
