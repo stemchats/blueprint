@@ -302,7 +302,7 @@ header {
 
 .column {
     float: left;
-    width: 50%;
+    width: 100%;
     padding: 10px;
   }
   
@@ -312,6 +312,18 @@ header {
     clear: both;
   }
 
+  .view-btn {
+    background-color: #82d1c6;
+    border: none;
+    color: white;
+    padding: 8px;
+    transition: 0.2s;
+  }
+
+  .view-btn:hover {
+    background-color: #005792;
+    transition: 0.3s;
+  }
 
 
 // FOOTER

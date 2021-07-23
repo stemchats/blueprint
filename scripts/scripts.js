@@ -9,8 +9,10 @@ $(function () {
             $("#logo").append(`<img src="${response.feed["image"]}" class="rounded mx-auto d-block">`)
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="column">`;
-                display += `<div class="card h-100 mb-3 mx-auto mr-5 " style="width: 20rem;">`;
+                // display+=`<div class = "row">`;
+                display+=`<div class = "column" width: 70%; margin-left: auto; margin-right: auto">`;
+                display += `<div class="card h-100 mb-3 mx-auto mr-5" style ="width: 100%;">`;
+                // style="width: 20rem;";
                 var src = item["thumbnail"];
                 display += `<img src="${src}" class="card-img-top" alt="Cover image">`;
                 display += `<div class="card-body">`;

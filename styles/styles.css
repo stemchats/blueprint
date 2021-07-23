@@ -297,7 +297,7 @@ header .dropdown:hover .dropdown-menu {
 
 .column {
   float: left;
-  width: 50%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -305,6 +305,21 @@ header .dropdown:hover .dropdown-menu {
   content: "";
   display: table;
   clear: both;
+}
+
+.view-btn {
+  background-color: #82d1c6;
+  border: none;
+  color: white;
+  padding: 8px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #005792;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 footer {
