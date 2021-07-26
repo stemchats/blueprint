@@ -359,7 +359,7 @@ header .navbar .nav-item.active .nav-link {
 
 .column {
   float: left;
-  width: 100%;
+  width: 50%;
   padding: 10px;
 }
 
@@ -494,8 +494,17 @@ footer .row-bottom {
   margin: 30px 10px;
 }
 
+#page h1 {
+  font-family: 'Roboto Slab';
+}
+
 #page #ourmission .opening {
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
+  border: 1px solid #ff5959;
+  border-radius: 25px;
 }
 
 #page #ourmission a {
@@ -669,8 +678,8 @@ footer .row-bottom {
           justify-content: center;
 }
 
-#get-involved .card {
-  width: 800px;
+#get-involved .opp-title {
+  margin-bottom: 20px;
 }
 
 .carousel-item {

@@ -1,3 +1,31 @@
+// Cards responsiveness #get-involved
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1600px
+) !default;
+
+$grid-gutter-width: 30px !default;
+
+// number of cards per line for each breakpoint
+$cards-per-line: (
+    xs: 1,
+    sm: 1,
+    md: 1,
+    lg: 4,
+    xl: 5
+);
+
+@each $name, $breakpoint in $grid-breakpoints {
+    @media (min-width: $breakpoint) {
+        .card-deck .card {
+            flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+        }
+    }
+}
+
 @media (max-width: 700px) {
     .modal-body .img-fluid {
         float: none;
@@ -43,10 +71,7 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 479px) {
-    /* start of phone styles */
     #get-involved{
         .write-img{
             width:100%;
@@ -66,8 +91,13 @@
             height:auto;
         }
 
-        .card{
-            width:350px;
+        .opp-title{
+            justify-content:center;
+            text-align:center;
+        }
+        .opp-text{
+            justify-content:center;
+            text-align:center;
         }
     }
 }
@@ -121,19 +151,34 @@
             display:block;
         }
 
-        .card{
-            width:300px;
+        .card-body{
+            justify-content:center;
+            text-align:center;
         }
     }
+
+    
 }
 
 
 @media screen and (max-width: 1600px){
-    /* start of large tablet/laptop styles */
+    /* start of large tablet styles */
+
     .write-img{
         width:100%;
         max-width:500px;
         height:auto;
     }
+
+    #get-involved{
+    
+        .card-body{
+            justify-content:center;
+            text-align:center;
+        }
+
+
+    }
+    
 
 }
