@@ -28,11 +28,19 @@
   font-family: Karla;
 }
 
-ol {
-  font-family: Karla;
+.center a {
+  font-weight: bolder;
+  color: #005792;
 }
 
-address {
+.center a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #005792;
+  background-color: #99d6ff;
+}
+
+ol {
   font-family: Karla;
 }
 
@@ -54,21 +62,28 @@ address {
   font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
-  font-family: Josefin Sans;
+  font-family: Roboto Slab;
 }
 
 header {
-  position: fixed;
+  position: relative;
   z-index: 10;
   width: 100%;
   height: 50px;
-  background-color: #13334c;
+  background-color: #005792;
 }
 
 header .navbar {
   padding: 20 0px;
   line-height: 74px;
-  background-color: #13334c;
+  background-color: #005792;
+}
+
+header .navbar .navbar-toggler-icon {
+  border-color: transparent;
+  background-color: #fff;
+  border-style: none;
+  z-index: 0;
 }
 
 header .navbar .navbar-brand {
@@ -76,7 +91,7 @@ header .navbar .navbar-brand {
   font-size: 2em;
   font-family: Roboto Slab;
   color: #fff;
-  z-index: 0;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,32 +108,41 @@ header .navbar .navbar-brand {
 }
 
 header .navbar .navbar-brand:hover {
-  color: #ff5959;
+  color: #82d1c6;
 }
 
-header .navbar .navbar-brand .logo-img {
-  width: 70px;
-  margin-top: -10px;
-  margin-right: -2px;
+@media only screen and (min-width: 1310px) {
+  header .navbar .navbar-brand .logo-img {
+    width: 70px;
+    margin-top: -10px;
+    margin-right: 20px;
+  }
+  header .navbar .navbar-brand .logo-text {
+    border: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 10px 5px 5px;
+    font-weight: bold;
+    z-index: 10;
+    font-size: 50px;
+    letter-spacing: 5px;
+    z-index: 5;
+  }
 }
 
-header .navbar .navbar-brand .logo-text {
-  border: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding: 10px 5px 5px;
-  font-weight: bold;
-  z-index: 10;
-  font-size: 50px;
-  letter-spacing: 5px;
+@media only screen and (max-width: 1310px) {
+  header .navbar .navbar-brand .logo-img {
+    width: 100px;
+    z-index: 999;
+  }
+  header .navbar .navbar-brand .logo-text {
+    width: 0;
+  }
 }
 
 header .navbar .nav-item {
   font-family: Josefin Sans;
   z-index: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -129,6 +153,10 @@ header .navbar .nav-item {
   margin-right: 50px;
   margin-top: 10px;
   font-size: 20px;
+  line-height: 66px;
+  position: relative;
+  list-style: none;
+  display: inline-block;
 }
 
 header .navbar .nav-item .nav-link {
@@ -137,7 +165,7 @@ header .navbar .nav-item .nav-link {
 }
 
 header .navbar .nav-item .nav-link:hover {
-  color: #ff5959;
+  color: #82d1c6;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -150,57 +178,80 @@ header .navbar .nav-item.active .nav-link {
   color: #82d1c6;
 }
 
-header .dropdown:hover {
-  z-index: 0;
+@media only screen and (min-width: 769px) {
+  header .dropdown:hover {
+    z-index: 0;
+    position: relative;
+    display: inline-block;
+  }
+  header .dropdown:hover .dropdown-menu {
+    margin-top: -1px;
+    display: block;
+    background-color: lightgray;
+    width: 100%;
+  }
+  header .dropdown:hover .dropdown-menu .dropdown-item {
+    color: #005792;
+  }
+  header .dropdown:hover .dropdown-menu .dropdown-item:hover {
+    color: black;
+    font-style: bold;
+    background-color: lightgray;
+  }
 }
 
-header .dropdown:hover .dropdown-menu {
-  margin-top: -1px;
-  display: block;
-  background-color: #005792;
+@media only screen and (max-width: 769px) {
+  header .dropdown {
+    z-index: 0;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  header .dropdown .dropdown-menu {
+    margin-top: -1px;
+    background-color: lightgray;
+    width: 100%;
+    line-height: 20px;
+  }
+  header .dropdown .dropdown-menu .dropdown-item {
+    color: #005792;
+  }
+  header .dropdown .dropdown-menu .dropdown-item:hover {
+    color: black;
+    font-style: bold;
+  }
 }
 
 .team-header {
   text-align: center;
   font-size: 50px;
-  margin-top: 5px;
   margin-bottom: 30px;
 }
 
-.team-desc {
+.teamcard-desc {
+  padding-top: 10px;
   text-align: center;
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 40px;
 }
 
-.teamcard-name {
-  padding-top: 20px;
-}
-
-.teamcard-container {
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  padding: 0 50px 60px 50px;
-}
-
-.teamcard-container:hover .img-hover .teamcard-content {
-  background: #b3cdde;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  border-radius: 6%;
-}
-
-.teamcard-position {
+.teamcard-desc .teamcard-position {
   color: #005792;
   font-size: 17px;
 }
 
 .teamcard-container {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.img-hover img {
+  width: 80%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .socials .fab {
@@ -243,22 +294,11 @@ header .dropdown:hover .dropdown-menu {
   padding-right: 20px;
 }
 
-.teamcard-desc {
-  padding-top: 30px;
-}
-
-.teamcard-desc .teamcard-position {
-  color: #005792;
-}
-
-.img-hover {
-  position: relative;
-  overflow: hidden;
-}
-
-.img-hover img {
-  width: 250px;
-  border-radius: 6%;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .img-hover img {
+    height: 300px;
+    width: 100%;
+  }
 }
 
 .blog-header {
@@ -327,6 +367,21 @@ header .dropdown:hover .dropdown-menu {
   content: "";
   display: table;
   clear: both;
+}
+
+.view-btn {
+  background-color: #82d1c6;
+  border: none;
+  color: white;
+  padding: 8px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #005792;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 footer {
@@ -649,11 +704,113 @@ footer .row-bottom {
 }
 
 .partnerSection {
-  background-color: tomato;
+  background-color: pink;
   text-align: center;
   width: 1030px;
   font-size: 40px;
   position: relative;
   left: 120px;
+}
+
+.accordion {
+  max-width: 800px;
+  padding: 0 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion .contentBx {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background: #005792;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Josefin Sans;
+  text-shadow: 0 -1px 1px #0056b3;
+  cursor: pointer;
+  margin-bottom: 8px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.accordion .contentBx .label::before {
+  content: '\2295';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: auto;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.accordion .contentBx .content p {
+  font-size: 16px;
+  padding: 15px 20px;
+  font-family: karla;
+}
+
+.accordion .contentBx .content p a {
+  font-weight: bolder;
+  color: #005792;
+}
+
+.accordion .contentBx .content p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #005792;
+  background-color: #99d6ff;
+}
+
+.accordion .contentBx.active .content {
+  height: 150px;
+  padding: 10px;
+}
+
+.accordion .contentBx.active .label::before {
+  content: '\2296';
+}
+
+.accordion p {
+  font-size: 16px;
+  padding: 15px 20px;
+  font-family: karla;
+}
+
+.accordion p a {
+  font-weight: bolder;
+  color: #005792;
+}
+
+.accordion p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #005792;
+  background-color: #99d6ff;
 }
 /*# sourceMappingURL=styles.css.map */
