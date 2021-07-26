@@ -452,10 +452,19 @@ footer {
         margin: 30px 10px;
     }
 
+    h1{
+        font-family: 'Roboto Slab';
+    }
+
     #ourmission {
 
         .opening {
+            padding-top:15px;
+            padding-left:10px;
+            padding-right:10px;
             text-align: center;
+            border:1px solid $red;
+            border-radius: 25px;
         }
 
         a {
@@ -639,8 +648,8 @@ footer {
         justify-content: center;
     }
 
-    .card{
-        width:800px;
+    .opp-title{
+        margin-bottom: 20px;
     }
         
 }
