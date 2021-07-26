@@ -28,11 +28,19 @@
   font-family: Karla;
 }
 
-ol {
-  font-family: Karla;
+.center a {
+  font-weight: bolder;
+  color: #005792;
 }
 
-address {
+.center a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #005792;
+  background-color: #99d6ff;
+}
+
+ol {
   font-family: Karla;
 }
 
@@ -54,11 +62,11 @@ address {
   font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
-  font-family: Josefin Sans;
+  font-family: Roboto Slab;
 }
 
 header {
-  position: fixed;
+  position: relative;
   z-index: 10;
   width: 100%;
   height: 50px;
@@ -128,16 +136,13 @@ header .navbar .navbar-brand:hover {
     z-index: 999;
   }
   header .navbar .navbar-brand .logo-text {
-    width: 0px;
+    width: 0;
   }
 }
 
 header .navbar .nav-item {
   font-family: Josefin Sans;
   z-index: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -150,6 +155,8 @@ header .navbar .nav-item {
   font-size: 20px;
   line-height: 66px;
   position: relative;
+  list-style: none;
+  display: inline-block;
 }
 
 header .navbar .nav-item .nav-link {
@@ -167,12 +174,11 @@ header .navbar .nav-item.active {
   font-weight: bold;
 }
 
-header .navbar .nav-item.active color
-.nav-link {
+header .navbar .nav-item.active .nav-link {
   color: #82d1c6;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   header .dropdown:hover {
     z-index: 0;
     position: relative;
@@ -181,7 +187,6 @@ header .navbar .nav-item.active color
   header .dropdown:hover .dropdown-menu {
     margin-top: -1px;
     display: block;
-    position: absolute;
     background-color: lightgray;
     width: 100%;
   }
@@ -195,10 +200,12 @@ header .navbar .nav-item.active color
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   header .dropdown {
     z-index: 0;
+    position: relative;
     display: inline-block;
+    margin: 0 auto;
   }
   header .dropdown .dropdown-menu {
     margin-top: -1px;
@@ -696,89 +703,105 @@ footer .row-bottom {
   left: 120px;
 }
 
-.wrapper {
-  max-width: 600px;
+.accordion {
+  max-width: 800px;
   padding: 0 20px;
-  display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.wrapper .parent-tab {
-  margin-bottom: 8px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
-          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+.accordion .contentBx {
+  position: relative;
+  margin: 10px 20px;
 }
 
-.wrapper .parent-tab label {
-  background: #007bff;
-  padding: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background: #005792;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  cursor: pointer;
   border-radius: 3px;
-  position: relative;
-  z-index: 1;
-}
-
-.wrapper .parent-tab label span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   font-family: Josefin Sans;
-}
-
-.wrapper .parent-tab label .icon {
-  position: relative;
-  height: 30px;
-  width: 30px;
-  color: #007bff;
-  font-size: 15px;
-  display: block;
-  background: #fff;
-  border-radius: 50%;
   text-shadow: 0 -1px 1px #0056b3;
+  cursor: pointer;
+  margin-bottom: 8px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
 }
 
-.wrapper .parent-tab label .icon i {
+.accordion .contentBx .label::before {
+  content: '\2295';
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5em;
 }
 
-.wrapper .parent-tab .content {
-  max-height: 0px;
+.accordion .contentBx .content {
+  position: relative;
+  background: #fff;
+  height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: auto;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
 }
 
-.wrapper .parent-tab .content p {
+.accordion .contentBx .content p {
   font-size: 16px;
   padding: 15px 20px;
   font-family: karla;
 }
 
-.wrapper .parent-tab input:checked ~ .content {
-  max-height: 100vh;
+.accordion .contentBx .content p a {
+  font-weight: bolder;
+  color: #005792;
 }
 
-.wrapper .parent-tab input:checked ~ label .icon i:before {
-  content: '\f068';
+.accordion .contentBx .content p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #005792;
+  background-color: #99d6ff;
 }
 
-.wrapper .parent-tab input {
-  display: none;
+.accordion .contentBx.active .content {
+  height: 150px;
+  padding: 10px;
+}
+
+.accordion .contentBx.active .label::before {
+  content: '\2296';
+}
+
+.accordion p {
+  font-size: 16px;
+  padding: 15px 20px;
+  font-family: karla;
+}
+
+.accordion p a {
+  font-weight: bolder;
+  color: #005792;
+}
+
+.accordion p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #005792;
+  background-color: #99d6ff;
 }
 /*# sourceMappingURL=styles.css.map */
