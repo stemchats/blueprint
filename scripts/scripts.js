@@ -27,7 +27,9 @@ $(function () {
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
                 
-                display += `<a href="${item.link}" target="_blank" class="post-btn" >Read More</a>`;
+                display += `<div class="card-footer">
+                <a href="${item.link}" target="_blank" class="post-btn btn btn-primary" >Read More</a>
+                </div>`;
                 display += '</div></div></div>';
                 return k < 10;
             });
