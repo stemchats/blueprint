@@ -17,6 +17,7 @@ $teal : #82d1c6;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
 }
 
 .container,
@@ -64,6 +65,10 @@ ol {
     font-size: 28px;
     font-weight: bold;
     text-transform: capitalize;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab', serif;
 }
 
 .medium-box-title {
@@ -163,6 +168,26 @@ header {
     height: 50px;
     background-color: $blue;
 
+    .stemchats {
+        color: $teal;
+        font-size: 14px;
+        line-height: 1em;
+        margin: 25px 0 0 -10px;
+    
+        .stemchats-link {
+            color: #ff5959;
+            font-family: 'Josefin Sans', sans-serif;
+            border-bottom: 1px dashed #ccc;
+            transition: 0.2s;
+    
+            &:hover {
+                text-decoration: none;
+                color: #ff5959;
+                border-bottom: 1px dashed #ff5959;
+            }
+        }
+    }
+
     .navbar {
         padding: 20 0px;
         line-height: 74px;
@@ -178,7 +203,6 @@ header {
         .navbar-brand {
             font-weight: 800;
             font-size: 2em;
-            font-family: Roboto Slab;
             color: #fff;
             z-index: 3;
             display: flex;
