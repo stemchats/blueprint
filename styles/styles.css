@@ -26,7 +26,6 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  font-family: Karla;
 }
 
 .center a {
@@ -67,20 +66,20 @@ h1, h2, h3, h4 {
   font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', serif;
 }
 
 .large-box-title-first {
   font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', serif;
 }
 
 .Volume1_title {
   font-weight: bold;
   font-size: 25px;
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', serif;
   margin-top: -190px;
   text-align: center;
 }
