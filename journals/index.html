@@ -83,21 +83,84 @@
 
     <!-- CONTENT -->
     <div class="container">
-        <h1 class="large-box-title center">Issues</h1>
+        <h1 class="large-box-title-first center">Issues</h1>
         <p class="center">Despite the increasing number of students pursuing their own scientific research, reputable research journals are often considered “off-limits” to high schoolers. Our journal, Blueprint, represents the quality scientific work of high schoolers, regardless of access to high-quality labs or other resources. We aim to create a formal youth scientific publication dedicated exclusively to publishing the work led by these students.
         </p>
         <br>
         <br>
-        <h1 class="large-box-title center">Collaborations</h1>
+        <h1 class="large-box-title-first center">Collaborations</h1>
         <p class="center">Currently, we are collaborating with the <a href ="https://scholars.stemchats.org/">i-STEM Scholars program</a>, a STEMchats initiative that connects high school students with university labs to contribute to a research project. Blueprint is working with the program to produce a special edition scientific journal featuring the i-STEM scholars and their research this summer.
         </p>
         <br>
         <br>
-        <h1 class="large-box-title center">Review Process</h1>
+        <h1 class="large-box-title-first center">Review Process</h1>
         <p class="center">Blueprint aims to guide researchers through the peer-review and scientific publication process. If accepted, researchers will go through a thorough peer-review process, with two rounds of editing. After each round, the author will receive detailed and comprehensive feedback on their work. This involves potential mentorship from Blueprint team members and the peer-review team.   
         </p> 
     </div>
-    <h1 class="large-box-title center">FAQs</h1>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+    </script>
+  
+  
+  <select class="form-select" aria-label="Default select example">
+    <option selected value="Volume1"><pre>     Volume 1    </pre></option>
+    <option value="Volume2">       Volume 2    </option>
+  </select>
+
+  <div class="Volume1 box">
+    <div class="image_hover">
+      <div class="container" style="position: relative; top: -150px;">
+        <img src="Img1.png" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text">
+            <a href="https://issuu.com/blueprint.stemchats/docs/final_blueprint_vol._1" target="_blank">
+              <img src="./STEMchatImg.png" style="position:relative; top:20px">
+          </a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <h1 class="Volume1_title">In our first volume, researchers were:</h1>
+    <ul class = "Volume_List">
+      <li>
+       100% female
+      </li>
+      <li>
+       87.5% POCm
+      </li>
+      <li>37.5% FGLI
+      </li>
+    </ul>
+  </div> 
+
+
+  <div class="Volume2 box">
+    <div class="Volume2">
+      <img src="Img2.jpg">
+      <h1 class="Volume2_header">Volume 2 Coming Soon</h1>
+    </div>
+    <p class="vol2Description" > 
+      After the publication of the special edition of Blueprint featuring our collaboration with the i-STEM Scholars program, applications for Volume 2 <br>will open on September 1, 2021. To learn more about our next volume, check our Vol. 2 Landing Page. This contains information about the <br> upcoming application cycle timeline, submission requirements, FAQs, and more. Applications open on September 1, 2021!  
+    </p> 
+  </div>
+</div>
+
+
+  <h1 class="large-box-title center">FAQs</h1>
   <div class="accordion">
     <div class="contentBx">
       <div class="label">What type of submissions are accepted?</div>
@@ -150,6 +213,9 @@
     <br>
     <p>If you have any questions, please reach out to us at <a href ="mailto:blueprint.stemchats@gmail.com./">blueprint.stemchats@gmail.com.</a></p>
   </div>
+  <ul style="list-style: circle;">
+    
+
   <script>
     const accordion = document.getElementsByClassName('contentBx');
     
