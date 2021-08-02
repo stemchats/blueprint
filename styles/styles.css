@@ -140,6 +140,27 @@ header {
   background-color: #005792;
 }
 
+header .stemchats {
+  color: #82d1c6;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  margin: 25px 0 0 -10px;
+}
+
+header .stemchats .stemchats-link {
+  color: #ff5959;
+  border-bottom: 1px dashed #ccc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .stemchats .stemchats-link:hover {
+  text-decoration: none;
+  color: #ff5959;
+  border-bottom: 1px dashed #ff5959;
+}
+
 header .navbar {
   padding: 20 0px;
   line-height: 74px;

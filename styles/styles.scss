@@ -163,6 +163,26 @@ header {
     height: 50px;
     background-color: $blue;
 
+    .stemchats {
+        color: $teal;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1em;
+        margin: 25px 0 0 -10px;
+    
+        .stemchats-link {
+            color: #ff5959;
+            border-bottom: 1px dashed #ccc;
+            transition: 0.2s;
+    
+            &:hover {
+                text-decoration: none;
+                color: #ff5959;
+                border-bottom: 1px dashed #ff5959;
+            }
+        }
+    }
+
     .navbar {
         padding: 20 0px;
         line-height: 74px;
