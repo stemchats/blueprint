@@ -144,43 +144,35 @@ header {
   background-color: #005792;
 }
 
-header .stemchats {
-  color: #82d1c6;
-  font-size: 14px;
-  line-height: 1em;
-  margin: 25px 0 0 -10px;
-}
-
-header .stemchats .stemchats-link {
-  color: #ff5959;
-  font-family: 'Josefin Sans', sans-serif;
-  border-bottom: 1px dashed #ccc;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-header .stemchats .stemchats-link:hover {
-  text-decoration: none;
-  color: #ff5959;
-  border-bottom: 1px dashed #ff5959;
-}
-
 header .navbar {
   padding: 20 0px;
   line-height: 74px;
   background-color: #005792;
 }
 
-header .navbar .navbar-toggler-icon {
-  border-color: transparent;
-  background-color: #fff;
-  border-style: none;
-  z-index: 0;
+header .navbar .logo-img {
+  width: 70px;
+  margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .logo-text {
+  border: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px 5px 5px;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 50px;
+  letter-spacing: 5px;
+  z-index: 5;
 }
 
 header .navbar .navbar-brand {
   font-weight: 800;
-  font-size: 2em;
+  font-size: 20px;
   color: #fff;
   z-index: 3;
   display: -webkit-box;
@@ -195,40 +187,32 @@ header .navbar .navbar-brand {
   margin-top: rem;
   line-height: 100px;
   overflow: hidden;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 header .navbar .navbar-brand:hover {
   color: #82d1c6;
 }
 
-@media only screen and (min-width: 1310px) {
-  header .navbar .navbar-brand .logo-img {
-    width: 70px;
-    margin-top: -10px;
-    margin-right: 20px;
-  }
-  header .navbar .navbar-brand .logo-text {
-    border: 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    padding: 10px 5px 5px;
-    font-weight: bold;
-    z-index: 10;
-    font-size: 50px;
-    letter-spacing: 5px;
-    z-index: 5;
-  }
+header .navbar .stemchats {
+  color: #82d1c6;
+  font-size: 14px;
+  line-height: 1em;
+  margin: 25px 0 0 -10px;
 }
 
-@media only screen and (max-width: 1310px) {
-  header .navbar .navbar-brand .logo-img {
-    width: 100px;
-    z-index: 999;
-  }
-  header .navbar .navbar-brand .logo-text {
-    width: 0;
-  }
+header .navbar .stemchats .stemchats-link {
+  color: #ff5959;
+  font-family: 'Josefin Sans', sans-serif;
+  border-bottom: 1px dashed #ccc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .navbar .stemchats .stemchats-link:hover {
+  text-decoration: none;
+  color: #ff5959;
+  border-bottom: 1px dashed #ff5959;
 }
 
 header .navbar .nav-item {
@@ -240,11 +224,9 @@ header .navbar .nav-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 25px;
-  margin-right: 50px;
-  margin-top: 10px;
-  font-size: 20px;
-  line-height: 66px;
+  margin-right: 40px;
+  font-size: 17px;
+  line-height: 74px;
   position: relative;
   list-style: none;
   display: inline-block;
@@ -269,48 +251,38 @@ header .navbar .nav-item.active .nav-link {
   color: #82d1c6;
 }
 
-@media only screen and (min-width: 769px) {
-  header .dropdown:hover {
-    z-index: 0;
-    position: relative;
-    display: inline-block;
-  }
-  header .dropdown:hover .dropdown-menu {
-    margin-top: -1px;
-    display: block;
-    background-color: lightgray;
-    width: 100%;
-  }
-  header .dropdown:hover .dropdown-menu .dropdown-item {
-    color: #005792;
-  }
-  header .dropdown:hover .dropdown-menu .dropdown-item:hover {
-    color: black;
-    font-style: bold;
-    background-color: lightgray;
-  }
+header .navbar .dropdown:hover {
+  z-index: 0;
+  position: relative;
+  display: inline-block;
 }
 
-@media only screen and (max-width: 769px) {
-  header .dropdown {
-    z-index: 0;
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-  }
-  header .dropdown .dropdown-menu {
-    margin-top: -1px;
-    background-color: lightgray;
-    width: 100%;
-    line-height: 20px;
-  }
-  header .dropdown .dropdown-menu .dropdown-item {
-    color: #005792;
-  }
-  header .dropdown .dropdown-menu .dropdown-item:hover {
-    color: black;
-    font-style: bold;
-  }
+header .navbar .dropdown:hover .dropdown-menu {
+  margin-top: -1px;
+  display: block;
+  background-color: #005792;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header .navbar .dropdown:hover .dropdown-menu .dropdown-item {
+  color: white;
+}
+
+header .navbar .dropdown:hover .dropdown-menu .dropdown-item:hover {
+  color: #82d1c6;
+  font-style: bold;
+  background-color: #005792;
+}
+
+header .navbar .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+header .navbar .custom-toggler.navbar-toggler {
+  border: none;
 }
 
 .team-header {
@@ -689,6 +661,10 @@ footer .row-bottom {
 }
 
 #get-involved h1 {
+  margin-bottom: 40px;
+}
+
+#get-involved title {
   margin-top: 20px;
   font-family: 'Roboto Slab';
 }

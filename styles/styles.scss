@@ -167,41 +167,32 @@ header {
     height: 50px;
     background-color: $blue;
 
-    .stemchats {
-        color: $teal;
-        font-size: 14px;
-        line-height: 1em;
-        margin: 25px 0 0 -10px;
-    
-        .stemchats-link {
-            color: #ff5959;
-            font-family: 'Josefin Sans', sans-serif;
-            border-bottom: 1px dashed #ccc;
-            transition: 0.2s;
-    
-            &:hover {
-                text-decoration: none;
-                color: #ff5959;
-                border-bottom: 1px dashed #ff5959;
-            }
-        }
-    }
-
     .navbar {
+        
         padding: 20 0px;
         line-height: 74px;
         background-color: $blue;
 
-        .navbar-toggler-icon{
-            border-color:transparent;
-            background-color:#fff;
-            border-style:none;
-            z-index:0
+        .logo-img {
+            width: 70px;
+            margin-right: 20px;
+            align-items: center;
         }
+    
+        .logo-text {
+            border: 0;
+            transition: 0.5s;
+            padding: 10px 5px 5px;
+            font-weight: bold;
+            z-index: 10;
+            font-size: 50px;
+            letter-spacing: 5px;
+            z-index:5;
 
+        }
         .navbar-brand {
             font-weight: 800;
-            font-size: 2em;
+            font-size: 20px;
             color: #fff;
             z-index: 3;
             display: flex;
@@ -210,39 +201,29 @@ header {
             margin-top: rem;
             line-height: 100px;
             overflow: hidden;
-            margin-left: 100px;
+            margin-left: 50px;
 
             &:hover {
                 color: #82d1c6;
             }
+        }
 
-            @media only screen and(min-width:1310px){
-                .logo-img {
-                    width: 70px;
-                    margin-top: -10px;
-                    margin-right: 20px;
-                }
-
-                .logo-text {
-                    border: 0;
-                    transition: 0.5s;
-                    padding: 10px 5px 5px;
-                    font-weight: bold;
-                    z-index: 10;
-                    font-size: 50px;
-                    letter-spacing: 5px;
-                    z-index:5;
-                }
-            }
-            @media only screen and(max-width:1310px){
-                .logo-img {
-                    width: 100px;
-                    z-index:999;
-                }
-
-                .logo-text {
-                    width:0;
-                    
+        .stemchats {
+            color: $teal;
+            font-size: 14px;
+            line-height: 1em;
+            margin: 25px 0 0 -10px;
+        
+            .stemchats-link {
+                color: #ff5959;
+                font-family: 'Josefin Sans', sans-serif;
+                border-bottom: 1px dashed #ccc;
+                transition: 0.2s;
+        
+                &:hover {
+                    text-decoration: none;
+                    color: #ff5959;
+                    border-bottom: 1px dashed #ff5959;
                 }
             }
         }
@@ -252,11 +233,9 @@ header {
             z-index: 0;
             align-items: center;
             justify-content: center;
-            margin-left: 25px;
-            margin-right: 50px;
-            margin-top: 10px;
-            font-size: 20px;
-            line-height:66px;
+            margin-right: 40px;
+            font-size: 17px;
+            line-height:74px;
             position:relative;
             list-style:none;
             display:inline-block;
@@ -279,8 +258,7 @@ header {
                 }
             }
         }
-    }
-    @media only screen and(min-width:769px){
+
         .dropdown:hover {
             z-index: 0;
             position:relative;
@@ -289,54 +267,33 @@ header {
             .dropdown-menu {
                 margin-top: -1px;
                 display: block;
-                background-color:lightgray;
+                background-color:$blue;
                 width:100%;
+                justify-content: end;
                 
                 .dropdown-item{
-                    color:$blue;
+                    color:white;
 
                 }
                 .dropdown-item:hover{
-                    color:black;
+                    color:$teal;
                     font-style:bold;
-                    background-color:lightgray;
+                    background-color:$blue;
                 }
             }
-            
-        }
-    }
-
-
-    @media only screen and(max-width:769px){
-        .dropdown{
-            z-index: 0;
-            position:relative;
-            display: inline-block;
-            margin:0 auto;
-            
-            .dropdown-menu {
-                margin-top: -1px;
-                background-color:lightgray;
-                width:100%;
-                line-height:20px;
-                
-                .dropdown-item{
-                    color:$blue;
-                }
-                .dropdown-item:hover{
-                    color:black;
-                    font-style:bold;
-                }
-            }
-            
+        
         }
 
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+          
+        .custom-toggler.navbar-toggler {
+            border:none;
+        } 
+
     }
-    
 }
-
-
-
 
 // TEAM
 
@@ -730,7 +687,11 @@ footer {
     font-family: 'Karla';
     font-size: 18px;
 
-    h1 {
+    h1{
+        margin-bottom:40px
+    }
+
+    title{
         margin-top: 20px;
         font-family: 'Roboto Slab';
     }
@@ -1083,5 +1044,3 @@ left: 120px;
         padding-bottom: 20px;
     }
 }
-
-

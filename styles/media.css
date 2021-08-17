@@ -1,3 +1,83 @@
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+  header {
+    height: 100px;
+  }
+  header .navbar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 0px 0px 10px;
+  }
+  header .navbar .navbar-brand {
+    margin: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .navbar .logo-img {
+    margin-left: 10px;
+    max-width: 70px;
+    width: 100%;
+  }
+  header .navbar .logo-text {
+    padding-top: 0px;
+    font-weight: bold;
+    z-index: 10;
+    font-size: 34px;
+    letter-spacing: 5px;
+    z-index: 5;
+    margin: 0px;
+  }
+  header .navbar .stemchats {
+    margin: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 105px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* start of medium tablet styles */
+  .stemchats {
+    margin: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 155px;
+  }
+  .logo-img {
+    max-width: 70px;
+    width: 100%;
+    margin-right: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-brand {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* start of navbar toggler showing up*/
+  header .navbar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .navbar .nav-item {
+    color: red;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
 @media (min-width: 0) {
   .card-deck .card {
     -webkit-box-flex: 0;

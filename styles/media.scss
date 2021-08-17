@@ -18,6 +18,86 @@ $cards-per-line: (
     xl: 5
 );
 
+//NAVBAR
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    header{
+        height:100px;
+        .navbar{
+            align-items: center;
+            padding: 0px 0px 0px 10px;
+            .navbar-brand{
+                //padding-top:15px;
+                margin:0px;
+                justify-content:center;
+            }
+            .logo-img {
+                margin-left:10px;
+                max-width: 70px;
+                width:100%;
+            }
+
+            .logo-text {
+                padding-top: 0px;
+                font-weight: bold;
+                z-index: 10;
+                font-size: 34px;
+                letter-spacing: 5px;
+                z-index:5;
+                margin:0px;
+            }
+
+            .stemchats{
+                margin:0px;
+                justify-content:center;
+                padding-left:105px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width: 991px) {
+    /* start of medium tablet styles */
+
+    .stemchats{
+        margin:0px;
+        justify-content:center;
+        padding-left:155px;
+    }
+    .logo-img {
+        max-width: 70px;
+        width:100%;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    .navbar-brand{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    /* start of navbar toggler showing up*/
+
+    header{
+        .navbar{
+            justify-content: end;
+
+            .nav-item{
+                color: red;
+                justify-content: end;
+            }
+            
+        }
+    }   
+
+}
+
 @each $name, $breakpoint in $grid-breakpoints {
     @media (min-width: $breakpoint) {
         .card-deck .card {
