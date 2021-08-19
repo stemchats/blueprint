@@ -262,3 +262,192 @@ $cards-per-line: (
     
 
 }
+
+//HOME
+@media screen and (max-width: 479px){
+    /* start of phone styles */
+
+    #homepage{
+        #magnifycarousel{
+            .carousel-item{
+                width:100%;
+                margin-left:0px;
+            }
+
+            img{
+                margin-bottom: 20px;
+            }
+            .carousel-control-next-icon:after {
+                content: '>';
+                font-size: 40px;
+                margin-left:50px;
+            }
+        
+            .carousel-control-prev-icon:after {
+                content: '<';
+                font-size: 40px;
+                margin-right:50px;
+            }
+
+            .carousel-indicators{
+                margin-bottom: 0px;
+            }
+
+        }
+
+        .container,
+        .container-fluid {
+            position: relative;
+            padding-top: 25px;
+            padding-bottom:0px;
+        }
+
+        .journalstats{
+            justify-content: center;
+            padding-left: 80px;
+            margin-top: 0px;
+        }
+    
+        .journalimage{
+            width:150px;
+            margin-left: 100px;
+        }
+    
+        .journaltext{
+            margin-top: 20px;
+        }
+    
+        .introcard{
+            padding:30px;
+            margin-bottom: 10px;
+        }
+    
+        .partnerpic{
+            margin-top: 15px;
+        }
+    }
+   
+
+    
+}
+
+@media screen and (min-width: 479px) and (max-width: 991px){
+    /* start of medium tablet styles */
+
+    #homepage{
+
+        #magnifycarousel{
+            .carousel-item{
+                width:100%;
+                margin-left:0px;
+            }
+    
+            img{
+                margin-bottom: 20px;
+            }
+            .carousel-control-next-icon:after {
+                content: '>';
+                font-size: 40px;
+                margin-left:90px;
+            }
+        
+            .carousel-control-prev-icon:after {
+                content: '<';
+                font-size: 40px;
+                margin-right:90px;
+            }
+    
+            .carousel-indicators{
+                margin-bottom: 0px;
+            }
+    
+        }
+
+        .container,
+        .container-fluid {
+            position: relative;
+            padding-top: 70px;
+            padding-bottom:0px;
+        }
+
+        .introcard{
+            padding:30px;
+            margin-bottom: 10px;
+        }
+    
+        .journalstats{
+            justify-content: center;
+            padding-left: 150px;
+            margin-top: 0px;
+        }
+    
+        .journalimage{
+            width:150px;
+            margin-left: 150px;
+        }
+
+        .journaltext{
+            margin-top: 20px;
+        }
+        
+        .partnerpic{
+            margin-top:15px;
+        }
+
+    }
+
+   
+
+    
+
+}
+
+@media screen and (min-width:991px) and (max-width: 1400px){
+    /* large tablet styles */
+    #homepage{
+        #magnifycarousel{
+            .carousel-item{
+                width:100%;
+                margin-left:0px;
+            }
+    
+            img{
+                margin-bottom: 20px;
+            }
+            .carousel-control-next-icon:after {
+                content: '>';
+                font-size: 40px;
+                margin-left:100px;
+            }
+        
+            .carousel-control-prev-icon:after {
+                content: '<';
+                font-size: 40px;
+                margin-right:100px;
+            }
+    
+            .carousel-indicators{
+                margin-bottom: 0px;
+            }
+    
+        }
+
+        .container,
+        .container-fluid {
+            position: relative;
+            padding-top: 70px;
+            padding-bottom:0px;
+        }
+
+        .journalstats{
+            padding-left: 10px;
+        }
+    
+        .journalimage{
+            margin-left: 100px;
+        }
+
+    }
+    
+
+}
