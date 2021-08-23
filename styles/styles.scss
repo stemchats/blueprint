@@ -526,39 +526,46 @@ h1, h2, h3, h4 {
     font-family: 'Roboto Slab', serif;
 }
 
-.blog-header {
-    text-align: center;
-    font-size: 50px;
-}
-
 .blog-desc {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.post-btn {
-    margin-bottom: 20px;
-    color: #005792;
-    border: 1.5px solid #005792;
-    padding: 8px;
-    transition: 0.4s;
-}
+.blog-btn {
+    background-color: $blue;
+    border-color: $blue;
+    box-shadow: none;
+    outline: none;
+    transition: 0.2s;
 
-.post-btn:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #005792;
-    transition: 0.5s;
-
-    p {
-        position: relative;
-        white-space: normal;
-        word-wrap: break-word;
-        padding: 20px;
-        padding-top: 20px;
+    &:hover {
+        background-color: $teal;
+        border-color: $teal;
+        text-decoration: none;
+        transition: 0.2s;
     }
+
+}
+
+.view-btn {
+    background-color: $blue;
+    border-color: $blue;
+    color: white;
+    border: none;
+    padding: 9px;
+
+    &:hover {
+        background-color: $teal;
+        transition: 0.3s;
+        
+    }
+
+    &:focus {
+        background-color: $teal;
+    }
+
 }
 
 .card-title a {
@@ -570,10 +577,6 @@ h1, h2, h3, h4 {
     }
 }
 
-.medium-btn {
-    margin-bottom: 25px;
-}
-
 .card-img-top {
     height: 230px;
     object-fit: cover;
@@ -581,28 +584,47 @@ h1, h2, h3, h4 {
 
 .column {
     float: left;
-    width: 100%;
+    width: 33.33%;
     padding: 10px;
-  }
+}
   
 .row:after{
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  .view-btn {
-    background-color: #82d1c6;
-    border: none;
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer {
+    background: none;
+    border-top: 0px;
+}
+
+.blog-img-hover {
+    position: relative;
+    transition: 0.5s;
+    &:hover {
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+        transition: 0.5s;
+
+    }
+}
+
+.blog-read {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px;
     color: white;
-    padding: 8px;
-    transition: 0.2s;
-  }
-
-  .view-btn:hover {
-    background-color: #005792;
-    transition: 0.3s;
-  }
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: $blue;
+}
 
 
 // FOOTER

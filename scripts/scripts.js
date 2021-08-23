@@ -14,8 +14,8 @@ $(function () {
                 display += `<div class="card h-100 mb-3 mx-auto mr-5" style ="width: 100%;">`;
                 // style="width: 20rem;";
                 var src = item["thumbnail"];
-                display += `<img src="${src}" class="card-img-top" alt="Cover image">`;
-                display += `<div class="card-body">`;
+                display += `<a href="${item.link}"><img src="${src}" class="blog-img-hover card-img-top"><p class="blog-read">Read More</p></a>`;
+                display += `<div class="card-body d-flex flex-column ">`;
                 display += `<h5 class="card-title"><a href="${item.link}">${item.title}</a></h5>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,"");
                 yourString = yourString.replace('h4', 'p');
@@ -27,9 +27,9 @@ $(function () {
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
                 
-                display += `<div class="card-footer">
-                <a href="${item.link}" target="_blank" class="post-btn btn btn-primary" >Read More</a>
-                </div>`;
+                /* display += `<div class="card-footer"> 
+                <a href="${item.link}" target="_blank" class="blog-btn btn btn-primary btn-lg shadow-none mt-auto" >Read More</a>
+                </div>`; */
                 display += '</div></div></div>';
                 return k < 10;
             });
@@ -86,4 +86,4 @@ function gridView() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.width = "33.33%";
   }
-} 
+}
