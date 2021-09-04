@@ -106,12 +106,16 @@ h1, h2, h3, h4 {
         font-family: Karla;
     }
 
+    b {
+        color: $blue;
+    }
+
 
     .Volume1_title {
         font-weight: bold;
         font-size: 25px;
         font-family: 'Roboto Slab', serif;
-        margin-top: -260px;
+        margin-top: -250px;
         text-align: center;
     }
 
@@ -121,7 +125,6 @@ h1, h2, h3, h4 {
         color: $blue;
         font-weight: bold;
     }
-
     
     .researchers{
         //text-align: center;
@@ -143,9 +146,17 @@ h1, h2, h3, h4 {
     text-align: center;    
     }
 
-    .Volume2 { 
-        height: 320px;  
-        top: -80px;
+    .Volume1 {
+        margin-top: -80px;
+    }
+
+    .VolDesc {
+        margin-top: -150px;
+    }
+
+    .Volume2 {  
+        top: -145px;
+        margin-bottom: -140px;
 
         .vol2Description {
             color: black; 
@@ -466,14 +477,15 @@ header {
     justify-content: center;
 }
 
-.socials .fab {
+.fab {
     color: #005792;
-    padding-left: 10px;
-    font-size: 35px;
+    font-size: 30px;
+    transition: 0.2s;
 }
 
-.socials .fab:hover {
+.fab:hover {
     color: #13334c;
+    transition: 0.2s;
 }
 
 
@@ -483,6 +495,9 @@ header {
 
 .modal-title {
     font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+
 }
 
 .modal-head {
@@ -494,14 +509,20 @@ header {
 .modal-role {
     margin-bottom: 15px;
     color: #005792;
+    text-align: center;
+    font-weight: bold;
 }
 
 .modal-body .img-fluid {
-    height: 300px;
-    width: 250px;
+    max-width: 300px;
+    height: 380px;
     object-fit: cover;
     float: left;
-    padding-right: 20px;
+    border-radius: 6%;
+}
+
+.container-fluid {
+    padding: 25px;
 }
 
 @media only screen 
@@ -549,6 +570,10 @@ h1, h2, h3, h4 {
 
 }
 
+.discover-more {
+    margin-bottom: 50px;
+}
+
 .view-btn {
     background-color: $blue;
     border-color: $blue;
@@ -558,7 +583,7 @@ h1, h2, h3, h4 {
 
     &:hover {
         background-color: $teal;
-        transition: 0.3s;
+        transition: 0.1s;
         
     }
 
@@ -625,6 +650,21 @@ h1, h2, h3, h4 {
     border-radius: 3px;
     background-color: $blue;
 }
+
+@media (max-width: 700px) {
+
+    .column {
+        width: 100%;     
+    }
+
+    .view-btns {
+        position:absolute;
+        visibility: hidden;
+    }
+  }
+
+
+  
 
 
 // FOOTER

@@ -82,11 +82,15 @@ h1, h2, h3, h4 {
   font-family: Karla;
 }
 
+#journalpage b {
+  color: #005792;
+}
+
 #journalpage .Volume1_title {
   font-weight: bold;
   font-size: 25px;
   font-family: 'Roboto Slab', serif;
-  margin-top: -260px;
+  margin-top: -250px;
   text-align: center;
 }
 
@@ -115,9 +119,17 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+#journalpage .Volume1 {
+  margin-top: -80px;
+}
+
+#journalpage .VolDesc {
+  margin-top: -150px;
+}
+
 #journalpage .Volume2 {
-  height: 320px;
-  top: -80px;
+  top: -145px;
+  margin-bottom: -140px;
 }
 
 #journalpage .Volume2 .vol2Description {
@@ -458,14 +470,17 @@ header .navbar .custom-toggler.navbar-toggler {
           justify-content: center;
 }
 
-.socials .fab {
+.fab {
   color: #005792;
-  padding-left: 10px;
-  font-size: 35px;
+  font-size: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.socials .fab:hover {
+.fab:hover {
   color: #13334c;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .modal-trigger {
@@ -474,6 +489,8 @@ header .navbar .custom-toggler.navbar-toggler {
 
 .modal-title {
   font-size: 25px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .modal-head {
@@ -487,15 +504,21 @@ header .navbar .custom-toggler.navbar-toggler {
 .modal-role {
   margin-bottom: 15px;
   color: #005792;
+  text-align: center;
+  font-weight: bold;
 }
 
 .modal-body .img-fluid {
-  height: 300px;
-  width: 250px;
+  max-width: 300px;
+  height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
   float: left;
-  padding-right: 20px;
+  border-radius: 6%;
+}
+
+.container-fluid {
+  padding: 25px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -538,6 +561,10 @@ h1, h2, h3, h4 {
   transition: 0.2s;
 }
 
+.discover-more {
+  margin-bottom: 50px;
+}
+
 .view-btn {
   background-color: #005792;
   border-color: #005792;
@@ -548,8 +575,8 @@ h1, h2, h3, h4 {
 
 .view-btn:hover {
   background-color: #82d1c6;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .view-btn:focus {
@@ -620,6 +647,16 @@ h1, h2, h3, h4 {
   font-size: 12px;
   border-radius: 3px;
   background-color: #005792;
+}
+
+@media (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+  .view-btns {
+    position: absolute;
+    visibility: hidden;
+  }
 }
 
 footer {
