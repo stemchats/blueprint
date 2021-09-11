@@ -60,18 +60,14 @@ h1, h2, h3, h4 {
     
 }
 
-.container,
-.container-fluid {
-    position: relative;
-    padding: 150px 1.5rem 70px;
-}
+
 
 //JOURNALS
 #journalpage{
     .container,
     .container-fluid {
         position: relative;
-        padding: 150px 1.5rem 70px;
+        padding: 90px 1.5rem 70px;
     }
 
     .text-center {
@@ -314,7 +310,9 @@ header {
 
     .navbar {
         
-        padding: 20 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 10px;
         line-height: 74px;
         background-color: $blue;
 
@@ -388,6 +386,7 @@ header {
             .nav-link {
                 font-weight: 800px;
                 color: #fff;
+                //margin-left: 150px;
 
                 &:hover {
                     color: #82d1c6;
@@ -404,50 +403,51 @@ header {
             }
         }
 
-        .dropdown:hover {
-            z-index: 0;
-            position:relative;
-            display: inline-block;
-       
-            .dropdown-menu {
-                margin-top: -1px;
-                display: block;
-                background-color:$blue;
-                width:100%;
-                justify-content: end;
-                
-                .dropdown-item{
-                    color:white;
-
-                }
-                .dropdown-item:hover{
-                    color:$teal;
-                    font-style:bold;
-                    background-color:$blue;
-                }
-            }
         
+        
+
+        .dropdown-menu{
+            background-color:$blue;
+            border:none;
+            outline:none;
+            box-shadow:none;
         }
+
+        .dropdown-item{
+            color:white;
+            background-color:$blue;
+
+            &:hover{
+                color:$teal;
+                font-style:bold;
+            }
+        }
+
+        
 
         .custom-toggler .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
           
-        .custom-toggler.navbar-toggler {
+        .custom-toggler.navbar-toggler:focus,
+        .custom-toggler.navbar-toggler:active,
+        .custom-toggler.navbar-toggler-icon:focus,
+        .custom-toggler.navbar-toggler{
             border:none;
+            outline:none;
+            box-shadow:none;
         } 
+
+
 
     }
 }
 
 // TEAM
 
-.container,
-.container-fluid {
-    position: relative;
-    padding: 150px 1.5rem 70px;
+#aboutus{
+    margin-top: 90px;
 }
-
 .team-header {
     text-align: center;
     margin-bottom: 30px;
@@ -540,7 +540,7 @@ header {
 // BLOG
 
 #medium{
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 h1, h2, h3, h4 {
@@ -675,7 +675,7 @@ footer {
     .container-fluid {
         width: 100%;
         background-color: $blue;
-        padding: 30px 40px;
+        padding:30px 40px;
         min-height: 150px;
     }
 
@@ -740,13 +740,21 @@ footer {
         }
     }
 
+    .row-social{
+        padding-top: 20px;
+    }
     .icon {
-        color: white;
+        color:white;
         margin: 0 10px;
+        padding-right:15px;
 
         &:hover {
             color: $teal;
         }
+    }
+
+    .row-mission{
+        padding-top: 20px;
     }
 
     .mission {
@@ -898,7 +906,7 @@ footer {
 #get-involved {
     font-family: 'Karla';
     font-size: 18px;
-    margin-top: 100px;
+    margin-top: 90px;
 
     // .container,
     // .container-fluid {
@@ -911,7 +919,7 @@ footer {
     }
 
     title{
-        margin-top: 20px;
+        margin-top: 0px;
         font-family: 'Roboto Slab';
     }
 
@@ -1058,7 +1066,7 @@ footer {
     }
     
     .journalimage{
-        width:150px;
+        width:190px;
         margin-left: 120px;
     }
     
@@ -1081,6 +1089,7 @@ footer {
     .carouselrow{
         justify-content: center;
         text-align: center;
+        height: 150px;
     }
     
     .carouselcontainer{
@@ -1115,22 +1124,54 @@ footer {
             color:$blue;
         }
     
+        .carousel-indicators{
+            z-index: 0;
+        }
         .carousel .carousel-indicators li {
             background-color:$blue;
         }
         .carousel .carousel-indicators li.active {
             background-color:$dark-blue;
         }
-    
+
+        
         .carousel-item{
             width:900px;
-            margin-left: 250px;
+            margin-left: 240px;
+            transition-duration: 2s;;
         }
     
         .carousel-caption {
             color:black;
             position: relative;
             left: 0;
+            margin-top: 20px;
+        }
+
+        .carousel .carousel-item {
+            transition-duration: 2s;
+        }
+        
+        
+        
+        html, 
+        body, 
+        .carousel, 
+        .carousel-inner, 
+        .carousel-inner .item {
+            height: 100%;
+        }
+        
+        .item:nth-child(1) {
+            background: #74C390;
+        }
+        
+        .item:nth-child(2) {
+            background: #51BCE8;
+        }
+        
+        .item:nth-child(3) {
+            background: #E46653;
         }
     
     }

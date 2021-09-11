@@ -41,16 +41,10 @@ h1, h2, h3, h4 {
   font-family: 'Roboto Slab', serif;
 }
 
-.container,
-.container-fluid {
-  position: relative;
-  padding: 150px 1.5rem 70px;
-}
-
 #journalpage .container,
 #journalpage .container-fluid {
   position: relative;
-  padding: 150px 1.5rem 70px;
+  padding: 90px 1.5rem 70px;
 }
 
 #journalpage .text-center {
@@ -292,7 +286,9 @@ header {
 }
 
 header .navbar {
-  padding: 20 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
   line-height: 74px;
   background-color: #005792;
 }
@@ -398,44 +394,40 @@ header .navbar .nav-item.active .nav-link {
   color: #82d1c6;
 }
 
-header .navbar .dropdown:hover {
-  z-index: 0;
-  position: relative;
-  display: inline-block;
-}
-
-header .navbar .dropdown:hover .dropdown-menu {
-  margin-top: -1px;
-  display: block;
+header .navbar .dropdown-menu {
   background-color: #005792;
-  width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-header .navbar .dropdown:hover .dropdown-menu .dropdown-item {
+header .navbar .dropdown-item {
   color: white;
+  background-color: #005792;
 }
 
-header .navbar .dropdown:hover .dropdown-menu .dropdown-item:hover {
+header .navbar .dropdown-item:hover {
   color: #82d1c6;
   font-style: bold;
-  background-color: #005792;
 }
 
 header .navbar .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+header .navbar .custom-toggler.navbar-toggler:focus,
+header .navbar .custom-toggler.navbar-toggler:active,
+header .navbar .custom-toggler.navbar-toggler-icon:focus,
 header .navbar .custom-toggler.navbar-toggler {
   border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.container,
-.container-fluid {
-  position: relative;
-  padding: 150px 1.5rem 70px;
+#aboutus {
+  margin-top: 90px;
 }
 
 .team-header {
@@ -529,7 +521,7 @@ header .navbar .custom-toggler.navbar-toggler {
 }
 
 #medium {
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 h1, h2, h3, h4 {
@@ -733,13 +725,22 @@ footer .container-overlay:hover .overlay {
   width: 150px;
 }
 
+footer .row-social {
+  padding-top: 20px;
+}
+
 footer .icon {
   color: white;
   margin: 0 10px;
+  padding-right: 15px;
 }
 
 footer .icon:hover {
   color: #82d1c6;
+}
+
+footer .row-mission {
+  padding-top: 20px;
 }
 
 footer .mission {
@@ -878,7 +879,7 @@ footer .row-bottom {
 #get-involved {
   font-family: 'Karla';
   font-size: 18px;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 #get-involved h1 {
@@ -886,7 +887,7 @@ footer .row-bottom {
 }
 
 #get-involved title {
-  margin-top: 20px;
+  margin-top: 0px;
   font-family: 'Roboto Slab';
 }
 
@@ -1032,7 +1033,7 @@ footer .row-bottom {
 }
 
 #homepage .journalimage {
-  width: 150px;
+  width: 190px;
   margin-left: 120px;
 }
 
@@ -1057,6 +1058,7 @@ footer .row-bottom {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  height: 150px;
 }
 
 #homepage .carouselcontainer {
@@ -1089,6 +1091,10 @@ footer .row-bottom {
   color: #005792;
 }
 
+#homepage #magnifycarousel .carousel-indicators {
+  z-index: 0;
+}
+
 #homepage #magnifycarousel .carousel .carousel-indicators li {
   background-color: #005792;
 }
@@ -1099,12 +1105,40 @@ footer .row-bottom {
 
 #homepage #magnifycarousel .carousel-item {
   width: 900px;
-  margin-left: 250px;
+  margin-left: 240px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 #homepage #magnifycarousel .carousel-caption {
   color: black;
   position: relative;
   left: 0;
+  margin-top: 20px;
+}
+
+#homepage #magnifycarousel .carousel .carousel-item {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+#homepage #magnifycarousel html,
+#homepage #magnifycarousel body,
+#homepage #magnifycarousel .carousel,
+#homepage #magnifycarousel .carousel-inner,
+#homepage #magnifycarousel .carousel-inner .item {
+  height: 100%;
+}
+
+#homepage #magnifycarousel .item:nth-child(1) {
+  background: #74C390;
+}
+
+#homepage #magnifycarousel .item:nth-child(2) {
+  background: #51BCE8;
+}
+
+#homepage #magnifycarousel .item:nth-child(3) {
+  background: #E46653;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -22,99 +22,41 @@ $cards-per-line: (
 
 @media screen and (max-width: 479px) {
     /* start of phone styles */
+
     header{
-        height:100px;
+        max-height:50px;
         .navbar{
-            align-items: center;
-            padding: 0px 0px 0px 10px;
             .navbar-brand{
-                //padding-top:15px;
-                margin:0px;
-                justify-content:center;
+                margin-left: 10px;
             }
+
             .logo-img {
-                margin-left:10px;
                 max-width: 70px;
                 width:100%;
+                margin-right: 5px;
+                align-items: center;
             }
 
             .logo-text {
-                padding-top: 0px;
-                font-weight: bold;
-                z-index: 10;
-                font-size: 34px;
-                letter-spacing: 5px;
-                z-index:5;
-                margin:0px;
-            }
-
-            .stemchats{
-                margin:0px;
-                justify-content:center;
-                padding-left:105px;
-                padding-bottom: 20px;
+                font-size: 40px;
             }
         }
-    }
-    
-    
-}
 
-@media screen and (max-width: 991px) {
-    /* start of medium tablet styles */
-
-    .stemchats{
-        margin:0px;
-        justify-content:center;
-        padding-left:155px;
-    }
-    .logo-img {
-        max-width: 70px;
-        width:100%;
-        margin-right: 20px;
-        align-items: center;
     }
 
-    .navbar-brand{
-        justify-content: center;
-    }
+    footer{
 
-}
-
-@media screen and (max-width: 1200px){
-    /* start of navbar toggler showing up*/
-
-    header{
-        .navbar{
-            justify-content: end;
-
-            .nav-item{
-                color: red;
-                justify-content: end;
-            }
-            
+       .blog{
+           text-align: center;
+       }
+        .icon{
+            padding-right: 0px;
         }
-    }   
 
-}
-
-@each $name, $breakpoint in $grid-breakpoints {
-    @media (min-width: $breakpoint) {
-        .card-deck .card {
-            flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+        .row-mission{
+            padding-top: 20px;
         }
     }
-}
-
-@media (max-width: 700px) {
-    .modal-body .img-fluid {
-        float: none;
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    /* start of phone styles */
 
     #page{
         margin: 20px 20px;
@@ -180,96 +122,11 @@ $cards-per-line: (
             text-align:center;
         }
     }
-}
-
-@media screen and (max-width: 991px) {
-    /* start of medium tablet styles */
-    #page{
-        margin: 40px 40px;
-
-        #ourmission{
-
-            .blueprint{
-                margin-top:60px;
-                margin-bottom: auto;
-            }
-    
-            .magnify{
-                margin-top:auto;
-            }
-        }
-
-        #support{
-            .handshake{
-                align-items: center;
-            }
-
-            .icon{
-                text-align: center;
-                margin:auto;
-            }
-        }
-    }
-
-    #get-involved{
-        .images{
-            text-align:center;
-        }
-
-        .textbox{
-            text-align: center;
-            justify-content:center;
-        }
-
-        .title{
-            justify-content:center;
-            text-align:center;
-        }
-
-        .btn{
-            margin:0 auto;
-            display:block;
-        }
-
-        .card-body{
-            justify-content:center;
-            text-align:center;
-        }
-    }
-
-    
-}
-
-
-@media screen and (max-width: 1600px){
-    /* start of large tablet styles */
-
-    .write-img{
-        width:100%;
-        max-width:500px;
-        height:auto;
-    }
-
-    #get-involved{
-    
-        .card-body{
-            justify-content:center;
-            text-align:center;
-        }
-
-
-    }
-    
-
-}
-
-//HOME
-@media screen and (max-width: 479px){
-    /* start of phone styles */
 
     #homepage{
         #magnifycarousel{
             .carousel-item{
+                margin-top: 20px;
                 width:100%;
                 margin-left:0px;
             }
@@ -325,16 +182,195 @@ $cards-per-line: (
         .partnerpic{
             margin-top: 15px;
         }
+
+        .carouselrow{
+            height:350px;
+        }
     }
-   
 
     
+    
+    
+}
+
+@media screen and (max-width: 991px) {
+    /* start of medium tablet styles */
+
+    header{
+        height:50px;
+        .navbar{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .navbar-brand{
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .logo-img {
+        max-width: 70px;
+        width:100%;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+
+    #page{
+        margin: 40px 40px;
+
+        #ourmission{
+
+            .blueprint{
+                margin-top:60px;
+                margin-bottom: auto;
+            }
+    
+            .magnify{
+                margin-top:auto;
+            }
+        }
+
+        #support{
+            .handshake{
+                align-items: center;
+            }
+
+            .icon{
+                text-align: center;
+                margin:auto;
+            }
+        }
+    }
+
+    #get-involved{
+        .images{
+            text-align:center;
+        }
+
+        .textbox{
+            text-align: center;
+            justify-content:center;
+        }
+
+        .title{
+            justify-content:center;
+            text-align:center;
+        }
+
+        .btn{
+            margin:0 auto;
+            display:block;
+        }
+
+        .card-body{
+            justify-content:center;
+            text-align:center;
+        }
+    }
+
+    footer{
+        .row-social{
+            padding-bottom: 40px;
+        }
+
+        .icon{
+            padding-right: 0px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1600px){
+    /* start of large tablet styles */
+
+    .write-img{
+        width:100%;
+        max-width:500px;
+        height:auto;
+    }
+
+    #get-involved{
+    
+        .card-body{
+            justify-content:center;
+            text-align:center;
+        }
+
+
+    }   
+
+}
+
+@media screen and (max-width: 1200px){
+    /* start of navbar toggler showing up*/
+
+    header{
+        max-height:50px;
+        .navbar{
+            justify-content: end;
+
+            .nav-item{
+                line-height: 20px;
+            }
+        
+            .dropdown:active{
+                z-index: 0;
+                position:relative;
+                //display: inline-block;
+    
+                .dropdown-menu {
+                    margin-top: -1px;
+                    //display: block;
+                    width:100%;
+                    justify-content: end;
+                }
+    
+            }
+        }
+
+        
+    }  
+
+    footer{
+        .icon{
+            padding-right: 0px;
+        }
+    }
+
+}
+
+
+@each $name, $breakpoint in $grid-breakpoints {
+    @media (min-width: $breakpoint) {
+        .card-deck .card {
+            flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .modal-body .img-fluid {
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+    
+//HOME
+
+@media screen and (max-width:479px){
+
 }
 
 @media screen and (min-width: 479px) and (max-width: 991px){
     /* start of medium tablet styles */
 
     #homepage{
+        .carouselrow{
+            height:200px
+        }
 
         #magnifycarousel{
             .carousel-item{
@@ -377,13 +413,13 @@ $cards-per-line: (
     
         .journalstats{
             justify-content: center;
-            padding-left: 150px;
+            padding-left: 270px;
             margin-top: 0px;
         }
     
         .journalimage{
             width:150px;
-            margin-left: 150px;
+            margin-left: 270px;
         }
 
         .journaltext{
@@ -406,6 +442,8 @@ $cards-per-line: (
     /* large tablet styles */
     #homepage{
         #magnifycarousel{
+            
+        
             .carousel-item{
                 width:100%;
                 margin-left:0px;
@@ -444,7 +482,7 @@ $cards-per-line: (
         }
     
         .journalimage{
-            margin-left: 100px;
+            margin-left: 60px;
         }
 
     }
