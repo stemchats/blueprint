@@ -64,10 +64,12 @@ h1, h2, h3, h4 {
 
 //JOURNALS
 #journalpage{
+    margin-bottom: 100px;
     .container,
     .container-fluid {
         position: relative;
         padding: 90px 1.5rem 70px;
+        
     }
 
     .text-center {
@@ -525,6 +527,12 @@ header {
     padding: 25px;
 }
 
+.row2{
+    margin-bottom: 100px;
+}
+
+
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -540,7 +548,8 @@ header {
 // BLOG
 
 #medium{
-    margin-top: 0px;
+    margin-top: 90px;
+    margin-bottom: 100px;
 }
 
 h1, h2, h3, h4 {
@@ -673,9 +682,10 @@ footer {
     font-family: 'Karla';
 
     .container-fluid {
+        z-index: 0;
         width: 100%;
         background-color: $blue;
-        padding:30px 40px;
+        padding:40px 40px;
         min-height: 150px;
     }
 
@@ -685,6 +695,14 @@ footer {
 
     p {
         color: $light-blue
+    }
+
+    .rowtop{
+        padding-top: 10px;
+    }
+
+    .row-magnify{
+        text-align: center;
     }
 
     .nextlink {
@@ -704,7 +722,9 @@ footer {
     .magnify-logo {
         width: 150px;
     }
-
+    .magnify{
+        text-align: center;
+    }
     .text-overlay {
         white-space: nowrap;
         color: white;
@@ -732,6 +752,7 @@ footer {
     }
 
     .container-overlay {
+        justify-content: center;
         position: relative;
         width: 50%;
 
@@ -740,13 +761,18 @@ footer {
         }
     }
 
-    .row-social{
-        padding-top: 20px;
+    .row-blog{
+        text-align: center;
     }
+
+    .row-social{
+        padding-top: 80px;
+        text-align: center;
+    }
+
     .icon {
         color:white;
-        margin: 0 10px;
-        padding-right:15px;
+        padding:15px;
 
         &:hover {
             color: $teal;
@@ -791,7 +817,8 @@ footer {
     }
 
     #ourmission {
-        margin-top:50px ;
+        margin-top:90px ;
+        margin-bottom: 50px;
 
         .opening {
             padding-top:15px;
@@ -847,7 +874,8 @@ footer {
     }
 
     #partners {
-        margin-top: 50px;
+        margin-top: 90px;
+        margin-bottom: 100px;
 
         .textbox {
             text-align: center;
@@ -907,6 +935,7 @@ footer {
     font-family: 'Karla';
     font-size: 18px;
     margin-top: 90px;
+    margin-bottom: 100px;
 
     // .container,
     // .container-fluid {
@@ -1093,7 +1122,7 @@ footer {
     }
     
     .carouselcontainer{
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     
     #magnifycarousel{
@@ -1149,7 +1178,7 @@ footer {
         }
 
         .carousel .carousel-item {
-            transition-duration: 2s;
+            transition-duration: 1s;
         }
         
         

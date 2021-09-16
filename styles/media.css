@@ -17,11 +17,19 @@
   header .navbar .logo-text {
     font-size: 40px;
   }
-  footer .blog {
+  footer .container-fluid {
+    padding: 40px 20px;
+  }
+  footer .get-involved {
     text-align: center;
   }
-  footer .icon {
-    padding-right: 0px;
+  footer .blog {
+    text-align: center;
+    margin: 0px;
+  }
+  footer .row-social {
+    padding-top: 50px;
+    text-align: center;
   }
   footer .row-mission {
     padding-top: 20px;
@@ -193,8 +201,15 @@
             justify-content: center;
     text-align: center;
   }
+  footer .get-involved {
+    text-align: center;
+  }
   footer .row-social {
     padding-bottom: 40px;
+  }
+  footer .blog {
+    text-align: center;
+    margin-left: 40px;
   }
   footer .icon {
     padding-right: 0px;
@@ -239,6 +254,10 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+  }
+  footer .get-involved {
+    text-align: center;
+    padding-bottom: 30px;
   }
   footer .icon {
     padding-right: 0px;

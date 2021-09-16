@@ -41,6 +41,10 @@ h1, h2, h3, h4 {
   font-family: 'Roboto Slab', serif;
 }
 
+#journalpage {
+  margin-bottom: 100px;
+}
+
 #journalpage .container,
 #journalpage .container-fluid {
   position: relative;
@@ -513,6 +517,10 @@ header .navbar .custom-toggler.navbar-toggler {
   padding: 25px;
 }
 
+.row2 {
+  margin-bottom: 100px;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .img-hover img {
     height: 300px;
@@ -521,7 +529,8 @@ header .navbar .custom-toggler.navbar-toggler {
 }
 
 #medium {
-  margin-top: 0px;
+  margin-top: 90px;
+  margin-bottom: 100px;
 }
 
 h1, h2, h3, h4 {
@@ -656,9 +665,10 @@ footer {
 }
 
 footer .container-fluid {
+  z-index: 0;
   width: 100%;
   background-color: #005792;
-  padding: 30px 40px;
+  padding: 40px 40px;
   min-height: 150px;
 }
 
@@ -668,6 +678,14 @@ footer h4 {
 
 footer p {
   color: #b3cdde;
+}
+
+footer .rowtop {
+  padding-top: 10px;
+}
+
+footer .row-magnify {
+  text-align: center;
 }
 
 footer .nextlink {
@@ -686,6 +704,10 @@ footer .link:hover {
 
 footer .magnify-logo {
   width: 150px;
+}
+
+footer .magnify {
+  text-align: center;
 }
 
 footer .text-overlay {
@@ -717,6 +739,9 @@ footer .overlay {
 }
 
 footer .container-overlay {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   width: 50%;
 }
@@ -725,14 +750,18 @@ footer .container-overlay:hover .overlay {
   width: 150px;
 }
 
+footer .row-blog {
+  text-align: center;
+}
+
 footer .row-social {
-  padding-top: 20px;
+  padding-top: 80px;
+  text-align: center;
 }
 
 footer .icon {
   color: white;
-  margin: 0 10px;
-  padding-right: 15px;
+  padding: 15px;
 }
 
 footer .icon:hover {
@@ -775,7 +804,8 @@ footer .row-bottom {
 }
 
 #page #ourmission {
-  margin-top: 50px;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 
 #page #ourmission .opening {
@@ -828,7 +858,8 @@ footer .row-bottom {
 }
 
 #page #partners {
-  margin-top: 50px;
+  margin-top: 90px;
+  margin-bottom: 100px;
 }
 
 #page #partners .textbox {
@@ -880,6 +911,7 @@ footer .row-bottom {
   font-family: 'Karla';
   font-size: 18px;
   margin-top: 90px;
+  margin-bottom: 100px;
 }
 
 #get-involved h1 {
@@ -1062,7 +1094,7 @@ footer .row-bottom {
 }
 
 #homepage .carouselcontainer {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 #homepage #magnifycarousel .Carousel {
@@ -1118,8 +1150,8 @@ footer .row-bottom {
 }
 
 #homepage #magnifycarousel .carousel .carousel-item {
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 #homepage #magnifycarousel html,
