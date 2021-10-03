@@ -10,13 +10,33 @@ $grid-breakpoints: (
 $grid-gutter-width: 30px !default;
 
 // number of cards per line for each breakpoint
-$cards-per-line: (
+$get-involved-cards-per-line: (
     xs: 1,
     sm: 1,
-    md: 1,
+    md: 2,
     lg: 4,
-    xl: 5
+    xl: 4
 );
+$homepage-cards-per-line: (
+    xs: 1,
+    sm: 1,
+    md: 2,
+    lg: 2,
+    xl: 2
+);
+
+
+@each $name, $breakpoint in $grid-breakpoints {
+    @media (min-width: $breakpoint) {
+        #get-involved .card-deck .card {
+            flex: 0 0 calc(#{100/map-get($get-involved-cards-per-line, $name)}% - #{$grid-gutter-width});
+        }
+
+        #homepage .card-deck .card {
+            flex: 0 0 calc(#{100/map-get($homepage-cards-per-line, $name)}% - #{$grid-gutter-width});
+        }
+    }
+}
 
 //NAVBAR
 
@@ -57,11 +77,6 @@ $cards-per-line: (
            text-align: center;
            margin: 0px;
        }
-
-       .row-social{
-        padding-top: 50px;
-        text-align: center;
-        }
 
         .row-mission{
             padding-top: 20px;
@@ -171,13 +186,11 @@ $cards-per-line: (
 
         .journalstats{
             justify-content: center;
-            padding-left: 80px;
             margin-top: 0px;
         }
     
         .journalimage{
             width:150px;
-            margin-left: 100px;
         }
     
         .journaltext{
@@ -283,9 +296,6 @@ $cards-per-line: (
         .get-involved{
             text-align: center;
         }
-        .row-social{
-            padding-bottom: 40px;
-        }
 
         .blog{
             text-align: center;
@@ -352,7 +362,6 @@ $cards-per-line: (
 
     footer{
         .get-involved{
-            text-align: center;
             padding-bottom: 30px;
         }
         .icon{
@@ -360,15 +369,6 @@ $cards-per-line: (
         }
     }
 
-}
-
-
-@each $name, $breakpoint in $grid-breakpoints {
-    @media (min-width: $breakpoint) {
-        .card-deck .card {
-            flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
-        }
-    }
 }
 
 @media (max-width: 700px) {
@@ -382,10 +382,6 @@ $cards-per-line: (
 
     
 //HOME
-
-@media screen and (max-width:479px){
-
-}
 
 @media screen and (min-width: 479px) and (max-width: 991px){
     /* start of medium tablet styles */
@@ -436,13 +432,11 @@ $cards-per-line: (
     
         .journalstats{
             justify-content: center;
-            padding-left: 270px;
             margin-top: 0px;
         }
     
         .journalimage{
             width:150px;
-            margin-left: 270px;
         }
 
         .journaltext{
@@ -498,14 +492,6 @@ $cards-per-line: (
             position: relative;
             padding-top: 70px;
             padding-bottom:0px;
-        }
-
-        .journalstats{
-            padding-left: 10px;
-        }
-    
-        .journalimage{
-            margin-left: 60px;
         }
 
     }

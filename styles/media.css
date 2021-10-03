@@ -1,3 +1,68 @@
+@media (min-width: 0) {
+  #get-involved .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 30px);
+            flex: 0 0 calc(100% - 30px);
+  }
+  #homepage .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 30px);
+            flex: 0 0 calc(100% - 30px);
+  }
+}
+
+@media (min-width: 576px) {
+  #get-involved .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 30px);
+            flex: 0 0 calc(100% - 30px);
+  }
+  #homepage .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 30px);
+            flex: 0 0 calc(100% - 30px);
+  }
+}
+
+@media (min-width: 768px) {
+  #get-involved .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 30px);
+            flex: 0 0 calc(50% - 30px);
+  }
+  #homepage .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 30px);
+            flex: 0 0 calc(50% - 30px);
+  }
+}
+
+@media (min-width: 992px) {
+  #get-involved .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(25% - 30px);
+            flex: 0 0 calc(25% - 30px);
+  }
+  #homepage .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 30px);
+            flex: 0 0 calc(50% - 30px);
+  }
+}
+
+@media (min-width: 1600px) {
+  #get-involved .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(25% - 30px);
+            flex: 0 0 calc(25% - 30px);
+  }
+  #homepage .card-deck .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 30px);
+            flex: 0 0 calc(50% - 30px);
+  }
+}
+
 @media screen and (max-width: 479px) {
   /* start of phone styles */
   header {
@@ -26,10 +91,6 @@
   footer .blog {
     text-align: center;
     margin: 0px;
-  }
-  footer .row-social {
-    padding-top: 50px;
-    text-align: center;
   }
   footer .row-mission {
     padding-top: 20px;
@@ -115,12 +176,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 80px;
     margin-top: 0px;
   }
   #homepage .journalimage {
     width: 150px;
-    margin-left: 100px;
   }
   #homepage .journaltext {
     margin-top: 20px;
@@ -204,9 +263,6 @@
   footer .get-involved {
     text-align: center;
   }
-  footer .row-social {
-    padding-bottom: 40px;
-  }
   footer .blog {
     text-align: center;
     margin-left: 40px;
@@ -256,51 +312,10 @@
             justify-content: end;
   }
   footer .get-involved {
-    text-align: center;
     padding-bottom: 30px;
   }
   footer .icon {
     padding-right: 0px;
-  }
-}
-
-@media (min-width: 0) {
-  .card-deck .card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100% - 30px);
-            flex: 0 0 calc(100% - 30px);
-  }
-}
-
-@media (min-width: 576px) {
-  .card-deck .card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100% - 30px);
-            flex: 0 0 calc(100% - 30px);
-  }
-}
-
-@media (min-width: 768px) {
-  .card-deck .card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100% - 30px);
-            flex: 0 0 calc(100% - 30px);
-  }
-}
-
-@media (min-width: 992px) {
-  .card-deck .card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(25% - 30px);
-            flex: 0 0 calc(25% - 30px);
-  }
-}
-
-@media (min-width: 1600px) {
-  .card-deck .card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(20% - 30px);
-            flex: 0 0 calc(20% - 30px);
   }
 }
 
@@ -350,12 +365,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 270px;
     margin-top: 0px;
   }
   #homepage .journalimage {
     width: 150px;
-    margin-left: 270px;
   }
   #homepage .journaltext {
     margin-top: 20px;
@@ -392,12 +405,6 @@
     position: relative;
     padding-top: 70px;
     padding-bottom: 0px;
-  }
-  #homepage .journalstats {
-    padding-left: 10px;
-  }
-  #homepage .journalimage {
-    margin-left: 60px;
   }
 }
 /*# sourceMappingURL=media.css.map */

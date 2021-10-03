@@ -13,6 +13,13 @@ $dark-blue : #13334c;
 $red : #ff5959;
 $teal : #82d1c6;
 
+@mixin center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -20,44 +27,90 @@ $teal : #82d1c6;
     font-family: 'Karla', sans-serif;
 }
 
-//MAIN
-
-.small-box-title {
-    //h3
-    margin-top: 10rem;
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: capitalize;
+html, body {
+    overflow-x: hidden;
 }
+
+//MAIN
 
 h1, h2, h3, h4 {
     font-family: 'Roboto Slab', serif;
 }
 
+.large-box-title {
+    //h1
+    margin-bottom: 25px;
+}
 .medium-box-title {
     //h2
-    margin-top: 10rem;
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.small-box-title {
+    //h3, h4
+    margin-bottom: 15px;
 }
 
-.large-box-title {
-    //FAQ
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-family: 'Roboto Slab', serif;
-    
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.large-box-title-first {
-    //h1
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-family: 'Roboto Slab', serif;
+.light-blue {
+    color: $light-blue;
+}
+.blue {
+    color: $blue;
+}
+.dark-blue {
+    color: $dark-blue;
+}
+.red {
+    color: $red;
+}
+.teal {
+    color: $teal;
+}
+.white {
+    color: white;
+}
+
+.hover-swipe {
+    overflow: hidden;
+    background: linear-gradient(45deg, $red, $red 50%, $dark-blue 50%);
+    width: fit-content;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 0.5s ease-in-out;
     
+    &:hover {
+        background-position: 0 100%;
+    }
+}
+
+.important {
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    border: 1px solid $red;
+    border-radius: 25px;
+
+    p {
+        margin: 0;
+    }
+}
+    
+.linkintext {
+    font-weight: bolder;
+    color: $blue;
+
+    &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid;
+        color: $blue;
+        background-color: #99d6ff;
+    }
 }
 
 
@@ -65,6 +118,8 @@ h1, h2, h3, h4 {
 //JOURNALS
 #journalpage{
     margin-bottom: 100px;
+    font-size: 18px;
+
     .container,
     .container-fluid {
         position: relative;
@@ -203,37 +258,36 @@ h1, h2, h3, h4 {
             }
 
             .content{
-            position:relative;
-            background: #fff;
-            height: 0;
-            overflow:hidden;
-            transition: 0.5s;
-            overflow-y: auto;
-            box-shadow:0px 0px 15px rgba(0, 0, 0, 0.18);
+                position: relative;
+                background: #fff;
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s;
+                overflow-y: none;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
 
-            p{
-                font-size: 16px;
-                padding: 15px 20px;
-                font-family: karla;
+                p{
+                    font-size: 16px;
+                    padding: 20px;
+                    margin-bottom: 0;
 
-                    a{
-                        font-weight: bolder;
-                        color: $blue;
-            
-                        &:hover {
-                            text-decoration: none;
-                            border-bottom: 1px solid;
+                        a{
+                            font-weight: bolder;
                             color: $blue;
-                            background-color: #99d6ff;
+                
+                            &:hover {
+                                text-decoration: none;
+                                border-bottom: 1px solid;
+                                color: $blue;
+                                background-color: #99d6ff;
+                            }
                         }
-                    }
-            }
+                }
             }
         }
         
         .contentBx.active .content{
             height: 150px;
-            padding: 10px;
         }
         .contentBx.active .label::before{
             content:'\2296';
@@ -242,7 +296,6 @@ h1, h2, h3, h4 {
         p{
             font-size: 16px;
             padding: 15px 20px;
-            font-family: karla;
 
                 a{
                     font-weight: bolder;
@@ -311,7 +364,6 @@ header {
     background-color: $blue;
 
     .navbar {
-        
         padding-top: 20px;
         padding-bottom: 20px;
         padding-right: 10px;
@@ -389,10 +441,10 @@ header {
                 font-weight: 800px;
                 color: #fff;
                 //margin-left: 150px;
+                transition: 0.5s;
 
                 &:hover {
                     color: #82d1c6;
-                    transition: 0.5s;
                 }
             }
 
@@ -679,51 +731,25 @@ h1, h2, h3, h4 {
 // FOOTER
 
 footer {
-    font-family: 'Karla';
+    background-color: $blue;
+    width: 100%;
+    padding: 40px;
+    color: $light-blue;
 
-    .container-fluid {
-        z-index: 0;
-        width: 100%;
-        background-color: $blue;
-        padding:40px 40px;
-        min-height: 150px;
-    }
+    .get-involved {
+        a {
+            color: $light-blue;
 
-    h4 {
-        color: white;
-    }
-
-    p {
-        color: $light-blue
-    }
-
-    .rowtop{
-        padding-top: 10px;
-    }
-
-    .row-magnify{
-        text-align: center;
-    }
-
-    .nextlink {
-        color: white
-    }
-
-    .link {
-        color: $light-blue;
-
-        &:hover {
-            color: $teal;
-            text-decoration: none;
-            border-bottom: 1px solid;
+            &:hover {
+                color: $teal;
+                text-decoration: none;
+                border-bottom: 1px solid;
+            }
         }
     }
 
     .magnify-logo {
         width: 150px;
-    }
-    .magnify{
-        text-align: center;
     }
     .text-overlay {
         white-space: nowrap;
@@ -761,29 +787,21 @@ footer {
         }
     }
 
-    .row-blog{
-        text-align: center;
-    }
+    .socials {
+        padding-top: 30px;
 
-    .row-social{
-        padding-top: 80px;
-        text-align: center;
-    }
-
-    .icon {
-        color:white;
-        padding:15px;
-
-        &:hover {
-            color: $teal;
+        .icon {
+            color:white;
+            padding:15px;
+    
+            &:hover {
+                color: $teal;
+            }
         }
     }
 
-    .row-mission{
+    .mission{
         padding-top: 20px;
-    }
-
-    .mission {
         font-size: 25px;
         font-weight: 700;
         color: $teal;
@@ -792,12 +810,9 @@ footer {
     }
 
     .bottom {
+        text-align: center;
         color: white;
         font-size: 13px;
-    }
-
-    .row-bottom {
-        text-align: center;
     }
 }
 
@@ -809,7 +824,7 @@ footer {
     margin: 0px 90px;
 
     .textbox {
-        margin: 30px 10px;
+        margin: 20px 10px;
     }
 
     h1{
@@ -819,15 +834,6 @@ footer {
     #ourmission {
         margin-top:90px ;
         margin-bottom: 50px;
-
-        .opening {
-            padding-top:15px;
-            padding-left:10px;
-            padding-right:10px;
-            text-align: center;
-            border:1px solid $red;
-            border-radius: 25px;
-        }
 
         a {
             font-weight: bolder;
@@ -845,10 +851,6 @@ footer {
         .title {
             padding: 10px;
             text-align: center;
-        }
-
-        .textbox {
-            text-align: justify;
         }
 
         .research-img {
@@ -1033,15 +1035,7 @@ footer {
 
 //HOME
 #homepage{
-    h1, h2, h3, h4 {
-        font-family: 'Roboto Slab', serif;
-    }
-    
-    .title{
-        margin-top: 20px;
-        margin-bottom:40px;
-        font-family: 'Roboto Slab';
-    }
+    font-size: 18px;
     
     .container,
     .container-fluid {
@@ -1050,83 +1044,7 @@ footer {
         padding-bottom:50px;
     }
     
-    .text{
-        text-align: center;
-        font-size:20px;
-    }
-    
-    .text-volume2{
-        text-align: center;
-        font-size:20px;
-        margin-top: 35px;;
-    
-    }
-    
-    .partnertext{
-        text-align: center;
-    }
-    
-    .intro{
-        margin-top:0px;
-    }
-    .cards{
-        padding-top:25px;
-    }
-    
-    .introcard{
-        padding:50px;
-        text-align: center;
-        border: none;
-        background-color: $light-blue;
-    }
-    
-    .journalstats{
-        font-size: 20px;
-        margin-top: 40px;
-        padding-left: 60px;
-        font-weight: bold;
-    
-        .numbers{
-            color:$red;
-            font-weight: bold;
-            font-size: 50px;
-            padding-right: 8px;
-        }
-    }
-    
-    .journalimage{
-        width:190px;
-        margin-left: 120px;
-    }
-    
-    .linkintext{
-        font-weight: bolder;
-        color: $blue;
-    
-        &:hover {
-            text-decoration: none;
-            border-bottom: 1px solid;
-            color: $blue;
-            background-color: #99d6ff;
-        }
-    }
-    
-    .partnerpic{
-        width:150px;
-    }
-    
-    .carouselrow{
-        justify-content: center;
-        text-align: center;
-        height: 150px;
-    }
-    
-    .carouselcontainer{
-        margin-bottom: 100px;
-    }
-    
     #magnifycarousel{
-    
         .Carousel{
             padding-bottom: 20px;
             background-color:$light-blue;
@@ -1203,6 +1121,67 @@ footer {
             background: #E46653;
         }
     
+    }
+
+    .introcards {
+        margin-bottom: 40px;
+
+        .card {
+            padding: 35px;
+            margin-bottom: 15px;
+            text-align: center;
+            border: none;
+            background-color: $light-blue;
+            transition: 0.25s;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+                color: $dark-blue;
+            }
+            &:hover h1 {
+                background-position: 0 100%;
+            }
+        }
+    }
+    
+    .journal {
+        .journalstats{
+            font-size: 20px;
+            font-weight: bold;
+        
+            .numbers{
+                color:$red;
+                font-weight: bold;
+                font-size: 50px;
+                padding-right: 8px;
+            }
+        }
+        
+        .journalimage{
+            width: 190px;
+        }
+    }
+
+    .partnercard {
+        margin-top: 30px;
+    }
+    
+    .carouselcontainer{
+        margin: 60px 0 75px;
+    
+        .carouselrow{
+            justify-content: center;
+            text-align: center;
+            height: 150px;
+    
+            .partnerpic{
+                width:150px;
+            }
+        }
     }
     
 
