@@ -35,6 +35,7 @@ html, body {
 
 h1, h2, h3, h4 {
     font-family: 'Roboto Slab', serif;
+    color: $dark-blue;
 }
 
 .large-box-title {
@@ -377,6 +378,7 @@ header {
         }
     
         .logo-text {
+            color: white;
             border: 0;
             transition: 0.5s;
             padding: 10px 5px 5px;
@@ -733,7 +735,7 @@ h1, h2, h3, h4 {
 footer {
     background-color: $blue;
     width: 100%;
-    padding: 40px;
+    padding: 40px 40px 5px;
     color: $light-blue;
 
     .get-involved {
@@ -788,7 +790,8 @@ footer {
     }
 
     .socials {
-        padding-top: 30px;
+        padding-top: 60px;
+        white-space: nowrap;
 
         .icon {
             color:white;
@@ -797,6 +800,12 @@ footer {
             &:hover {
                 color: $teal;
             }
+        }
+
+        &::before {
+            content: '';
+            width: 100%;
+            border-top: 1px solid black;
         }
     }
 

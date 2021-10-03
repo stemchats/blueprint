@@ -15,6 +15,7 @@ html, body {
 
 h1, h2, h3, h4 {
   font-family: 'Roboto Slab', serif;
+  color: #13334c;
 }
 
 .large-box-title {
@@ -364,6 +365,7 @@ header .navbar .logo-img {
 }
 
 header .navbar .logo-text {
+  color: white;
   border: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -721,7 +723,7 @@ h1, h2, h3, h4 {
 footer {
   background-color: #005792;
   width: 100%;
-  padding: 40px;
+  padding: 40px 40px 5px;
   color: #b3cdde;
 }
 
@@ -780,7 +782,8 @@ footer .container-overlay:hover .overlay {
 }
 
 footer .socials {
-  padding-top: 30px;
+  padding-top: 60px;
+  white-space: nowrap;
 }
 
 footer .socials .icon {
@@ -790,6 +793,12 @@ footer .socials .icon {
 
 footer .socials .icon:hover {
   color: #82d1c6;
+}
+
+footer .socials::before {
+  content: '';
+  width: 100%;
+  border-top: 1px solid black;
 }
 
 footer .mission {
