@@ -85,6 +85,9 @@
   footer .container-fluid {
     padding: 40px 20px;
   }
+  footer .container-overlay {
+    padding-right: 100px;
+  }
   footer .get-involved {
     text-align: center;
   }
@@ -94,6 +97,9 @@
   }
   footer .row-mission {
     padding-top: 20px;
+  }
+  footer .socials .icon {
+    padding: 10px;
   }
   #page {
     margin: 20px 20px;

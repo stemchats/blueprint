@@ -778,11 +778,19 @@ footer .container-overlay {
 }
 
 footer .container-overlay:hover .overlay {
-  width: 150px;
+  width: 155px;
+}
+
+footer .row {
+  padding-bottom: 50px;
+}
+
+footer hr {
+  margin: auto;
 }
 
 footer .socials {
-  padding-top: 60px;
+  padding-top: 50px;
   white-space: nowrap;
 }
 
@@ -811,7 +819,7 @@ footer .mission {
 }
 
 footer .bottom {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   color: white;
   font-size: 13px;
@@ -968,7 +976,7 @@ footer .bottom {
 }
 
 #get-involved .stemchats-img {
-  width: 300px;
+  width: 500px;
   height: auto;
 }
 
@@ -999,9 +1007,18 @@ footer .bottom {
 
 #get-involved .work,
 #get-involved .collaboration,
-#get-involved .opportunities,
-#get-involved .write {
+#get-involved .opportunities {
   padding: 20px;
+}
+
+#get-involved .work {
+  padding: 50px;
+}
+
+#get-involved .join {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #get-involved .card-title {

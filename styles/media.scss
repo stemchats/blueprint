@@ -66,10 +66,13 @@ $homepage-cards-per-line: (
 
     footer{
 
-        .container-fluid {
+        .container-fluid{
             padding:40px 20px;
         }
 
+        .container-overlay{
+            padding-right:100px;
+        }
         .get-involved{
             text-align: center;
         }
@@ -80,6 +83,12 @@ $homepage-cards-per-line: (
 
         .row-mission{
             padding-top: 20px;
+        }
+
+        .socials{
+            .icon{
+                padding:10px;
+            }
         }
     }
 
