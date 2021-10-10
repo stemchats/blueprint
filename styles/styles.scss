@@ -25,6 +25,7 @@ $teal : #82d1c6;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
+    font-size: 18px;
 }
 
 html, body {
@@ -75,12 +76,16 @@ h1, h2, h3, h4 {
 .white {
     color: white;
 }
+.black {
+    color: black;
+}
 
 .hover-swipe {
     overflow: hidden;
     background: linear-gradient(45deg, $red, $red 50%, $dark-blue 50%);
     width: fit-content;
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 100%;
     background-position: 100%;
@@ -144,6 +149,7 @@ h1, h2, h3, h4 {
         a{
             font-weight: bolder;
             color: $blue;
+            border-bottom: 1px solid;
         
             &:hover {
                 text-decoration: none;
@@ -218,6 +224,14 @@ h1, h2, h3, h4 {
             margin-bottom: 80px;
             text-align: center;
         }
+
+        .card-deck {
+            .card {
+                border: none;
+                background-color: $light-blue;
+                padding: 15px;
+            }
+        }
     }
 
     .accordion{
@@ -275,6 +289,7 @@ h1, h2, h3, h4 {
                         a{
                             font-weight: bolder;
                             color: $blue;
+                            border-bottom: 1px solid;
                 
                             &:hover {
                                 text-decoration: none;
@@ -301,6 +316,7 @@ h1, h2, h3, h4 {
                 a{
                     font-weight: bolder;
                     color: $blue;
+                    border-bottom: 1px solid;
         
                     &:hover {
                         text-decoration: none;
@@ -848,6 +864,7 @@ footer {
         a {
             font-weight: bolder;
             color: $red;
+            border-bottom: 1px solid;
 
             &:hover {
                 text-decoration: none;
@@ -896,10 +913,10 @@ footer {
         a {
             font-weight: bolder;
             color: $blue;
+            border-bottom: 1px solid;
 
             &:hover {
                 text-decoration: none;
-                border-bottom: 1px solid;
                 color: $blue;
                 background-color: #99d6ff;
             }
@@ -1056,25 +1073,25 @@ footer {
     
     #magnifycarousel{
         .Carousel{
-            padding-bottom: 20px;
-            background-color:$light-blue;
+            padding: 70px 2rem 60px;
+        }
+
+        .carousel-inner {
+            overflow: visible;
         }
     
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            height: 100px;
+        .carousel-control-prev,
+        .carousel-control-next {
             width: 100px;
             outline: black;
             background-size: 100%, 100%;
             background-image: none;
         }
-    
         .carousel-control-next-icon:after {
             content: '>';
             font-size: 55px;
             color: $blue;
         }
-    
         .carousel-control-prev-icon:after {
             content: '<';
             font-size: 55px;
@@ -1082,41 +1099,33 @@ footer {
         }
     
         .carousel-indicators{
-            z-index: 0;
-        }
-        .carousel .carousel-indicators li {
-            background-color:$blue;
-        }
-        .carousel .carousel-indicators li.active {
-            background-color:$dark-blue;
-        }
+            z-index: 5;
+            margin-bottom: -70px;
 
-        
-        .carousel-item{
-            width:900px;
-            margin-left: 240px;
-            transition-duration: 2s;;
-        }
-    
-        .carousel-caption {
-            color:black;
-            position: relative;
-            left: 0;
-            margin-top: 20px;
+            li {
+                background-color:$blue;
+
+                &.active {
+                    background-color:$dark-blue;
+                }
+            }
         }
 
         .carousel .carousel-item {
-            transition-duration: 1s;
+            max-width: 1200px;
+            width: 100%;
+            transition: 0.75s;
+
+            img {
+                height: 500px;
+                object-fit: cover;
+                object-position: center;
+            }
         }
-        
-        
-        
-        html, 
-        body, 
-        .carousel, 
-        .carousel-inner, 
-        .carousel-inner .item {
-            height: 100%;
+
+        .carousel-caption {
+            margin-bottom: -100px;
+            z-index: 5;
         }
         
         .item:nth-child(1) {

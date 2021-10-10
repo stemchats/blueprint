@@ -7,6 +7,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Karla', sans-serif;
+  font-size: 18px;
 }
 
 html, body {
@@ -60,6 +61,10 @@ h1, h2, h3, h4 {
   color: white;
 }
 
+.black {
+  color: black;
+}
+
 .hover-swipe {
   overflow: hidden;
   background: linear-gradient(45deg, #ff5959, #ff5959 50%, #13334c 50%);
@@ -67,6 +72,7 @@ h1, h2, h3, h4 {
   width: -moz-fit-content;
   width: fit-content;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 100%;
   background-position: 100%;
@@ -128,6 +134,7 @@ h1, h2, h3, h4 {
 #journalpage .center a {
   font-weight: bolder;
   color: #005792;
+  border-bottom: 1px solid;
 }
 
 #journalpage .center a:hover {
@@ -198,6 +205,12 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+#journalpage .Volume2 .card-deck .card {
+  border: none;
+  background-color: #b3cdde;
+  padding: 15px;
+}
+
 #journalpage .accordion {
   max-width: 800px;
   padding: 0 20px;
@@ -264,6 +277,7 @@ h1, h2, h3, h4 {
 #journalpage .accordion .contentBx .content p a {
   font-weight: bolder;
   color: #005792;
+  border-bottom: 1px solid;
 }
 
 #journalpage .accordion .contentBx .content p a:hover {
@@ -289,6 +303,7 @@ h1, h2, h3, h4 {
 #journalpage .accordion p a {
   font-weight: bolder;
   color: #005792;
+  border-bottom: 1px solid;
 }
 
 #journalpage .accordion p a:hover {
@@ -839,6 +854,7 @@ footer .bottom {
 #page #ourmission a {
   font-weight: bolder;
   color: #ff5959;
+  border-bottom: 1px solid;
 }
 
 #page #ourmission a:hover {
@@ -884,11 +900,11 @@ footer .bottom {
 #page #partners a {
   font-weight: bolder;
   color: #005792;
+  border-bottom: 1px solid;
 }
 
 #page #partners a:hover {
   text-decoration: none;
-  border-bottom: 1px solid;
   color: #005792;
   background-color: #99d6ff;
 }
@@ -1030,13 +1046,15 @@ footer .bottom {
 }
 
 #homepage #magnifycarousel .Carousel {
-  padding-bottom: 20px;
-  background-color: #b3cdde;
+  padding: 70px 2rem 60px;
 }
 
-#homepage #magnifycarousel .carousel-control-prev-icon,
-#homepage #magnifycarousel .carousel-control-next-icon {
-  height: 100px;
+#homepage #magnifycarousel .carousel-inner {
+  overflow: visible;
+}
+
+#homepage #magnifycarousel .carousel-control-prev,
+#homepage #magnifycarousel .carousel-control-next {
   width: 100px;
   outline: black;
   background-size: 100%, 100%;
@@ -1056,42 +1074,36 @@ footer .bottom {
 }
 
 #homepage #magnifycarousel .carousel-indicators {
-  z-index: 0;
+  z-index: 5;
+  margin-bottom: -70px;
 }
 
-#homepage #magnifycarousel .carousel .carousel-indicators li {
+#homepage #magnifycarousel .carousel-indicators li {
   background-color: #005792;
 }
 
-#homepage #magnifycarousel .carousel .carousel-indicators li.active {
+#homepage #magnifycarousel .carousel-indicators li.active {
   background-color: #13334c;
 }
 
-#homepage #magnifycarousel .carousel-item {
-  width: 900px;
-  margin-left: 240px;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
+#homepage #magnifycarousel .carousel .carousel-item {
+  max-width: 1200px;
+  width: 100%;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+#homepage #magnifycarousel .carousel .carousel-item img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 #homepage #magnifycarousel .carousel-caption {
-  color: black;
-  position: relative;
-  left: 0;
-  margin-top: 20px;
-}
-
-#homepage #magnifycarousel .carousel .carousel-item {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-#homepage #magnifycarousel html,
-#homepage #magnifycarousel body,
-#homepage #magnifycarousel .carousel,
-#homepage #magnifycarousel .carousel-inner,
-#homepage #magnifycarousel .carousel-inner .item {
-  height: 100%;
+  margin-bottom: -100px;
+  z-index: 5;
 }
 
 #homepage #magnifycarousel .item:nth-child(1) {
