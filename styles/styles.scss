@@ -85,7 +85,7 @@ h1, h2, h3, h4 {
     background-size: 300% 100%;
     background-position: 100%;
     transition: background-position 0.5s ease-in-out;
-    
+
     &:hover {
         background-position: 0 100%;
     }
@@ -101,7 +101,7 @@ h1, h2, h3, h4 {
         margin: 0;
     }
 }
-    
+
 .linkintext {
     font-weight: bolder;
     color: $blue;
@@ -125,7 +125,7 @@ h1, h2, h3, h4 {
     .container-fluid {
         position: relative;
         padding: 90px 1.5rem 70px;
-        
+
     }
 
     .text-center {
@@ -139,12 +139,12 @@ h1, h2, h3, h4 {
         margin-right: auto;
         margin-left: auto;
         text-align: center;
-    
+
 
         a{
             font-weight: bolder;
             color: $blue;
-        
+
             &:hover {
                 text-decoration: none;
                 border-bottom: 1px solid;
@@ -179,7 +179,7 @@ h1, h2, h3, h4 {
         color: $blue;
         font-weight: bold;
     }
-    
+
     .researchers{
         //text-align: center;
         //justify-content: center;
@@ -197,7 +197,7 @@ h1, h2, h3, h4 {
     background: #005792;
     color: wheat;
     margin-left: 100px;
-    text-align: center;    
+    text-align: center;
     }
 
     .Volume1 {
@@ -208,12 +208,12 @@ h1, h2, h3, h4 {
         margin-top: -150px;
     }
 
-    .Volume2 {  
+    .Volume2 {
         top: -145px;
         margin-bottom: -140px;
 
         .vol2Description {
-            color: black; 
+            color: black;
             font-family: Karla;
             margin-bottom: 80px;
             text-align: center;
@@ -226,12 +226,12 @@ h1, h2, h3, h4 {
         text-align:center;
         margin-left:auto;
         margin-right:auto;
-        
+
 
         .contentBx{
             position:relative;
             margin: 10px 20px;
-            
+
             .label{
                 position:relative;
                 padding:10px;
@@ -275,7 +275,7 @@ h1, h2, h3, h4 {
                         a{
                             font-weight: bolder;
                             color: $blue;
-                
+
                             &:hover {
                                 text-decoration: none;
                                 border-bottom: 1px solid;
@@ -286,7 +286,7 @@ h1, h2, h3, h4 {
                 }
             }
         }
-        
+
         .contentBx.active .content{
             height: 150px;
         }
@@ -301,7 +301,7 @@ h1, h2, h3, h4 {
                 a{
                     font-weight: bolder;
                     color: $blue;
-        
+
                     &:hover {
                         text-decoration: none;
                         border-bottom: 1px solid;
@@ -310,7 +310,7 @@ h1, h2, h3, h4 {
                     }
                 }
         }
-        
+
     }
 
     .image_hover {
@@ -323,7 +323,7 @@ h1, h2, h3, h4 {
             position: relative;
             width: 70%;
         }
-        
+
         .image {
             opacity: 1;
             display: block;
@@ -332,7 +332,7 @@ h1, h2, h3, h4 {
             transition: .5s ease;
             backface-visibility: hidden;
         }
-        
+
         .middle {
             transition: .5s ease;
             opacity: 0;
@@ -343,15 +343,15 @@ h1, h2, h3, h4 {
             -ms-transform: translate(-50%, -50%);
             text-align: center;
         }
-        
+
         .container:hover .image {
             opacity: 0.3;
         }
-        
+
         .container:hover .middle {
             opacity: 1;
         }
-        
+
 
     }
 }
@@ -376,7 +376,7 @@ header {
             margin-right: 20px;
             align-items: center;
         }
-    
+
         .logo-text {
             color: white;
             border: 0;
@@ -412,13 +412,13 @@ header {
             font-size: 14px;
             line-height: 1em;
             margin: 25px 0 0 -10px;
-        
+
             .stemchats-link {
-                color: #ff5959;
+                color: $teal;
                 font-family: 'Josefin Sans', sans-serif;
                 border-bottom: 1px dashed #ccc;
                 transition: 0.2s;
-        
+
                 &:hover {
                     text-decoration: none;
                     color: #ff5959;
@@ -426,7 +426,7 @@ header {
                 }
             }
         }
-    
+
         .nav-item {
             font-family: Josefin Sans;
             z-index: 0;
@@ -459,8 +459,8 @@ header {
             }
         }
 
-        
-        
+
+
 
         .dropdown-menu{
             background-color:$blue;
@@ -479,12 +479,12 @@ header {
             }
         }
 
-        
+
 
         .custom-toggler .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
-          
+
         .custom-toggler.navbar-toggler:focus,
         .custom-toggler.navbar-toggler:active,
         .custom-toggler.navbar-toggler-icon:focus,
@@ -492,7 +492,7 @@ header {
             border:none;
             outline:none;
             box-shadow:none;
-        } 
+        }
 
 
 
@@ -587,9 +587,9 @@ header {
 
 
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .img-hover img {
         height: 300px;
@@ -647,7 +647,7 @@ h1, h2, h3, h4 {
     &:hover {
         background-color: $teal;
         transition: 0.1s;
-        
+
     }
 
     &:focus {
@@ -675,7 +675,7 @@ h1, h2, h3, h4 {
     width: 33.33%;
     padding: 10px;
 }
-  
+
 .row:after{
     content: "";
     display: table;
@@ -717,7 +717,7 @@ h1, h2, h3, h4 {
 @media (max-width: 700px) {
 
     .column {
-        width: 100%;     
+        width: 100%;
     }
 
     .view-btns {
@@ -727,7 +727,7 @@ h1, h2, h3, h4 {
   }
 
 
-  
+
 
 
 // FOOTER
@@ -805,7 +805,7 @@ footer {
         .icon {
             color:white;
             padding:15px;
-    
+
             &:hover {
                 color: $teal;
             }
@@ -835,7 +835,7 @@ footer {
     }
 }
 
-//ABOUT  
+//ABOUT
 
 #page {
     font-family: 'Karla';
@@ -891,7 +891,7 @@ footer {
             margin-bottom: 50px;
         }
 
-        
+
         .mission-btn {
             margin-top: 5px;
             margin-bottom: 5px;
@@ -903,12 +903,12 @@ footer {
                 color: white;
                 background-color: $teal;
                 border-color: $teal;
-                text-decoration: none; 
+                text-decoration: none;
             }
-                
+
         }
-            
-                
+
+
 
     }
 
@@ -967,9 +967,9 @@ footer {
 
     }
 }
-    
 
-//GET INVOLVED 
+
+//GET INVOLVED
 #get-involved {
     font-family: 'Karla';
     font-size: 18px;
@@ -994,7 +994,7 @@ footer {
     .textbox{
         margin-top: 20px;
         margin-bottom: 20px;
-    
+
     }
     .card-deck {
         margin-top: 20px;
@@ -1075,27 +1075,27 @@ footer {
     }
 
 
-        
+
 }
 
 
 //HOME
 #homepage{
     font-size: 18px;
-    
+
     .container,
     .container-fluid {
         position: relative;
         padding-top: 50px;
         padding-bottom:50px;
     }
-    
+
     #magnifycarousel{
         .Carousel{
             padding-bottom: 20px;
             background-color:$light-blue;
         }
-    
+
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
             height: 100px;
@@ -1104,19 +1104,19 @@ footer {
             background-size: 100%, 100%;
             background-image: none;
         }
-    
+
         .carousel-control-next-icon:after {
             content: '>';
             font-size: 55px;
             color: $blue;
         }
-    
+
         .carousel-control-prev-icon:after {
             content: '<';
             font-size: 55px;
             color:$blue;
         }
-    
+
         .carousel-indicators{
             z-index: 0;
         }
@@ -1127,13 +1127,13 @@ footer {
             background-color:$dark-blue;
         }
 
-        
+
         .carousel-item{
             width:900px;
             margin-left: 240px;
             transition-duration: 2s;;
         }
-    
+
         .carousel-caption {
             color:black;
             position: relative;
@@ -1144,29 +1144,29 @@ footer {
         .carousel .carousel-item {
             transition-duration: 1s;
         }
-        
-        
-        
-        html, 
-        body, 
-        .carousel, 
-        .carousel-inner, 
+
+
+
+        html,
+        body,
+        .carousel,
+        .carousel-inner,
         .carousel-inner .item {
             height: 100%;
         }
-        
+
         .item:nth-child(1) {
             background: #74C390;
         }
-        
+
         .item:nth-child(2) {
             background: #51BCE8;
         }
-        
+
         .item:nth-child(3) {
             background: #E46653;
         }
-    
+
     }
 
     .introcards {
@@ -1193,12 +1193,12 @@ footer {
             }
         }
     }
-    
+
     .journal {
         .journalstats{
             font-size: 20px;
             font-weight: bold;
-        
+
             .numbers{
                 color:$red;
                 font-weight: bold;
@@ -1206,7 +1206,7 @@ footer {
                 padding-right: 8px;
             }
         }
-        
+
         .journalimage{
             width: 190px;
         }
@@ -1215,21 +1215,21 @@ footer {
     .partnercard {
         margin-top: 30px;
     }
-    
+
     .carouselcontainer{
         margin: 60px 0 75px;
-    
+
         .carouselrow{
             justify-content: center;
             text-align: center;
             height: 150px;
-    
+
             .partnerpic{
                 width:150px;
             }
         }
     }
-    
+
 
 }
 
@@ -1257,7 +1257,7 @@ footer {
 //     }
 //     .card-text1 {
 //         color: black;
-       
+
 //     }
 //     .card-body2{
 //         position: relative;
@@ -1271,11 +1271,11 @@ footer {
 
 //     .card-title2 {
 //         color: black;
-       
+
 //     }
 //     .card-text2 {
 //         color: black;
-        
+
 //     }
 //     .card-title3 {
 //         color: black;
