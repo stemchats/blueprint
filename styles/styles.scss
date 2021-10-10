@@ -90,7 +90,7 @@ h1, h2, h3, h4 {
     background-size: 300% 100%;
     background-position: 100%;
     transition: background-position 0.5s ease-in-out;
-    
+
     &:hover {
         background-position: 0 100%;
     }
@@ -106,7 +106,7 @@ h1, h2, h3, h4 {
         margin: 0;
     }
 }
-    
+
 .linkintext {
     font-weight: bolder;
     color: $blue;
@@ -130,7 +130,7 @@ h1, h2, h3, h4 {
     .container-fluid {
         position: relative;
         padding: 90px 1.5rem 70px;
-        
+
     }
 
     .text-center {
@@ -144,7 +144,7 @@ h1, h2, h3, h4 {
         margin-right: auto;
         margin-left: auto;
         text-align: center;
-    
+
 
         a{
             font-weight: bolder;
@@ -185,7 +185,7 @@ h1, h2, h3, h4 {
         color: $blue;
         font-weight: bold;
     }
-    
+
     .researchers{
         //text-align: center;
         //justify-content: center;
@@ -203,7 +203,7 @@ h1, h2, h3, h4 {
     background: #005792;
     color: wheat;
     margin-left: 100px;
-    text-align: center;    
+    text-align: center;
     }
 
     .Volume1 {
@@ -214,12 +214,12 @@ h1, h2, h3, h4 {
         margin-top: -150px;
     }
 
-    .Volume2 {  
+    .Volume2 {
         top: -145px;
         margin-bottom: -140px;
 
         .vol2Description {
-            color: black; 
+            color: black;
             font-family: Karla;
             margin-bottom: 80px;
             text-align: center;
@@ -240,12 +240,12 @@ h1, h2, h3, h4 {
         text-align:center;
         margin-left:auto;
         margin-right:auto;
-        
+
 
         .contentBx{
             position:relative;
             margin: 10px 20px;
-            
+
             .label{
                 position:relative;
                 padding:10px;
@@ -301,7 +301,7 @@ h1, h2, h3, h4 {
                 }
             }
         }
-        
+
         .contentBx.active .content{
             height: 150px;
         }
@@ -326,7 +326,7 @@ h1, h2, h3, h4 {
                     }
                 }
         }
-        
+
     }
 
     .image_hover {
@@ -339,7 +339,7 @@ h1, h2, h3, h4 {
             position: relative;
             width: 70%;
         }
-        
+
         .image {
             opacity: 1;
             display: block;
@@ -348,7 +348,7 @@ h1, h2, h3, h4 {
             transition: .5s ease;
             backface-visibility: hidden;
         }
-        
+
         .middle {
             transition: .5s ease;
             opacity: 0;
@@ -359,15 +359,15 @@ h1, h2, h3, h4 {
             -ms-transform: translate(-50%, -50%);
             text-align: center;
         }
-        
+
         .container:hover .image {
             opacity: 0.3;
         }
-        
+
         .container:hover .middle {
             opacity: 1;
         }
-        
+
 
     }
 }
@@ -392,7 +392,7 @@ header {
             margin-right: 20px;
             align-items: center;
         }
-    
+
         .logo-text {
             color: white;
             border: 0;
@@ -428,13 +428,13 @@ header {
             font-size: 14px;
             line-height: 1em;
             margin: 25px 0 0 -10px;
-        
+
             .stemchats-link {
-                color: #ff5959;
+                color: $teal;
                 font-family: 'Josefin Sans', sans-serif;
                 border-bottom: 1px dashed #ccc;
                 transition: 0.2s;
-        
+
                 &:hover {
                     text-decoration: none;
                     color: #ff5959;
@@ -442,7 +442,7 @@ header {
                 }
             }
         }
-    
+
         .nav-item {
             font-family: Josefin Sans;
             z-index: 0;
@@ -475,8 +475,8 @@ header {
             }
         }
 
-        
-        
+
+
 
         .dropdown-menu{
             background-color:$blue;
@@ -495,12 +495,12 @@ header {
             }
         }
 
-        
+
 
         .custom-toggler .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
-          
+
         .custom-toggler.navbar-toggler:focus,
         .custom-toggler.navbar-toggler:active,
         .custom-toggler.navbar-toggler-icon:focus,
@@ -508,7 +508,7 @@ header {
             border:none;
             outline:none;
             box-shadow:none;
-        } 
+        }
 
 
 
@@ -603,9 +603,9 @@ header {
 
 
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .img-hover img {
         height: 300px;
@@ -663,7 +663,7 @@ h1, h2, h3, h4 {
     &:hover {
         background-color: $teal;
         transition: 0.1s;
-        
+
     }
 
     &:focus {
@@ -691,7 +691,7 @@ h1, h2, h3, h4 {
     width: 33.33%;
     padding: 10px;
 }
-  
+
 .row:after{
     content: "";
     display: table;
@@ -733,7 +733,7 @@ h1, h2, h3, h4 {
 @media (max-width: 700px) {
 
     .column {
-        width: 100%;     
+        width: 100%;
     }
 
     .view-btns {
@@ -743,7 +743,7 @@ h1, h2, h3, h4 {
   }
 
 
-  
+
 
 
 // FOOTER
@@ -764,6 +764,7 @@ footer {
                 border-bottom: 1px solid;
             }
         }
+
     }
 
     .magnify-logo {
@@ -801,18 +802,26 @@ footer {
         width: 50%;
 
         &:hover .overlay {
-            width: 150px;
+            width: 155px;
         }
     }
 
+    .row{
+        padding-bottom: 50px;
+    }
+
+    hr{
+        margin:auto;
+    }
+
     .socials {
-        padding-top: 60px;
+        padding-top: 50px;
         white-space: nowrap;
 
         .icon {
             color:white;
             padding:15px;
-    
+
             &:hover {
                 color: $teal;
             }
@@ -835,14 +844,14 @@ footer {
     }
 
     .bottom {
-        margin-top: 50px;
+        margin-top: 30px;
         text-align: center;
         color: white;
         font-size: 13px;
     }
 }
 
-//ABOUT  
+//ABOUT
 
 #page {
     font-family: 'Karla';
@@ -898,6 +907,24 @@ footer {
             margin-top: 60px;
             margin-bottom: 50px;
         }
+
+
+        .mission-btn {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: white;
+            font-weight: normal;
+            background-color: $blue;
+
+            &:hover {
+                color: white;
+                background-color: $teal;
+                border-color: $teal;
+                text-decoration: none;
+            }
+
+        }
+
 
 
     }
@@ -957,9 +984,9 @@ footer {
 
     }
 }
-    
 
-//GET INVOLVED 
+
+//GET INVOLVED
 #get-involved {
     font-family: 'Karla';
     font-size: 18px;
@@ -984,7 +1011,7 @@ footer {
     .textbox{
         margin-top: 20px;
         margin-bottom: 20px;
-    
+
     }
     .card-deck {
         margin-top: 20px;
@@ -1009,7 +1036,7 @@ footer {
     }
 
     .stemchats-img {
-        width: 300px;
+        width: 500px;
         height: auto;
     }
 
@@ -1040,9 +1067,16 @@ footer {
 
     .work,
     .collaboration,
-    .opportunities,
-    .write {
+    .opportunities{
         padding: 20px;
+    }
+
+    .work{
+        padding:50px;
+    }
+
+    .join{
+        justify-content: center;
     }
 
     .card-title{
@@ -1056,21 +1090,23 @@ footer {
     .opp-title{
         margin-bottom: 20px;
     }
-        
+
+
+
 }
 
 
 //HOME
 #homepage{
     font-size: 18px;
-    
+
     .container,
     .container-fluid {
         position: relative;
         padding-top: 50px;
         padding-bottom:50px;
     }
-    
+
     #magnifycarousel{
         .Carousel{
             padding: 70px 2rem 60px;
@@ -1097,7 +1133,7 @@ footer {
             font-size: 55px;
             color:$blue;
         }
-    
+
         .carousel-indicators{
             z-index: 5;
             margin-bottom: -70px;
@@ -1127,19 +1163,19 @@ footer {
             margin-bottom: -100px;
             z-index: 5;
         }
-        
+
         .item:nth-child(1) {
             background: #74C390;
         }
-        
+
         .item:nth-child(2) {
             background: #51BCE8;
         }
-        
+
         .item:nth-child(3) {
             background: #E46653;
         }
-    
+
     }
 
     .introcards {
@@ -1166,12 +1202,12 @@ footer {
             }
         }
     }
-    
+
     .journal {
         .journalstats{
             font-size: 20px;
             font-weight: bold;
-        
+
             .numbers{
                 color:$red;
                 font-weight: bold;
@@ -1179,7 +1215,7 @@ footer {
                 padding-right: 8px;
             }
         }
-        
+
         .journalimage{
             width: 190px;
         }
@@ -1188,21 +1224,21 @@ footer {
     .partnercard {
         margin-top: 30px;
     }
-    
+
     .carouselcontainer{
         margin: 60px 0 75px;
-    
+
         .carouselrow{
             justify-content: center;
             text-align: center;
             height: 150px;
-    
+
             .partnerpic{
                 width:150px;
             }
         }
     }
-    
+
 
 }
 
@@ -1230,7 +1266,7 @@ footer {
 //     }
 //     .card-text1 {
 //         color: black;
-       
+
 //     }
 //     .card-body2{
 //         position: relative;
@@ -1244,11 +1280,11 @@ footer {
 
 //     .card-title2 {
 //         color: black;
-       
+
 //     }
 //     .card-text2 {
 //         color: black;
-        
+
 //     }
 //     .card-title3 {
 //         color: black;
