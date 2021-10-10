@@ -891,6 +891,24 @@ footer {
             margin-bottom: 50px;
         }
 
+        
+        .mission-btn {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: white;
+            font-weight: normal;
+            background-color: $blue;
+
+            &:hover {
+                color: white;
+                background-color: $teal;
+                border-color: $teal;
+                text-decoration: none; 
+            }
+                
+        }
+            
+                
 
     }
 

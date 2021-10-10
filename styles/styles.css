@@ -880,6 +880,21 @@ footer .bottom {
   margin-bottom: 50px;
 }
 
+#page #ourmission .mission-btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: normal;
+  background-color: #005792;
+}
+
+#page #ourmission .mission-btn:hover {
+  color: white;
+  background-color: #82d1c6;
+  border-color: #82d1c6;
+  text-decoration: none;
+}
+
 #page #partners {
   margin-top: 90px;
   margin-bottom: 100px;
