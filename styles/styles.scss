@@ -95,6 +95,14 @@ h1, h2, h3, h4 {
         background-position: 0 100%;
     }
 }
+.hover-shadow {
+    transition: 0.25s;
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1);
+    }
+}
 
 .important {
     padding: 15px 25px;
@@ -1057,10 +1065,10 @@ footer {
     .linkintext {
         font-weight: bolder;
         color: $blue;
+        border-bottom: 1px solid;
 
         &:hover {
             text-decoration: none;
-            border-bottom: 1px solid;
             color: $blue;
             background-color: #99d6ff;
         }
@@ -1188,12 +1196,6 @@ footer {
             text-align: center;
             border: none;
             background-color: $light-blue;
-            transition: 0.25s;
-
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1);
-            }
 
             h1 {
                 color: $dark-blue;
