@@ -1006,12 +1006,9 @@ footer .bottom {
 }
 
 #get-involved .work,
+#get-involved .write,
 #get-involved .collaboration,
 #get-involved .opportunities {
-  padding: 20px;
-}
-
-#get-involved .work {
   padding: 50px;
 }
 
