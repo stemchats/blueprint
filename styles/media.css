@@ -86,7 +86,7 @@
     padding: 40px 20px;
   }
   footer .container-overlay {
-    padding-right: 100px;
+    margin-left: 75px;
   }
   footer .get-involved {
     text-align: center;
@@ -99,7 +99,7 @@
     padding-top: 20px;
   }
   footer .socials .icon {
-    padding: 10px;
+    padding: 5px;
   }
   #page {
     margin: 20px 20px;
@@ -266,6 +266,9 @@
             justify-content: center;
     text-align: center;
   }
+  footer .container-overlay {
+    margin-left: 270px;
+  }
   footer .get-involved {
     text-align: center;
   }
@@ -411,6 +414,9 @@
     position: relative;
     padding-top: 70px;
     padding-bottom: 0px;
+  }
+  footer .container-overlay {
+    margin-left: 40px;
   }
 }
 /*# sourceMappingURL=media.css.map */

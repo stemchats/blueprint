@@ -806,12 +806,11 @@ footer {
     }
 
     .container-overlay {
-        justify-content: center;
         position: relative;
-        width: 50%;
-
+        width: 20%;
+        margin-left: 80px;
         &:hover .overlay {
-            width: 155px;
+            width: 150px;
         }
     }
 

@@ -798,15 +798,13 @@ footer .overlay {
 }
 
 footer .container-overlay {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
-  width: 50%;
+  width: 20%;
+  margin-left: 80px;
 }
 
 footer .container-overlay:hover .overlay {
-  width: 155px;
+  width: 150px;
 }
 
 footer .row {
