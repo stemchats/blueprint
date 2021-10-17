@@ -38,12 +38,304 @@ $homepage-cards-per-line: (
     }
 }
 
-//NAVBAR
+@media screen and (max-width: 1600px){
+    /* start of large tablet styles */
+
+    .write-img{
+        width:100%;
+        max-width:500px;
+        height:auto;
+    }
+
+    #get-involved{
+    
+        .card-body{
+            justify-content:center;
+            text-align:center;
+        }
+
+
+    }   
+
+}
+
+@media screen and (max-width: 1200px){
+    /* start of navbar toggler showing up*/
+
+    /*{
+        max-height:50px;
+        .navbar{
+            justify-content: end;
+
+            .nav-item{
+                line-height: 20px;
+            }
+        
+            .dropdown:active{
+                z-index: 0;
+                position:relative;
+                //display: inline-block;
+    
+                .dropdown-menu {
+                    margin-top: -1px;
+                    //display: block;
+                    width:100%;
+                    justify-content: end;
+                }
+    
+            }
+        }
+
+        
+    }  */
+
+    footer{
+
+        .get-involved{
+            padding-bottom: 30px;
+        }
+        .icon{
+            padding-right: 0px;
+        }
+    }
+
+}
+
+@media (max-width: 700px) {
+    .modal-body .img-fluid {
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+    
+
+@media screen and (min-width:991px) and (max-width: 1400px){
+    /* large tablet styles */
+    #homepage{
+        #magnifycarousel{
+            
+        
+            .carousel-item{
+                width:100%;
+                margin-left:0px;
+            }
+    
+            img{
+                margin-bottom: 20px;
+            }
+            .carousel-control-next-icon:after {
+                content: '>';
+                font-size: 40px;
+                margin-left:100px;
+            }
+        
+            .carousel-control-prev-icon:after {
+                content: '<';
+                font-size: 40px;
+                margin-right:100px;
+            }
+    
+            .carousel-indicators{
+                margin-bottom: 0px;
+            }
+    
+        }
+
+        .container,
+        .container-fluid {
+            position: relative;
+            padding-top: 70px;
+            padding-bottom:0px;
+        }
+
+    }
+    footer{
+        .container-overlay{
+            margin-left: 40px;
+        }
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+    /* start of medium tablet styles */
+
+    /*header{
+        height:50px;
+
+        .logo-img {
+            max-width: 70px;
+            width:100%;
+            margin-right: 20px;
+            align-items: center;
+        }
+    }*/
+    .navbar{
+        padding: 0 0;
+        height: 70px;
+        .navbar-brand{
+            margin-left: 10px;
+        }
+    }
+
+
+    #page{
+        margin: 40px 40px;
+
+        #ourmission{
+
+            .blueprint{
+                margin-top:60px;
+                margin-bottom: auto;
+            }
+    
+            .magnify{
+                margin-top:auto;
+            }
+        }
+
+        #support{
+            .handshake{
+                align-items: center;
+            }
+
+            .icon{
+                text-align: center;
+                margin:auto;
+            }
+        }
+    }
+
+    #get-involved{
+        .images{
+            text-align:center;
+        }
+
+        .textbox{
+            text-align: center;
+            justify-content:center;
+        }
+
+        .title{
+            justify-content:center;
+            text-align:center;
+        }
+
+        .btn{
+            margin:0 auto;
+            display:block;
+        }
+
+        .card-body{
+            justify-content:center;
+            text-align:center;
+        }
+    }
+
+    footer{
+
+        .container-overlay{
+            margin-left: 270px;
+        }
+
+        .get-involved{
+            text-align: center;
+        }
+
+        .blog{
+            text-align: center;
+            margin-left: 40px;
+        }
+
+        .icon{
+            padding-right: 0px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 479px) and (max-width: 991px){
+    /* start of medium tablet styles */
+
+    #homepage{
+        .carouselrow{
+            height:200px
+        }
+
+        #magnifycarousel{
+            .carousel-item{
+                width:100%;
+                margin-left:0px;
+            }
+    
+            img{
+                margin-bottom: 20px;
+            }
+            .carousel-control-next-icon:after {
+                content: '>';
+                font-size: 40px;
+                margin-left:90px;
+            }
+        
+            .carousel-control-prev-icon:after {
+                content: '<';
+                font-size: 40px;
+                margin-right:90px;
+            }
+    
+            .carousel-indicators{
+                margin-bottom: 0px;
+            }
+    
+        }
+
+        .container,
+        .container-fluid {
+            position: relative;
+            padding-top: 70px;
+            padding-bottom:0px;
+        }
+
+        .introcard{
+            padding:30px;
+            margin-bottom: 10px;
+        }
+    
+        .journalstats{
+            justify-content: center;
+            margin-top: 0px;
+        }
+    
+        .journalimage{
+            width:150px;
+        }
+
+        .journaltext{
+            margin-top: 20px;
+        }
+        
+        .partnerpic{
+            margin-top:15px;
+        }
+
+    }
+
+   
+
+    
+
+}
 
 @media screen and (max-width: 479px) {
     /* start of phone styles */
 
-    header{
+    /*header{
         max-height:50px;
         .navbar{
             .navbar-brand{
@@ -62,7 +354,7 @@ $homepage-cards-per-line: (
             }
         }
 
-    }
+    }*/
 
     footer{
 
@@ -224,298 +516,4 @@ $homepage-cards-per-line: (
     
     
 }
-
-@media screen and (max-width: 991px) {
-    /* start of medium tablet styles */
-
-    header{
-        height:50px;
-        .navbar{
-            padding-top: 10px;
-            padding-bottom: 10px;
-            .navbar-brand{
-                margin-left: 10px;
-            }
-        }
-    }
-
-    .logo-img {
-        max-width: 70px;
-        width:100%;
-        margin-right: 20px;
-        align-items: center;
-    }
-
-
-    #page{
-        margin: 40px 40px;
-
-        #ourmission{
-
-            .blueprint{
-                margin-top:60px;
-                margin-bottom: auto;
-            }
-    
-            .magnify{
-                margin-top:auto;
-            }
-        }
-
-        #support{
-            .handshake{
-                align-items: center;
-            }
-
-            .icon{
-                text-align: center;
-                margin:auto;
-            }
-        }
-    }
-
-    #get-involved{
-        .images{
-            text-align:center;
-        }
-
-        .textbox{
-            text-align: center;
-            justify-content:center;
-        }
-
-        .title{
-            justify-content:center;
-            text-align:center;
-        }
-
-        .btn{
-            margin:0 auto;
-            display:block;
-        }
-
-        .card-body{
-            justify-content:center;
-            text-align:center;
-        }
-    }
-
-    footer{
-
-        .container-overlay{
-            margin-left: 270px;
-        }
-
-        .get-involved{
-            text-align: center;
-        }
-
-        .blog{
-            text-align: center;
-            margin-left: 40px;
-        }
-
-        .icon{
-            padding-right: 0px;
-        }
-    }
-
-}
-
-@media screen and (max-width: 1600px){
-    /* start of large tablet styles */
-
-    .write-img{
-        width:100%;
-        max-width:500px;
-        height:auto;
-    }
-
-    #get-involved{
-    
-        .card-body{
-            justify-content:center;
-            text-align:center;
-        }
-
-
-    }   
-
-}
-
-@media screen and (max-width: 1200px){
-    /* start of navbar toggler showing up*/
-
-    header{
-        max-height:50px;
-        .navbar{
-            justify-content: end;
-
-            .nav-item{
-                line-height: 20px;
-            }
-        
-            .dropdown:active{
-                z-index: 0;
-                position:relative;
-                //display: inline-block;
-    
-                .dropdown-menu {
-                    margin-top: -1px;
-                    //display: block;
-                    width:100%;
-                    justify-content: end;
-                }
-    
-            }
-        }
-
-        
-    }  
-
-    footer{
-
-        .get-involved{
-            padding-bottom: 30px;
-        }
-        .icon{
-            padding-right: 0px;
-        }
-    }
-
-}
-
-@media (max-width: 700px) {
-    .modal-body .img-fluid {
-        float: none;
-        margin-bottom: 10px;
-    }
-}
-
-
-
-    
-//HOME
-
-@media screen and (min-width: 479px) and (max-width: 991px){
-    /* start of medium tablet styles */
-
-    #homepage{
-        .carouselrow{
-            height:200px
-        }
-
-        #magnifycarousel{
-            .carousel-item{
-                width:100%;
-                margin-left:0px;
-            }
-    
-            img{
-                margin-bottom: 20px;
-            }
-            .carousel-control-next-icon:after {
-                content: '>';
-                font-size: 40px;
-                margin-left:90px;
-            }
-        
-            .carousel-control-prev-icon:after {
-                content: '<';
-                font-size: 40px;
-                margin-right:90px;
-            }
-    
-            .carousel-indicators{
-                margin-bottom: 0px;
-            }
-    
-        }
-
-        .container,
-        .container-fluid {
-            position: relative;
-            padding-top: 70px;
-            padding-bottom:0px;
-        }
-
-        .introcard{
-            padding:30px;
-            margin-bottom: 10px;
-        }
-    
-        .journalstats{
-            justify-content: center;
-            margin-top: 0px;
-        }
-    
-        .journalimage{
-            width:150px;
-        }
-
-        .journaltext{
-            margin-top: 20px;
-        }
-        
-        .partnerpic{
-            margin-top:15px;
-        }
-
-    }
-
-   
-
-    
-
-}
-
-@media screen and (min-width:991px) and (max-width: 1400px){
-    /* large tablet styles */
-    #homepage{
-        #magnifycarousel{
-            
-        
-            .carousel-item{
-                width:100%;
-                margin-left:0px;
-            }
-    
-            img{
-                margin-bottom: 20px;
-            }
-            .carousel-control-next-icon:after {
-                content: '>';
-                font-size: 40px;
-                margin-left:100px;
-            }
-        
-            .carousel-control-prev-icon:after {
-                content: '<';
-                font-size: 40px;
-                margin-right:100px;
-            }
-    
-            .carousel-indicators{
-                margin-bottom: 0px;
-            }
-    
-        }
-
-        .container,
-        .container-fluid {
-            position: relative;
-            padding-top: 70px;
-            padding-bottom:0px;
-        }
-
-    }
-    footer{
-        .container-overlay{
-            margin-left: 40px;
-        }
-    }
-    
-
-}
-
 

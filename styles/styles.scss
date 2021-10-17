@@ -392,6 +392,7 @@ h1, h2, h3, h4 {
     color: $teal;
 }
 
+//hamburger button
 $button-size : 1.6rem;
 $transition: .3s; // increase this to see the transformations in slow-motion
 
@@ -446,6 +447,7 @@ $transition: .3s; // increase this to see the transformations in slow-motion
 .lines-button.x.close .lines {
     /*hide the middle line*/
     background: transparent;
+    left: -20px;
 
     /*overlay the lines by setting both their top values to 0*/
     &:before, &:after {
@@ -472,6 +474,7 @@ header {
     .navbar {
         height: 60px;
         background-color: $blue;
+        padding: 0;
     }
 
     .navbar-brand {
@@ -480,6 +483,7 @@ header {
         .logo-img {
             margin-top: -15px;
             width: 50px;
+            margin-left: 15px;
         }
 
         .logo-text {
@@ -518,18 +522,27 @@ header {
     .navbar-collapse {
         background-color: $blue;
         width: 100%;
+        padding-left: 20px;
+        padding-bottom: 10px;
 
         .nav-link {
-            margin-right: 10px;
+            margin-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 0;
+            transition: 0.1s;
         }
 
         .dropdown-menu, .dropdown-item {
             background-color: $blue;
-            color: white;
+            color: rgba(255,255,255,.75);
             border: 0;
+            transition: 0.1s;
         }
         .dropdown-item:hover {
-            color: $teal;
+            color: rgba(255,255,255,1);
+        }
+        .dropdown-menu {
+            margin: 0;
         }
     }
 }
@@ -1307,6 +1320,7 @@ footer {
             max-width: 1200px;
             width: 100%;
             transition: 0.75s;
+            padding-left: 8%;
 
             img {
                 height: 500px;

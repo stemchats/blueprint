@@ -439,6 +439,7 @@ h1, h2, h3, h4 {
 .lines-button.x.close .lines {
   /*hide the middle line*/
   background: transparent;
+  left: -20px;
   /*overlay the lines by setting both their top values to 0*/
 }
 
@@ -469,6 +470,7 @@ header {
 header .navbar {
   height: 60px;
   background-color: #005792;
+  padding: 0;
 }
 
 header .navbar-brand {
@@ -478,6 +480,7 @@ header .navbar-brand {
 header .navbar-brand .logo-img {
   margin-top: -15px;
   width: 50px;
+  margin-left: 15px;
 }
 
 header .navbar-brand .logo-text {
@@ -516,20 +519,32 @@ header .navbar-toggler {
 header .navbar-collapse {
   background-color: #005792;
   width: 100%;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 header .navbar-collapse .nav-link {
-  margin-right: 10px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 header .navbar-collapse .dropdown-menu, header .navbar-collapse .dropdown-item {
   background-color: #005792;
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
   border: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 header .navbar-collapse .dropdown-item:hover {
-  color: #82d1c6;
+  color: white;
+}
+
+header .navbar-collapse .dropdown-menu {
+  margin: 0;
 }
 
 /*header {
@@ -1286,6 +1301,7 @@ footer .bottom {
   width: 100%;
   -webkit-transition: 0.75s;
   transition: 0.75s;
+  padding-left: 8%;
 }
 
 #homepage #magnifycarousel .carousel .carousel-item img {
