@@ -80,6 +80,9 @@
 
 @media screen and (max-width: 1200px) {
   /* start of navbar toggler showing up*/
+  header .navbar-collapse .dropdown-menu {
+    padding-top: 10px;
+  }
   /*{
         max-height:50px;
         .navbar{
@@ -111,13 +114,6 @@
   }
   footer .icon {
     padding-right: 0px;
-  }
-}
-
-@media (max-width: 700px) {
-  .modal-body .img-fluid {
-    float: none;
-    margin-bottom: 10px;
   }
 }
 
@@ -166,11 +162,11 @@
             align-items: center;
         }
     }*/
-  .navbar {
+  header .navbar {
     padding: 0 0;
     height: 70px;
   }
-  .navbar .navbar-brand {
+  header .navbar .navbar-brand {
     margin-left: 10px;
   }
   #page {
@@ -284,6 +280,13 @@
   }
 }
 
+@media (max-width: 700px) {
+  .modal-body .img-fluid {
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   /* start of phone styles */
   /*header{
@@ -306,6 +309,23 @@
         }
 
     }*/
+  header .navbar-brand .logo-img {
+    margin-bottom: -20px;
+  }
+  header .navbar-brand .logo-text {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  header .stemchats {
+    margin-left: -135px;
+    margin-bottom: -5px;
+  }
+  header .navbar-collapse {
+    margin-top: -10px;
+  }
+  header .lines {
+    top: -10px;
+  }
   footer .container-fluid {
     padding: 40px 20px;
   }

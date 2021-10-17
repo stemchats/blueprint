@@ -539,12 +539,13 @@ header .navbar-collapse .dropdown-menu, header .navbar-collapse .dropdown-item {
   transition: 0.1s;
 }
 
-header .navbar-collapse .dropdown-item:hover {
-  color: white;
-}
-
 header .navbar-collapse .dropdown-menu {
   margin: 0;
+  padding-top: 20px;
+}
+
+header .navbar-collapse .dropdown-item:hover {
+  color: white;
 }
 
 /*header {
