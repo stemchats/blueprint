@@ -187,6 +187,7 @@ h1, h2, h3, h4 {
         text-align: center;
     }
 
+
     .numbers{
         padding:20px;
         font-size: 25px;
@@ -215,16 +216,23 @@ h1, h2, h3, h4 {
     }
 
     .Volume1 {
-        margin-top: -80px;
-    }
+        margin-top: -90px;
 
-    .VolDesc {
-        margin-top: -150px;
+        .card-title {
+            padding-top: 20px;
+        }
+
+        .btn{
+            background-color: $blue;
+            border-color: $blue;
+            color: white;
+            font-weight: normal;
+        }
     }
 
     .Volume2 {
-        top: -145px;
-        margin-bottom: -140px;
+        top: -30px;
+        //margin-bottom: -140px;
 
         .vol2Description {
             color: black;
@@ -916,19 +924,18 @@ footer {
             margin-bottom: 50px;
         }
 
-
-        .mission-btn {
-            margin-top: 5px;
-            margin-bottom: 5px;
+        .about-btn {
+            background-color: $blue;
+            border-color: $blue;
             color: white;
             font-weight: normal;
-            background-color: $blue;
+            transition: 0.1s;
 
             &:hover {
                 color: white;
                 background-color: $teal;
                 border-color: $teal;
-                text-decoration: none;
+                transition: 0.1s;
             }
 
         }
