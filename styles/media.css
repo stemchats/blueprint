@@ -63,24 +63,268 @@
   }
 }
 
-@media screen and (max-width: 479px) {
-  /* start of phone styles */
-  header {
-    max-height: 50px;
+@media screen and (max-width: 1600px) {
+  /* start of large tablet styles */
+  .write-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  #get-involved .card-body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* start of navbar toggler showing up*/
+  header .navbar-collapse .dropdown-menu {
+    padding-top: 10px;
+  }
+  /*{
+        max-height:50px;
+        .navbar{
+            justify-content: end;
+
+            .nav-item{
+                line-height: 20px;
+            }
+        
+            .dropdown:active{
+                z-index: 0;
+                position:relative;
+                //display: inline-block;
+    
+                .dropdown-menu {
+                    margin-top: -1px;
+                    //display: block;
+                    width:100%;
+                    justify-content: end;
+                }
+    
+            }
+        }
+
+        
+    }  */
+  footer .get-involved {
+    padding-bottom: 30px;
+  }
+  footer .icon {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+  /* large tablet styles */
+  #homepage #magnifycarousel .carousel-item {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #homepage #magnifycarousel img {
+    margin-bottom: 20px;
+  }
+  #homepage #magnifycarousel .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 40px;
+    margin-left: 100px;
+  }
+  #homepage #magnifycarousel .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 40px;
+    margin-right: 100px;
+  }
+  #homepage #magnifycarousel .carousel-indicators {
+    margin-bottom: 0px;
+  }
+  #homepage .container,
+  #homepage .container-fluid {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+  footer .container-overlay {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* start of medium tablet styles */
+  /*header{
+        height:50px;
+
+        .logo-img {
+            max-width: 70px;
+            width:100%;
+            margin-right: 20px;
+            align-items: center;
+        }
+    }*/
+  header .navbar {
+    padding: 0 0;
+    height: 70px;
   }
   header .navbar .navbar-brand {
     margin-left: 10px;
   }
-  header .navbar .logo-img {
-    max-width: 70px;
-    width: 100%;
-    margin-right: 5px;
+  #page {
+    margin: 40px 40px;
+  }
+  #page #ourmission .blueprint {
+    margin-top: 60px;
+    margin-bottom: auto;
+  }
+  #page #ourmission .magnify {
+    margin-top: auto;
+  }
+  #page #support .handshake {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  header .navbar .logo-text {
+  #page #support .icon {
+    text-align: center;
+    margin: auto;
+  }
+  #get-involved .images {
+    text-align: center;
+  }
+  #get-involved .textbox {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #get-involved .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #get-involved .btn {
+    margin: 0 auto;
+    display: block;
+  }
+  #get-involved .card-body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  footer .container-overlay {
+    margin-left: 270px;
+  }
+  footer .get-involved {
+    text-align: center;
+  }
+  footer .blog {
+    text-align: center;
+    margin-left: 40px;
+  }
+  footer .icon {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 479px) and (max-width: 991px) {
+  /* start of medium tablet styles */
+  #homepage .carouselrow {
+    height: 200px;
+  }
+  #homepage #magnifycarousel .carousel-item {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #homepage #magnifycarousel img {
+    margin-bottom: 20px;
+  }
+  #homepage #magnifycarousel .carousel-control-next-icon:after {
+    content: '>';
     font-size: 40px;
+    margin-left: 90px;
+  }
+  #homepage #magnifycarousel .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 40px;
+    margin-right: 90px;
+  }
+  #homepage #magnifycarousel .carousel-indicators {
+    margin-bottom: 0px;
+  }
+  #homepage .container,
+  #homepage .container-fluid {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+  #homepage .introcard {
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  #homepage .journalstats {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0px;
+  }
+  #homepage .journalimage {
+    width: 150px;
+  }
+  #homepage .journaltext {
+    margin-top: 20px;
+  }
+  #homepage .partnerpic {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .modal-body .img-fluid {
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+  /*header{
+        max-height:50px;
+        .navbar{
+            .navbar-brand{
+                margin-left: 10px;
+            }
+
+            .logo-img {
+                max-width: 70px;
+                width:100%;
+                margin-right: 5px;
+                align-items: center;
+            }
+
+            .logo-text {
+                font-size: 40px;
+            }
+        }
+
+    }*/
+  header .navbar-brand .logo-img {
+    margin-bottom: -20px;
+  }
+  header .navbar-brand .logo-text {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  header .stemchats {
+    margin-left: -135px;
+    margin-bottom: -5px;
+  }
+  header .navbar-collapse {
+    margin-top: -10px;
+  }
+  header .lines {
+    top: -10px;
   }
   footer .container-fluid {
     padding: 40px 20px;
@@ -199,224 +443,6 @@
   }
   #homepage .carouselrow {
     height: 350px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  /* start of medium tablet styles */
-  header {
-    height: 50px;
-  }
-  header .navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  header .navbar .navbar-brand {
-    margin-left: 10px;
-  }
-  .logo-img {
-    max-width: 70px;
-    width: 100%;
-    margin-right: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #page {
-    margin: 40px 40px;
-  }
-  #page #ourmission .blueprint {
-    margin-top: 60px;
-    margin-bottom: auto;
-  }
-  #page #ourmission .magnify {
-    margin-top: auto;
-  }
-  #page #support .handshake {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #page #support .icon {
-    text-align: center;
-    margin: auto;
-  }
-  #get-involved .images {
-    text-align: center;
-  }
-  #get-involved .textbox {
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #get-involved .title {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  #get-involved .btn {
-    margin: 0 auto;
-    display: block;
-  }
-  #get-involved .card-body {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  footer .container-overlay {
-    margin-left: 270px;
-  }
-  footer .get-involved {
-    text-align: center;
-  }
-  footer .blog {
-    text-align: center;
-    margin-left: 40px;
-  }
-  footer .icon {
-    padding-right: 0px;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  /* start of large tablet styles */
-  .write-img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-  }
-  #get-involved .card-body {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  /* start of navbar toggler showing up*/
-  header {
-    max-height: 50px;
-  }
-  header .navbar {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  header .navbar .nav-item {
-    line-height: 20px;
-  }
-  header .navbar .dropdown:active {
-    z-index: 0;
-    position: relative;
-  }
-  header .navbar .dropdown:active .dropdown-menu {
-    margin-top: -1px;
-    width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  footer .get-involved {
-    padding-bottom: 30px;
-  }
-  footer .icon {
-    padding-right: 0px;
-  }
-}
-
-@media (max-width: 700px) {
-  .modal-body .img-fluid {
-    float: none;
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 479px) and (max-width: 991px) {
-  /* start of medium tablet styles */
-  #homepage .carouselrow {
-    height: 200px;
-  }
-  #homepage #magnifycarousel .carousel-item {
-    width: 100%;
-    margin-left: 0px;
-  }
-  #homepage #magnifycarousel img {
-    margin-bottom: 20px;
-  }
-  #homepage #magnifycarousel .carousel-control-next-icon:after {
-    content: '>';
-    font-size: 40px;
-    margin-left: 90px;
-  }
-  #homepage #magnifycarousel .carousel-control-prev-icon:after {
-    content: '<';
-    font-size: 40px;
-    margin-right: 90px;
-  }
-  #homepage #magnifycarousel .carousel-indicators {
-    margin-bottom: 0px;
-  }
-  #homepage .container,
-  #homepage .container-fluid {
-    position: relative;
-    padding-top: 70px;
-    padding-bottom: 0px;
-  }
-  #homepage .introcard {
-    padding: 30px;
-    margin-bottom: 10px;
-  }
-  #homepage .journalstats {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 0px;
-  }
-  #homepage .journalimage {
-    width: 150px;
-  }
-  #homepage .journaltext {
-    margin-top: 20px;
-  }
-  #homepage .partnerpic {
-    margin-top: 15px;
-  }
-}
-
-@media screen and (min-width: 991px) and (max-width: 1400px) {
-  /* large tablet styles */
-  #homepage #magnifycarousel .carousel-item {
-    width: 100%;
-    margin-left: 0px;
-  }
-  #homepage #magnifycarousel img {
-    margin-bottom: 20px;
-  }
-  #homepage #magnifycarousel .carousel-control-next-icon:after {
-    content: '>';
-    font-size: 40px;
-    margin-left: 100px;
-  }
-  #homepage #magnifycarousel .carousel-control-prev-icon:after {
-    content: '<';
-    font-size: 40px;
-    margin-right: 100px;
-  }
-  #homepage #magnifycarousel .carousel-indicators {
-    margin-bottom: 0px;
-  }
-  #homepage .container,
-  #homepage .container-fluid {
-    position: relative;
-    padding-top: 70px;
-    padding-bottom: 0px;
-  }
-  footer .container-overlay {
-    margin-left: 40px;
   }
 }
 /*# sourceMappingURL=media.css.map */
