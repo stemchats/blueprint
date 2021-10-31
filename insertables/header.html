@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 </head>
 <header>
-    <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-xl fixed-top py-lg-0">
-              <a class="navbar-brand" href="/">
-                  <img src="/images/blueprint logo.png" alt="logo" class="logo-img d-inline-block">
-                  <h2 class="logo-text d-inline-block">Blueprint</h2>
-              </a>
-              <p class="stemchats">a <a class="stemchats-link" href="https://stemchats.org" target="_blank">stemchats</a> program</p>
-            
-            
-            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              
-              <ul class="navbar-nav ml-lg-auto">
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About Us
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/about/our-mission/">Our Mission</a>
-                    <a class="dropdown-item" href="/about/our-team/">Our Team</a>
-                    <a class="dropdown-item" href="/about/partners/">Partners</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/journal/">Journal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/blog/">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/get-involved/">Get Involved</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-        <script>// remove any current navbar active classes
-          $(".navbar .nav-item.active").removeClass('active');
-          // add active class to proper navbar item that matches window.location
-          $('.navbar .nav-item a[href="' + location.pathname + '"]').closest('li').addClass('active');</script>
-    </div> 
-</header>
-</html>
+	<nav class="navbar navbar-dark navbar-expand-xl fixed-top py-lg-0">
+		<a class="navbar-brand" href="/">
+			<img src="/images/blueprint logo.png" alt="logo" class="logo-img d-inline-block">
+			<h3 class="logo-text d-inline-block">Blueprint</h3>
+		</a>
+		<p class="stemchats">a <a class="stemchats-link" href="https://stemchats.org" target="_blank">stemchats</a>
+			program</p>
 
+
+		<!-- <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button> -->
+		<button class="lines-button x navbar-toggler ml-auto custom-toggler" type="button" role="button" aria-label="Toggle Navigation" data-toggle = "collapse" data-target = "#navbarSupportedContent">
+			<span class="lines"></span>
+		</button>
+
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<ul class="navbar-nav ml-lg-auto">
+
+				<li class="nav-item">
+					<a class="nav-link" id="home-nav" href="/">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="about-nav" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						About Us
+					</a>
+					<div class="dropdown-menu" aria-labelledby="about-nav">
+						<a class="dropdown-item" href="/about/our-mission/">Our Mission</a>
+						<a class="dropdown-item" href="/about/our-team/">Our Team</a>
+						<a class="dropdown-item" href="/about/partners/">Partners</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="journal-nav" href="/journal/">Journal</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="blog-nav" href="/blog/">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="involved-nav" href="/get-involved/">Get Involved</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- <script>// remove any current navbar active classes
+		$(".navbar .nav-item.active").removeClass('active');
+		// add active class to proper navbar item that matches window.location
+		$('.navbar .nav-item a[href="' + location.pathname + '"]').closest('li').addClass('active');</script> -->
+	<script>
+		var menu_check = document.getElementsByClassName("navbar-toggler ml-auto custom-toggler")[0];
+		var mainNav = document.getElementById("navbarSupportedContent");
+
+		const lines = document.getElementsByClassName("lines-button");
+		const linesToggle = [...lines];
+		linesToggle[0].addEventListener("click", () => {
+			if(linesToggle[0].classList.contains("close")) {
+				linesToggle[0].classList.remove("close");
+			} else {
+				linesToggle[0].classList.add("close");
+			}
+			//console.log(linesToggle[0]);
+		});
+	</script>
+</header>
+
+</html>
