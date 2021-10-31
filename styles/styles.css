@@ -198,16 +198,22 @@ h1, h2, h3, h4 {
 }
 
 #journalpage .Volume1 {
-  margin-top: -80px;
+  margin-top: -90px;
 }
 
-#journalpage .VolDesc {
-  margin-top: -150px;
+#journalpage .Volume1 .card-title {
+  padding-top: 20px;
+}
+
+#journalpage .Volume1 .btn {
+  background-color: #005792;
+  border-color: #005792;
+  color: white;
+  font-weight: normal;
 }
 
 #journalpage .Volume2 {
-  top: -145px;
-  margin-bottom: -140px;
+  top: -30px;
 }
 
 #journalpage .Volume2 .vol2Description {
@@ -1078,19 +1084,21 @@ footer .bottom {
   margin-bottom: 50px;
 }
 
-#page #ourmission .mission-btn {
-  margin-top: 5px;
-  margin-bottom: 5px;
+#page #ourmission .about-btn {
+  background-color: #005792;
+  border-color: #005792;
   color: white;
   font-weight: normal;
-  background-color: #005792;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
-#page #ourmission .mission-btn:hover {
+#page #ourmission .about-btn:hover {
   color: white;
   background-color: #82d1c6;
   border-color: #82d1c6;
-  text-decoration: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 #page #partners {
