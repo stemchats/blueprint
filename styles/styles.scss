@@ -205,14 +205,14 @@ h1, h2, h3, h4 {
     }
 
     .form-select {
-        width: 20rem;
-        border-color: #005792;
-        height: 60px;
-        position: relative;
-        background: #005792;
-        color: wheat;
-        margin-left: 100px;
-        text-align: center;
+    width: 20rem;
+    border-color: #005792;
+    height: 60px;
+    position: relative;
+    background: #005792;
+    color: wheat;
+    margin-left: 100px;
+    text-align: center;
     }
 
     .Volume1 {
@@ -291,9 +291,10 @@ h1, h2, h3, h4 {
             .content{
                 position: relative;
                 background: #fff;
-                max-height: 0;
+                height: 0;
                 overflow: hidden;
-                transition: max-height 0.5s;
+                transition: 0.5s;
+                overflow-y: none;
                 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
 
                 p{
@@ -318,7 +319,7 @@ h1, h2, h3, h4 {
         }
 
         .contentBx.active .content{
-            max-height: 1000px;
+            height: 150px;
         }
         .contentBx.active .label::before{
             content:'\2296';
@@ -388,178 +389,11 @@ h1, h2, h3, h4 {
 }
 
 //NAVBAR
-
-//active page highlight
-.home #home-nav,
-.journalpage #journal-nav,
-.getinvolvedpage #involved-nav,
-.blog #blog-nav,
-.about #about-nav
-{
-    font-weight: bold;
-    color: $teal;
-}
-
-//hamburger button
-$button-size : 1.6rem;
-$transition: .3s; // increase this to see the transformations in slow-motion
-
-.lines-button {
-    display: inline-block;
-    transition: .3s;
-    cursor: pointer;
-    user-select: none;
-    //padding-bottom: $button-size/2;
-
-    .lines {
-        margin-left: 50%;
-        margin-right: 2rem;
-        
-        &:before { top: $button-size/3; }
-        &:after { top: -$button-size/3; }
-    }
-}
-
-@mixin line {
-    display: inline-block;
-    width: $button-size;
-    height: 2px;
-    background: white;
-    border-radius: $button-size/14;
-    transition: $transition;
-}
-
-.lines {
-    //create middle line
-    @include line;
-    position: relative;
-    top: -5px;
-    left: -10px;
-
-    /*create the upper and lower lines as pseudo-elements of the middle line*/
-    &:before, &:after {
-        @include line;
-        position: absolute;
-        left:0;
-        content: '';
-        transform-origin: $button-size/14 center;
-    }
-    &:before {
-        top: $button-size/4;
-    }
-    &:after {
-        top: -$button-size/4;
-    }
-}
-
-.lines-button.x.close .lines {
-    /*hide the middle line*/
-    background: transparent;
-    left: -20px;
-
-    /*overlay the lines by setting both their top values to 0*/
-    &:before, &:after {
-        transform-origin: 50% 50%;
-        top: 0;
-        width: $button-size;
-    }
-
-    // rotate the lines to form the x shape
-    &:before{
-        transform: rotate3d(0,0,1,45deg);
-    }
-    &:after{
-        transform: rotate3d(0,0,1,-45deg);
-    }
-}
-
 header {
-    z-index: 100;
-    width: 100%;
-    position: fixed;
-    background-color: $blue;
-
-    .navbar {
-        height: 60px;
-        background-color: $blue;
-        padding: 0;
-    }
-
-    .navbar-brand {
-        margin-top: 5px;
-        
-        .logo-img {
-            margin-top: -15px;
-            width: 50px;
-            margin-left: 15px;
-        }
-
-        .logo-text {
-            color: white;
-            margin-bottom: 0;
-        }
-    }
-
-    .stemchats {
-        color: $teal;
-        font-size: 14px;
-        line-height: 1em;
-        margin: 20px 0 0 -10px;
-        white-space: nowrap;
-
-        .stemchats-link {
-            color: $teal;
-            font-size: 14px;
-            font-family: 'Josefin Sans', sans-serif;
-            border-bottom: 1px dashed #ccc;
-            transition: 0.2s;
-
-            &:hover {
-                text-decoration: none;
-                color: $red;
-                border-bottom: 1px dashed $red;
-            }
-        }
-    }
-
-    .navbar-toggler {
-        border: 0;
-        outline: none;
-    }
-
-    .navbar-collapse {
-        background-color: $blue;
-        width: 100%;
-        padding-left: 20px;
-        padding-bottom: 10px;
-
-        .nav-link {
-            margin-right: 20px;
-            padding-top: 10px;
-            padding-bottom: 0;
-            transition: 0.1s;
-        }
-
-        .dropdown-menu, .dropdown-item {
-            background-color: $blue;
-            color: rgba(255,255,255,.75);
-            border: 0;
-            transition: 0.1s;
-        }
-        .dropdown-menu {
-            margin: 0;
-            padding-top: 20px;
-        }
-        .dropdown-item:hover {
-            color: rgba(255,255,255,1);
-        }
-    }
-}
-/*header {
     position: relative;
     z-index: 10;
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: $blue;
 
     .navbar {
@@ -570,7 +404,7 @@ header {
         background-color: $blue;
 
         .logo-img {
-            width: 60px;
+            width: 70px;
             margin-right: 20px;
             align-items: center;
         }
@@ -595,6 +429,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: rem;
             line-height: 100px;
             overflow: hidden;
             margin-left: 50px;
@@ -619,8 +454,8 @@ header {
 
                 &:hover {
                     text-decoration: none;
-                    color: $red;
-                    border-bottom: 1px dashed $red;
+                    color: #ff5959;
+                    border-bottom: 1px dashed #ff5959;
                 }
             }
         }
@@ -695,7 +530,7 @@ header {
 
 
     }
-}*/
+}
 
 // TEAM
 
@@ -1328,7 +1163,6 @@ footer {
             max-width: 1200px;
             width: 100%;
             transition: 0.75s;
-            padding-left: 8%;
 
             img {
                 height: 500px;
