@@ -212,6 +212,10 @@ h1, h2, h3, h4 {
   font-weight: normal;
 }
 
+#journalpage .Volume1 .card {
+  background-color: #b3cdde;
+}
+
 #journalpage .Volume2 {
   top: -30px;
 }
@@ -1172,11 +1176,6 @@ footer .bottom {
   margin-bottom: 20px;
 }
 
-#get-involved .card-deck {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 #get-involved .buttons {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -1228,8 +1227,7 @@ footer .bottom {
 
 #get-involved .work,
 #get-involved .write,
-#get-involved .collaboration,
-#get-involved .opportunities {
+#get-involved .collaboration {
   padding: 50px;
 }
 
