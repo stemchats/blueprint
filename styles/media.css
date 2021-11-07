@@ -136,9 +136,6 @@
     font-size: 40px;
     margin-right: 100px;
   }
-  #homepage #magnifycarousel .carousel-indicators {
-    margin-bottom: 0px;
-  }
   #homepage .container,
   #homepage .container-fluid {
     position: relative;
@@ -249,9 +246,6 @@
     content: '<';
     font-size: 40px;
     margin-right: 90px;
-  }
-  #homepage #magnifycarousel .carousel-indicators {
-    margin-bottom: 0px;
   }
   #homepage .container,
   #homepage .container-fluid {
@@ -412,9 +406,6 @@
     content: '<';
     font-size: 40px;
     margin-right: 50px;
-  }
-  #homepage #magnifycarousel .carousel-indicators {
-    margin-bottom: 0px;
   }
   #homepage .container,
   #homepage .container-fluid {
