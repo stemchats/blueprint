@@ -768,13 +768,27 @@ header {
 }
 
 .modal-body .img-fluid {
+
     max-width: 300px;
-    height: 380px;
+    height: 490px;
     object-fit: cover;
     float: left;
     border-radius: 6%;
+    position: relative;
+
 }
 
+#bianca-img {
+    margin-top: 10px;
+}
+
+#april-img {
+    margin-top: 10px;
+}
+
+#gina-img {
+    margin-top: 4px;
+}
 .container-fluid {
     padding: 25px;
 }
