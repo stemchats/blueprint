@@ -126,7 +126,7 @@ $homepage-cards-per-line: (
             img{
                 margin-bottom: 20px;
             }
-            .carousel-control-next-icon:after {
+            /* .carousel-control-next-icon:after {
                 content: '>';
                 font-size: 40px;
                 margin-left:100px;
@@ -136,7 +136,7 @@ $homepage-cards-per-line: (
                 content: '<';
                 font-size: 40px;
                 margin-right:100px;
-            }
+            } */
     
         }
 
@@ -180,6 +180,12 @@ $homepage-cards-per-line: (
             .navbar-brand{
                 margin-left: 10px;
             }
+        }
+    }
+
+    #homepage #magnifycarousel {
+        .carousel-control-prev, .carousel-control-next {
+            visibility: hidden;
         }
     }
 
@@ -276,7 +282,7 @@ $homepage-cards-per-line: (
             img{
                 margin-bottom: 20px;
             }
-            .carousel-control-next-icon:after {
+            /* .carousel-control-next-icon:after {
                 content: '>';
                 font-size: 40px;
                 margin-left:90px;
@@ -286,7 +292,7 @@ $homepage-cards-per-line: (
                 content: '<';
                 font-size: 40px;
                 margin-right:90px;
-            }
+            } */
     
         }
 
@@ -487,7 +493,7 @@ $homepage-cards-per-line: (
             img{
                 margin-bottom: 20px;
             }
-            .carousel-control-next-icon:after {
+            /* .carousel-control-next-icon:after {
                 content: '>';
                 font-size: 40px;
                 margin-left:50px;
@@ -497,7 +503,7 @@ $homepage-cards-per-line: (
                 content: '<';
                 font-size: 40px;
                 margin-right:50px;
-            }
+            } */
 
         }
 
