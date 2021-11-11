@@ -212,6 +212,10 @@ h1, h2, h3, h4 {
   font-weight: normal;
 }
 
+#journalpage .Volume1 .card {
+  background-color: #b3cdde;
+}
+
 #journalpage .Volume2 {
   top: -30px;
 }
@@ -1185,11 +1189,6 @@ footer .bottom {
   margin-bottom: 20px;
 }
 
-#get-involved .card-deck {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 #get-involved .buttons {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -1241,8 +1240,7 @@ footer .bottom {
 
 #get-involved .work,
 #get-involved .write,
-#get-involved .collaboration,
-#get-involved .opportunities {
+#get-involved .collaboration {
   padding: 50px;
 }
 
@@ -1277,32 +1275,32 @@ footer .bottom {
   padding-bottom: 50px;
 }
 
+#homepage #magnifycarousel {
+  /* .carousel-control-prev,
+        .carousel-control-next {
+            width: 100px;
+            outline: black;
+            background-size: 100%, 100%;
+            background-image: none;
+        }
+        .carousel-control-next-icon:after {
+            content: '>';
+            font-size: 55px;
+            color: $blue;
+        }
+        .carousel-control-prev-icon:after {
+            content: '<';
+            font-size: 55px;
+            color:$blue;
+        } */
+}
+
 #homepage #magnifycarousel .Carousel {
   padding: 70px 2rem 60px;
 }
 
 #homepage #magnifycarousel .carousel-inner {
   overflow: visible;
-}
-
-#homepage #magnifycarousel .carousel-control-prev,
-#homepage #magnifycarousel .carousel-control-next {
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  background-image: none;
-}
-
-#homepage #magnifycarousel .carousel-control-next-icon:after {
-  content: '>';
-  font-size: 55px;
-  color: #005792;
-}
-
-#homepage #magnifycarousel .carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: #005792;
 }
 
 #homepage #magnifycarousel .carousel-indicators {
@@ -1323,7 +1321,6 @@ footer .bottom {
   width: 100%;
   -webkit-transition: 0.75s;
   transition: 0.75s;
-  padding-left: 8%;
 }
 
 #homepage #magnifycarousel .carousel .carousel-item img {
@@ -1337,18 +1334,6 @@ footer .bottom {
 #homepage #magnifycarousel .carousel-caption {
   margin-bottom: -100px;
   z-index: 5;
-}
-
-#homepage #magnifycarousel .item:nth-child(1) {
-  background: #74C390;
-}
-
-#homepage #magnifycarousel .item:nth-child(2) {
-  background: #51BCE8;
-}
-
-#homepage #magnifycarousel .item:nth-child(3) {
-  background: #E46653;
 }
 
 #homepage .introcards {

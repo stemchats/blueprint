@@ -228,6 +228,10 @@ h1, h2, h3, h4 {
             color: white;
             font-weight: normal;
         }
+
+        .card {
+            background-color: $light-blue;
+        }
     }
 
     .Volume2 {
@@ -1207,10 +1211,6 @@ footer {
         margin-bottom: 20px;
 
     }
-    .card-deck {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
 
     .buttons {
         margin-bottom: 20px;
@@ -1261,8 +1261,8 @@ footer {
 
     .work,
     .write,
-    .collaboration,
-    .opportunities{
+    .collaboration
+    {
         padding: 50px;
     }
 
@@ -1272,6 +1272,7 @@ footer {
 
     .card-title{
         font-weight: bolder;
+        
     }
 
     .test{
@@ -1281,8 +1282,6 @@ footer {
     .opp-title{
         margin-bottom: 20px;
     }
-
-
 
 }
 
@@ -1307,7 +1306,7 @@ footer {
             overflow: visible;
         }
     
-        .carousel-control-prev,
+        /* .carousel-control-prev,
         .carousel-control-next {
             width: 100px;
             outline: black;
@@ -1323,7 +1322,7 @@ footer {
             content: '<';
             font-size: 55px;
             color:$blue;
-        }
+        } */
 
         .carousel-indicators{
             z-index: 5;
@@ -1342,7 +1341,7 @@ footer {
             max-width: 1200px;
             width: 100%;
             transition: 0.75s;
-            padding-left: 8%;
+            // padding-left: clamp(20px, 5%, 40px);
 
             img {
                 height: 500px;
@@ -1354,18 +1353,6 @@ footer {
         .carousel-caption {
             margin-bottom: -100px;
             z-index: 5;
-        }
-
-        .item:nth-child(1) {
-            background: #74C390;
-        }
-
-        .item:nth-child(2) {
-            background: #51BCE8;
-        }
-
-        .item:nth-child(3) {
-            background: #E46653;
         }
 
     }
