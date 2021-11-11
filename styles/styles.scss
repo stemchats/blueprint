@@ -96,10 +96,11 @@ h1, h2, h3, h4 {
     }
 }
 .hover-shadow {
+    border: none;
     transition: 0.25s;
 
     &:hover {
-        transform: translateY(-3px);
+        transform: translateY(-5px);
         box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1);
     }
 }
@@ -808,7 +809,7 @@ header {
     margin-bottom: 100px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: 'Roboto Slab', serif;
 }
 
