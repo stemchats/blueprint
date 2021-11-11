@@ -69,32 +69,10 @@ $homepage-cards-per-line: (
             }
         }
     }
-    /*{
-        max-height:50px;
-        .navbar{
-            justify-content: end;
 
-            .nav-item{
-                line-height: 20px;
-            }
-        
-            .dropdown:active{
-                z-index: 0;
-                position:relative;
-                //display: inline-block;
-    
-                .dropdown-menu {
-                    margin-top: -1px;
-                    //display: block;
-                    width:100%;
-                    justify-content: end;
-                }
-    
-            }
-        }
-
-        
-    }  */
+    .blueprint {
+        text-align: center;
+    }
 
     footer{
 
@@ -197,7 +175,6 @@ $homepage-cards-per-line: (
 
             .blueprint{
                 margin-top:60px;
-                margin-bottom: auto;
             }
     
             .magnify{
@@ -434,7 +411,6 @@ $homepage-cards-per-line: (
 
             .blueprint{
                 margin-top:60px;
-                margin-bottom: auto;
             }
 
             .magnify{

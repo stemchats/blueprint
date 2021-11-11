@@ -1038,135 +1038,121 @@ footer {
 
 //ABOUT
 
-#page {
-    font-family: 'Karla';
-    font-size: 18px;
-    margin: 0px 90px;
+#ourmission {
+    margin-top:90px ;
+    margin-bottom: 50px;
+
+    a {
+        font-weight: bolder;
+        color: $red;
+        border-bottom: 1px solid;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid;
+            color: $red;
+            background-color: #ffc2c2;
+
+        }
+    }
+
+    .title {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .research-img {
+        width: 500px;
+        height: auto;
+    }
+
+    b {
+        color: $blue
+    }
+
+    .blueprint {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .magnify {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .about-btn {
+        background-color: $blue;
+        border-color: $blue;
+        color: white;
+        font-weight: normal;
+        transition: 0.1s;
+
+        &:hover {
+            color: white;
+            background-color: $teal;
+            border-color: $teal;
+            transition: 0.1s;
+        }
+
+    }
+
+
+
+}
+
+#partners {
+    margin-top: 90px;
+    margin-bottom: 100px;
 
     .textbox {
-        margin: 20px 10px;
+        text-align: center;
     }
 
-    h1{
-        font-family: 'Roboto Slab';
+    a {
+        font-weight: bolder;
+        color: $blue;
+        border-bottom: 1px solid;
+
+        &:hover {
+            text-decoration: none;
+            color: $blue;
+            background-color: #99d6ff;
+        }
     }
 
-    #ourmission {
-        margin-top:90px ;
-        margin-bottom: 50px;
+    img {
+        width: 600px;
+        height: auto;
+    }
 
-        a {
-            font-weight: bolder;
-            color: $red;
-            border-bottom: 1px solid;
+}
 
-            &:hover {
-                text-decoration: none;
-                border-bottom: 1px solid;
-                color: $red;
-                background-color: #ffc2c2;
+#support {
+    .textbox {
+        text-align: center;
+        margin-bottom: 70px;
+    }
 
-            }
-        }
+    .handshake {
+        color: $blue;
+        text-align: center;
+    }
 
-        .title {
-            padding: 10px;
-            text-align: center;
-        }
+    .btn {
+        color: $blue;
+        background-color: white;
+        border-color: $blue;
+        font-weight: bolder;
 
-        .research-img {
-            width: 500px;
-            height: auto;
-        }
-
-        b {
-            color: $blue
-        }
-
-        .blueprint {
-            margin-top: 60px;
-            margin-bottom: 50px;
-        }
-
-        .magnify {
-            margin-top: 60px;
-            margin-bottom: 50px;
-        }
-
-        .about-btn {
-            background-color: $blue;
-            border-color: $blue;
+        &:hover {
             color: white;
-            font-weight: normal;
-            transition: 0.1s;
-
-            &:hover {
-                color: white;
-                background-color: $teal;
-                border-color: $teal;
-                transition: 0.1s;
-            }
-
-        }
-
-
-
-    }
-
-    #partners {
-        margin-top: 90px;
-        margin-bottom: 100px;
-
-        .textbox {
-            text-align: center;
-        }
-
-        a {
+            background-color: $teal;
+            border-color: $teal;
             font-weight: bolder;
-            color: $blue;
-            border-bottom: 1px solid;
-
-            &:hover {
-                text-decoration: none;
-                color: $blue;
-                background-color: #99d6ff;
-            }
-        }
-
-        img {
-            width: 600px;
-            height: auto;
         }
 
     }
 
-    #support {
-        .textbox {
-            text-align: center;
-            margin-bottom: 70px;
-        }
-
-        .handshake {
-            color: $blue;
-            text-align: center;
-        }
-
-        .btn {
-            color: $blue;
-            background-color: white;
-            border-color: $blue;
-            font-weight: bolder;
-
-            &:hover {
-                color: white;
-                background-color: $teal;
-                border-color: $teal;
-                font-weight: bolder;
-            }
-
-        }
-
-    }
 }
 
 

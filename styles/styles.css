@@ -1032,63 +1032,49 @@ footer .bottom {
   font-size: 13px;
 }
 
-#page {
-  font-family: 'Karla';
-  font-size: 18px;
-  margin: 0px 90px;
-}
-
-#page .textbox {
-  margin: 20px 10px;
-}
-
-#page h1 {
-  font-family: 'Roboto Slab';
-}
-
-#page #ourmission {
+#ourmission {
   margin-top: 90px;
   margin-bottom: 50px;
 }
 
-#page #ourmission a {
+#ourmission a {
   font-weight: bolder;
   color: #ff5959;
   border-bottom: 1px solid;
 }
 
-#page #ourmission a:hover {
+#ourmission a:hover {
   text-decoration: none;
   border-bottom: 1px solid;
   color: #ff5959;
   background-color: #ffc2c2;
 }
 
-#page #ourmission .title {
+#ourmission .title {
   padding: 10px;
   text-align: center;
 }
 
-#page #ourmission .research-img {
+#ourmission .research-img {
   width: 500px;
   height: auto;
 }
 
-#page #ourmission b {
+#ourmission b {
   color: #005792;
 }
 
-#page #ourmission .blueprint {
+#ourmission .blueprint {
   margin-top: 60px;
   margin-bottom: 50px;
 }
 
-#page #ourmission .magnify {
+#ourmission .magnify {
   margin-top: 60px;
   margin-bottom: 50px;
 }
 
-#page #ourmission .about-btn {
+#ourmission .about-btn {
   background-color: #005792;
   border-color: #005792;
   color: white;
@@ -1097,7 +1083,7 @@ footer .bottom {
   transition: 0.1s;
 }
 
-#page #ourmission .about-btn:hover {
+#ourmission .about-btn:hover {
   color: white;
   background-color: #82d1c6;
   border-color: #82d1c6;
@@ -1105,50 +1091,50 @@ footer .bottom {
   transition: 0.1s;
 }
 
-#page #partners {
+#partners {
   margin-top: 90px;
   margin-bottom: 100px;
 }
 
-#page #partners .textbox {
+#partners .textbox {
   text-align: center;
 }
 
-#page #partners a {
+#partners a {
   font-weight: bolder;
   color: #005792;
   border-bottom: 1px solid;
 }
 
-#page #partners a:hover {
+#partners a:hover {
   text-decoration: none;
   color: #005792;
   background-color: #99d6ff;
 }
 
-#page #partners img {
+#partners img {
   width: 600px;
   height: auto;
 }
 
-#page #support .textbox {
+#support .textbox {
   text-align: center;
   margin-bottom: 70px;
 }
 
-#page #support .handshake {
+#support .handshake {
   color: #005792;
   text-align: center;
 }
 
-#page #support .btn {
+#support .btn {
   color: #005792;
   background-color: white;
   border-color: #005792;
   font-weight: bolder;
 }
 
-#page #support .btn:hover {
+#support .btn:hover {
   color: white;
   background-color: #82d1c6;
   border-color: #82d1c6;
