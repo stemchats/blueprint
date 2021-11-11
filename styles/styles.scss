@@ -774,24 +774,26 @@ header {
 .modal-body .img-fluid {
 
     max-width: 300px;
-    height: 490px;
+    height: 380px;
     object-fit: cover;
     float: left;
-    border-radius: 6%;
+    border-radius: 3%;
     position: relative;
 
 }
 
+// Unique Modal Image centering style 
+
 #bianca-img {
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 #april-img {
-    margin-top: 10px;
+    margin-top: 55px;
 }
 
 #gina-img {
-    margin-top: 4px;
+    margin-top: 20px;
 }
 .container-fluid {
     padding: 25px;
