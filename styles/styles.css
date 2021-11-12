@@ -1149,15 +1149,6 @@ footer .bottom {
   margin-bottom: 100px;
 }
 
-#get-involved h1 {
-  margin-bottom: 40px;
-}
-
-#get-involved title {
-  margin-top: 0px;
-  font-family: 'Roboto Slab';
-}
-
 #get-involved .textbox {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1218,24 +1209,12 @@ footer .bottom {
   padding: 50px;
 }
 
-#get-involved .join {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #get-involved .card-title {
   font-weight: bolder;
 }
 
-#get-involved .test {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#get-involved .opp-title {
-  margin-bottom: 20px;
+#get-involved .opportunities .card {
+  margin-top: 40px;
 }
 
 #homepage {
@@ -1359,10 +1338,11 @@ footer .bottom {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 150px;
+  height: 170px;
 }
 
 #homepage .carouselcontainer .carouselrow .partnerpic {
   width: 150px;
+  height: 150px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1169,16 +1169,7 @@ footer {
     //     position: relative;
     //     padding: 150px 1.5rem 70px;
     // }
-
-    h1{
-        margin-bottom:40px
-    }
-
-    title{
-        margin-top: 0px;
-        font-family: 'Roboto Slab';
-    }
-
+    
     .textbox{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1239,21 +1230,15 @@ footer {
         padding: 50px;
     }
 
-    .join{
-        justify-content: center;
-    }
-
     .card-title{
         font-weight: bolder;
         
     }
 
-    .test{
-        justify-content: center;
-    }
-
-    .opp-title{
-        margin-bottom: 20px;
+    .opportunities {
+        .card {
+            margin-top: 40px;
+        }
     }
 
 }
@@ -1377,10 +1362,11 @@ footer {
         .carouselrow{
             justify-content: center;
             text-align: center;
-            height: 150px;
+            height: 170px;
 
             .partnerpic{
                 width:150px;
+                height: 150px;
             }
         }
     }
