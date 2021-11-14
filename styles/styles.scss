@@ -233,6 +233,10 @@ h1, h2, h3, h4 {
         .card {
             background-color: $light-blue;
         }
+
+        .card-img-top {
+            height: 350px;
+        }
     }
 
     .Volume2 {
@@ -1231,13 +1235,15 @@ footer {
     }
 
     .card-title{
-        font-weight: bolder;
-        
+        font-weight: bolder;   
     }
 
     .opportunities {
         .card {
             margin-top: 40px;
+        }
+        a {
+            margin-top: 1rem;
         }
     }
 

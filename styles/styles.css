@@ -217,6 +217,10 @@ h1, h2, h3, h4 {
   background-color: #b3cdde;
 }
 
+#journalpage .Volume1 .card-img-top {
+  height: 350px;
+}
+
 #journalpage .Volume2 {
   top: -30px;
 }
@@ -1215,6 +1219,10 @@ footer .bottom {
 
 #get-involved .opportunities .card {
   margin-top: 40px;
+}
+
+#get-involved .opportunities a {
+  margin-top: 1rem;
 }
 
 #homepage {
