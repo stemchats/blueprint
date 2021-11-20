@@ -83,32 +83,9 @@
   header .navbar-collapse .dropdown-menu {
     padding-top: 10px;
   }
-  /*{
-        max-height:50px;
-        .navbar{
-            justify-content: end;
-
-            .nav-item{
-                line-height: 20px;
-            }
-        
-            .dropdown:active{
-                z-index: 0;
-                position:relative;
-                //display: inline-block;
-    
-                .dropdown-menu {
-                    margin-top: -1px;
-                    //display: block;
-                    width:100%;
-                    justify-content: end;
-                }
-    
-            }
-        }
-
-        
-    }  */
+  .blueprint {
+    text-align: center;
+  }
   footer .get-involved {
     padding-bottom: 30px;
   }
@@ -177,7 +154,6 @@
   }
   #page #ourmission .blueprint {
     margin-top: 60px;
-    margin-bottom: auto;
   }
   #page #ourmission .magnify {
     margin-top: auto;
@@ -283,7 +259,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .modal-body .img-fluid {
     float: none;
     margin-bottom: 10px;
@@ -361,7 +337,6 @@
   }
   #page #ourmission .blueprint {
     margin-top: 60px;
-    margin-bottom: auto;
   }
   #page #ourmission .magnify {
     margin-top: auto;
