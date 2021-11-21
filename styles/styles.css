@@ -780,7 +780,7 @@ header .navbar-collapse .dropdown-item:hover {
 
 .modal-body .img-fluid {
   max-width: 300px;
-  height: 380px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   float: left;
@@ -788,16 +788,11 @@ header .navbar-collapse .dropdown-item:hover {
   position: relative;
 }
 
-#bianca-img {
-  margin-top: 50px;
-}
-
-#april-img {
-  margin-top: 55px;
-}
-
-#gina-img {
-  margin-top: 20px;
+#modal-align {
+  top: calc(50% - 100px);
+  transform: translateY(0%);
+  -webkit-transform: translateY(-25%);
+  -moz-transform: translateY(0%);
 }
 
 .container-fluid {
