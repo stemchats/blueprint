@@ -1,3 +1,4 @@
+// load blog from medium
 $(function () {
     var mediumPromise = new Promise(function (resolve) {
     var $content = $('#jsonContent');
@@ -26,8 +27,8 @@ $(function () {
                 //re-trim if we are in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
-                
-                /* display += `<div class="card-footer"> 
+
+                /* display += `<div class="card-footer">
                 <a href="${item.link}" target="_blank" class="blog-btn btn btn-primary btn-lg shadow-none mt-auto" >Read More</a>
                 </div>`; */
                 display += '</div></div></div>';
