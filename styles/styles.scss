@@ -777,13 +777,25 @@ header {
 }
 
 .modal-body .img-fluid {
+
     max-width: 300px;
-    height: 380px;
+    height: auto;
     object-fit: cover;
     float: left;
-    border-radius: 6%;
+    border-radius: 3%;
+    position: relative;
+    
+
 }
 
+// Unique Modal Image centering style 
+
+#modal-align {
+    top: calc(50% - 100px);
+    transform: translateY(+0%);
+    -webkit-transform: translateY(-25%);
+    -moz-transform: translateY(+0%);
+}
 .container-fluid {
     padding: 25px;
 }
@@ -802,6 +814,18 @@ header {
         height: 300px;
         width: 100%;
     }
+
+    // #modal-align {
+    //     position: relative;
+    //     top: calc(50% - 25px);
+    //     top: -moz-calc(50% - 25px);
+    //     top: -webkit-calc(50% - 25px);
+    //     transform: translateY(-50%);
+    //     -webkit-transform: translateY(-50%);
+    //     -moz-transform: translateY(-50%);
+
+    // }
+
 
 }
 
