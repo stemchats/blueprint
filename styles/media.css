@@ -373,6 +373,13 @@
             justify-content: center;
     text-align: center;
   }
+  #get-involved .opportunities {
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  #get-involved .opportunities .card {
+    margin-bottom: 15px;
+  }
   #homepage #magnifycarousel {
     /* .carousel-control-next-icon:after {
                 content: '>';
@@ -421,6 +428,9 @@
   }
   #homepage .carouselrow {
     height: 350px;
+  }
+  .column {
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=media.css.map */

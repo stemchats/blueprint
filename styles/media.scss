@@ -458,6 +458,14 @@ $homepage-cards-per-line: (
             justify-content:center;
             text-align:center;
         }
+
+        .opportunities{
+            margin-left:15px;
+            margin-right:5px;
+            .card{
+                margin-bottom:15px;
+            }
+        }
     }
 
     #homepage{
@@ -517,6 +525,10 @@ $homepage-cards-per-line: (
         .carouselrow{
             height:350px;
         }
+    }
+
+    .column{
+        margin:10px;
     }
 
     
