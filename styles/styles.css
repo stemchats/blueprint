@@ -1287,35 +1287,30 @@ footer .bottom {
 }
 
 #homepage #magnifycarousel .Carousel {
-  padding: 100px 2rem 60px;
+  padding: 80px 2rem 60px;
 }
 
 #homepage #magnifycarousel .carousel-inner {
   overflow: visible;
 }
 
-#homepage #magnifycarousel .carousel-control-prev-arr,
-#homepage #magnifycarousel .carousel-control-next-arr {
+#homepage #magnifycarousel .carousel-control-prev,
+#homepage #magnifycarousel .carousel-control-next {
   width: 75px;
   outline: black;
   background-image: none;
 }
 
-#homepage #magnifycarousel .carousel-control-next-icon i,
-#homepage #magnifycarousel .carousel-control-prev-icon i {
-  position: absolute;
-  font-size: 70px;
-  color: #005792;
-  height: 75px;
-  width: 75px;
-  background-color: rgba(255, 255, 255, 0.5);
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+#homepage #magnifycarousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23005792' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  width: 30px;
+  height: 50px;
 }
 
-#homepage #magnifycarousel .carousel-control-next-icon i {
-  left: 0;
+#homepage #magnifycarousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23005792' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  width: 30px;
+  height: 50px;
 }
 
 #homepage #magnifycarousel .carousel-indicators {

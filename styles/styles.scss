@@ -1324,32 +1324,29 @@ footer {
 
     #magnifycarousel{
         .Carousel{
-            padding: 100px 2rem 60px;
+            padding: 80px 2rem 60px;
         }
 
         .carousel-inner {
             overflow: visible;
         }
     
-        .carousel-control-prev-arr,
-        .carousel-control-next-arr {
+        .carousel-control-prev,
+        .carousel-control-next {
             width: 75px;
             outline: black;
             // background-size: 100%, 100%;
             background-image: none;
         }
-        .carousel-control-next-icon i,
-        .carousel-control-prev-icon i{
-            position: absolute;
-            font-size: 70px;
-            color: $blue;
-            height: 75px;
-            width: 75px;
-            background-color: rgba(255, 255, 255, 0.5);
-            align-self: center;
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23005792' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+            width: 30px;
+            height: 50px;
         }
-        .carousel-control-next-icon i {
-            left: 0;
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23005792' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+            width: 30px;
+            height: 50px;
         }
 
         .carousel-indicators{
