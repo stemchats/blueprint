@@ -1223,6 +1223,21 @@ footer .bottom {
   text-align: center;
 }
 
+#get-involved .social {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-left: 2px;
+}
+
+#get-involved .social .icon {
+  color: #005792;
+  padding-right: 20px;
+}
+
+#get-involved .social .icon:hover {
+  color: #82d1c6;
+}
+
 #get-involved .write-img {
   width: 600px;
   height: auto;
@@ -1274,6 +1289,10 @@ footer .bottom {
 
 #get-involved .card-title {
   font-weight: bolder;
+}
+
+#get-involved .opportunities {
+  padding: 75px;
 }
 
 #get-involved .opportunities .card {
