@@ -110,16 +110,13 @@ h1, h2, h3, h4 {
     margin-bottom: 20px;
     border: 1px solid $red;
     border-radius: 25px;
+    color: white;
+    background-color: $red;
     
     p {
         margin: 0;
     }
 
-}
-
-.important-home {
-    color: white;
-    background-color: red;
 }
 
 .bold {
