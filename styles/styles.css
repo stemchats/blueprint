@@ -1373,6 +1373,18 @@ footer .bottom {
   background-position: 0 100%;
 }
 
+#homepage .introcards .card .introcard-link {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+#homepage .introcards .card .introcard-link:hover {
+  -webkit-text-decoration-color: #ff5959;
+          text-decoration-color: #ff5959;
+}
+
 #homepage .journal .journalstats {
   font-size: 20px;
   font-weight: bold;

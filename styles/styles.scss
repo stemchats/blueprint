@@ -1408,6 +1408,15 @@ footer {
             &:hover h1 {
                 background-position: 0 100%;
             }
+
+            .introcard-link {
+                transition: 0.5s;
+                text-decoration-color: transparent;
+
+                &:hover {
+                    text-decoration-color: $red;
+                }
+            }
         }
     }
 
