@@ -110,11 +110,23 @@ h1, h2, h3, h4 {
     margin-bottom: 20px;
     border: 1px solid $red;
     border-radius: 25px;
-
+    
     p {
         margin: 0;
     }
+
 }
+
+.important-home {
+    color: white;
+    background-color: red;
+}
+
+.bold {
+    color: $blue;
+}
+
+
 
 .linkintext {
     font-weight: bolder;
@@ -255,6 +267,7 @@ h1, h2, h3, h4 {
                 border: none;
                 background-color: $light-blue;
                 padding: 15px;
+                border-radius: 30px;
             }
         }
     }
