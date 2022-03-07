@@ -102,15 +102,12 @@ h1, h2, h3, h4 {
   margin-bottom: 20px;
   border: 1px solid #ff5959;
   border-radius: 25px;
+  color: white;
+  background-color: #ff5959;
 }
 
 .important p {
   margin: 0;
-}
-
-.important-home {
-  color: white;
-  background-color: red;
 }
 
 .bold {
@@ -1393,6 +1390,18 @@ footer .bottom {
 
 #homepage .introcards .card:hover h1 {
   background-position: 0 100%;
+}
+
+#homepage .introcards .card .introcard-link {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+#homepage .introcards .card .introcard-link:hover {
+  -webkit-text-decoration-color: #ff5959;
+          text-decoration-color: #ff5959;
 }
 
 #homepage .journal .journalstats {
