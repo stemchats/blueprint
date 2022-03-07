@@ -112,7 +112,7 @@ h1, h2, h3, h4 {
     border-radius: 25px;
     color: white;
     background-color: $red;
-    
+
     p {
         margin: 0;
     }
@@ -127,13 +127,13 @@ h1, h2, h3, h4 {
 
 .linkintext {
     font-weight: bolder;
-    color: $blue;
+    color: $blue !important;
     border-bottom: 1px solid;
 
     &:hover {
         text-decoration: none;
-        color: $blue;
-        background-color: #99d6ff;
+        color: $blue !important;
+        background-color: #99d6ff !important;
     }
 }
 
@@ -168,7 +168,7 @@ h1, h2, h3, h4 {
             font-weight: bolder;
             color: $blue;
             border-bottom: 1px solid;
-        
+
             &:hover {
                 text-decoration: none;
                 border-bottom: 1px solid;
@@ -324,7 +324,7 @@ h1, h2, h3, h4 {
                             font-weight: bolder;
                             color: $blue;
                             border-bottom: 1px solid;
-                
+
                             &:hover {
                                 text-decoration: none;
                                 border-bottom: 1px solid;
@@ -351,7 +351,7 @@ h1, h2, h3, h4 {
                     font-weight: bolder;
                     color: $blue;
                     border-bottom: 1px solid;
-        
+
                     &:hover {
                         text-decoration: none;
                         border-bottom: 1px solid;
@@ -433,7 +433,7 @@ $transition: .3s; // increase this to see the transformations in slow-motion
     .lines {
         margin-left: 50%;
         margin-right: 2rem;
-        
+
         &:before { top: $button-size/3; }
         &:after { top: -$button-size/3; }
     }
@@ -506,7 +506,7 @@ header {
 
     .navbar-brand {
         margin-top: 5px;
-        
+
         .logo-img {
             margin-top: -15px;
             width: 50px;
@@ -805,7 +805,7 @@ header {
         max-height: calc(100vh - 200px);
         overflow-y: auto;
         overflow-x: hidden;
-        
+
         .img-col {
             display: grid;
 
@@ -826,7 +826,7 @@ header {
     }
 }
 
-// Unique Modal Image centering style 
+// Unique Modal Image centering style
 
 #modal-align {
     top: calc(50% - 100px);
@@ -1243,7 +1243,7 @@ footer {
     //     position: relative;
     //     padding: 150px 1.5rem 70px;
     // }
-    
+
     .textbox{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1266,7 +1266,7 @@ footer {
             &:hover{
                 color:$teal;
             }
-            
+
             }
 
     }
@@ -1320,7 +1320,7 @@ footer {
     }
 
     .card-title{
-        font-weight: bolder;   
+        font-weight: bolder;
     }
 
     .opportunities {
@@ -1356,7 +1356,7 @@ footer {
         .carousel-inner {
             overflow: visible;
         }
-    
+
         .carousel-control-prev,
         .carousel-control-next {
             width: 75px;
