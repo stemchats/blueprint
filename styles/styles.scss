@@ -1426,8 +1426,10 @@ footer {
             }
 
             .introcard-link {
-                transition: 0.5s;
                 text-decoration-color: transparent;
+                text-decoration-thickness: 5px;
+                text-underline-offset: 5px;
+                transition: 0.5s;
 
                 &:hover {
                     text-decoration-color: $red;
